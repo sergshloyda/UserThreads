@@ -1,0 +1,60 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (ae15d352).
+//
+// singletoneservice.tli
+//
+// Wrapper implementations for Win32 type library C:\VisualCStudy1\singletoneservice\singletoneservice.tlb
+// compiler-generated file created 11/18/14 at 17:27:25 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IMySingleton wrapper method implementations
+//
+
+inline HRESULT IMySingleton::HelloWorld ( _bstr_t bstrMsg ) {
+    HRESULT _hr = raw_HelloWorld(bstrMsg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::ConnectPoint ( _bstr_t bstrMachine, IUnknown * pUnk ) {
+    HRESULT _hr = raw_ConnectPoint(bstrMachine, pUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::DisconnectPoint ( _bstr_t bstrKey ) {
+    HRESULT _hr = raw_DisconnectPoint(bstrKey);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::AdviseTransactedDocument ( _bstr_t bstrMachine, _bstr_t bstr1CDocNumber, _bstr_t bstrIntDocNumber ) {
+    HRESULT _hr = raw_AdviseTransactedDocument(bstrMachine, bstr1CDocNumber, bstrIntDocNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::AdviseClientAboutTransaction ( ) {
+    HRESULT _hr = raw_AdviseClientAboutTransaction();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::ExecuteExprAndRetObject ( _bstr_t bstrExpr, IDispatch * * pObj ) {
+    HRESULT _hr = raw_ExecuteExprAndRetObject(bstrExpr, pObj);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::RefreshDataAllClients ( ) {
+    HRESULT _hr = raw_RefreshDataAllClients();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMySingleton::ThrowError ( _bstr_t bstrMachine, _bstr_t bstrSource, _bstr_t bstrDescription ) {
+    HRESULT _hr = raw_ThrowError(bstrMachine, bstrSource, bstrDescription);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

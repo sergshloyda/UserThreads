@@ -1,0 +1,2585 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (3ed59fb9).
+//
+// c:\visualcstudy\userthreads\debug\vsflex7u.tli
+//
+// Wrapper implementations for Win32 type library c:\windows\system32\vsflex7u.ocx
+// compiler-generated file created 08/15/06 at 17:50:01 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IVSFlexGrid wrapper method implementations
+//
+
+inline HRESULT IVSFlexGrid::About ( ) {
+    HRESULT _hr = raw_About();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IVSFlexGrid::Get_ConvInfo ( ) {
+    long _result;
+    HRESULT _hr = get__ConvInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::Put_ConvInfo ( long pVal ) {
+    HRESULT _hr = put__ConvInfo(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetFontName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_FontName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutFontName ( _bstr_t pVal ) {
+    HRESULT _hr = put_FontName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IVSFlexGrid::GetFontSize ( ) {
+    float _result;
+    HRESULT _hr = get_FontSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFontSize ( float pVal ) {
+    HRESULT _hr = put_FontSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetFontBold ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_FontBold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFontBold ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_FontBold(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetFontItalic ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_FontItalic(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFontItalic ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_FontItalic(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetFontStrikethru ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_FontStrikethru(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFontStrikethru ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_FontStrikethru(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetFontUnderline ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_FontUnderline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFontUnderline ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_FontUnderline(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetRows ( ) {
+    long _result;
+    HRESULT _hr = get_Rows(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRows ( long pVal ) {
+    HRESULT _hr = put_Rows(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetCols ( ) {
+    long _result;
+    HRESULT _hr = get_Cols(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCols ( long pVal ) {
+    HRESULT _hr = put_Cols(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IVSFlexGrid::GetVersion ( ) {
+    short _result;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutVersion ( short pVal ) {
+    HRESULT _hr = put_Version(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetFormatString ( ) {
+    BSTR _result;
+    HRESULT _hr = get_FormatString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutFormatString ( _bstr_t pVal ) {
+    HRESULT _hr = put_FormatString(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetFixedRows ( ) {
+    long _result;
+    HRESULT _hr = get_FixedRows(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFixedRows ( long pVal ) {
+    HRESULT _hr = put_FixedRows(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetFixedCols ( ) {
+    long _result;
+    HRESULT _hr = get_FixedCols(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFixedCols ( long pVal ) {
+    HRESULT _hr = put_FixedCols(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetTopRow ( ) {
+    long _result;
+    HRESULT _hr = get_TopRow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutTopRow ( long pVal ) {
+    HRESULT _hr = put_TopRow(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetLeftCol ( ) {
+    long _result;
+    HRESULT _hr = get_LeftCol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutLeftCol ( long pVal ) {
+    HRESULT _hr = put_LeftCol(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetRowSel ( ) {
+    long _result;
+    HRESULT _hr = get_RowSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowSel ( long pVal ) {
+    HRESULT _hr = put_RowSel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetColSel ( ) {
+    long _result;
+    HRESULT _hr = get_ColSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColSel ( long pVal ) {
+    HRESULT _hr = put_ColSel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetRow ( ) {
+    long _result;
+    HRESULT _hr = get_Row(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRow ( long pVal ) {
+    HRESULT _hr = put_Row(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetCol ( ) {
+    long _result;
+    HRESULT _hr = get_Col(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCol ( long pVal ) {
+    HRESULT _hr = put_Col(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutText ( _bstr_t pVal ) {
+    HRESULT _hr = put_Text(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetBackColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBackColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_BackColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetForeColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ForeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutForeColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_ForeColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetBackColorFixed ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColorFixed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBackColorFixed ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_BackColorFixed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetForeColorFixed ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ForeColorFixed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutForeColorFixed ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_ForeColorFixed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetBackColorSel ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColorSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBackColorSel ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_BackColorSel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetForeColorSel ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ForeColorSel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutForeColorSel ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_ForeColorSel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetBackColorBkg ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColorBkg(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBackColorBkg ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_BackColorBkg(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetWordWrap ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_WordWrap(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutWordWrap ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_WordWrap(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum TextStyleSettings IVSFlexGrid::GetTextStyle ( ) {
+    enum TextStyleSettings _result;
+    HRESULT _hr = get_TextStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutTextStyle ( enum TextStyleSettings pVal ) {
+    HRESULT _hr = put_TextStyle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum TextStyleSettings IVSFlexGrid::GetTextStyleFixed ( ) {
+    enum TextStyleSettings _result;
+    HRESULT _hr = get_TextStyleFixed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutTextStyleFixed ( enum TextStyleSettings pVal ) {
+    HRESULT _hr = put_TextStyleFixed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetScrollTrack ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ScrollTrack(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutScrollTrack ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ScrollTrack(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum FocusRectSettings IVSFlexGrid::GetFocusRect ( ) {
+    enum FocusRectSettings _result;
+    HRESULT _hr = get_FocusRect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFocusRect ( enum FocusRectSettings pVal ) {
+    HRESULT _hr = put_FocusRect(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum ShowSelSettings IVSFlexGrid::GetHighLight ( ) {
+    enum ShowSelSettings _result;
+    HRESULT _hr = get_HighLight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutHighLight ( enum ShowSelSettings pVal ) {
+    HRESULT _hr = put_HighLight(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RedrawSettings IVSFlexGrid::GetRedraw ( ) {
+    enum RedrawSettings _result;
+    HRESULT _hr = get_Redraw(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRedraw ( enum RedrawSettings pVal ) {
+    HRESULT _hr = put_Redraw(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum ScrollBarsSettings IVSFlexGrid::GetScrollBars ( ) {
+    enum ScrollBarsSettings _result;
+    HRESULT _hr = get_ScrollBars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutScrollBars ( enum ScrollBarsSettings pVal ) {
+    HRESULT _hr = put_ScrollBars(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetMouseRow ( ) {
+    long _result;
+    HRESULT _hr = get_MouseRow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetMouseCol ( ) {
+    long _result;
+    HRESULT _hr = get_MouseCol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetCellLeft ( ) {
+    long _result;
+    HRESULT _hr = get_CellLeft(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetCellTop ( ) {
+    long _result;
+    HRESULT _hr = get_CellTop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetCellWidth ( ) {
+    long _result;
+    HRESULT _hr = get_CellWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetCellHeight ( ) {
+    long _result;
+    HRESULT _hr = get_CellHeight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetRowHeightMin ( ) {
+    long _result;
+    HRESULT _hr = get_RowHeightMin(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowHeightMin ( long pVal ) {
+    HRESULT _hr = put_RowHeightMin(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum FillStyleSettings IVSFlexGrid::GetFillStyle ( ) {
+    enum FillStyleSettings _result;
+    HRESULT _hr = get_FillStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFillStyle ( enum FillStyleSettings pVal ) {
+    HRESULT _hr = put_FillStyle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum GridStyleSettings IVSFlexGrid::GetGridLines ( ) {
+    enum GridStyleSettings _result;
+    HRESULT _hr = get_GridLines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutGridLines ( enum GridStyleSettings pVal ) {
+    HRESULT _hr = put_GridLines(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum GridStyleSettings IVSFlexGrid::GetGridLinesFixed ( ) {
+    enum GridStyleSettings _result;
+    HRESULT _hr = get_GridLinesFixed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutGridLinesFixed ( enum GridStyleSettings pVal ) {
+    HRESULT _hr = put_GridLinesFixed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetGridColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_GridColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutGridColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_GridColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetGridColorFixed ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_GridColorFixed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutGridColorFixed ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_GridColorFixed(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetCellBackColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_CellBackColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellBackColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_CellBackColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetCellForeColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_CellForeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellForeColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_CellForeColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AlignmentSettings IVSFlexGrid::GetCellAlignment ( ) {
+    enum AlignmentSettings _result;
+    HRESULT _hr = get_CellAlignment(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellAlignment ( enum AlignmentSettings pVal ) {
+    HRESULT _hr = put_CellAlignment(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum TextStyleSettings IVSFlexGrid::GetCellTextStyle ( ) {
+    enum TextStyleSettings _result;
+    HRESULT _hr = get_CellTextStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellTextStyle ( enum TextStyleSettings pVal ) {
+    HRESULT _hr = put_CellTextStyle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * IVSFlexGrid::GetCellPicture ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_CellPicture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = put_CellPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefCellPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = putref_CellPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum PictureAlignmentSettings IVSFlexGrid::GetCellPictureAlignment ( ) {
+    enum PictureAlignmentSettings _result;
+    HRESULT _hr = get_CellPictureAlignment(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellPictureAlignment ( enum PictureAlignmentSettings pVal ) {
+    HRESULT _hr = put_CellPictureAlignment(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetCellFontName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_CellFontName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutCellFontName ( _bstr_t pVal ) {
+    HRESULT _hr = put_CellFontName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IVSFlexGrid::GetCellFontSize ( ) {
+    float _result;
+    HRESULT _hr = get_CellFontSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFontSize ( float pVal ) {
+    HRESULT _hr = put_CellFontSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetCellFontBold ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_CellFontBold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFontBold ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_CellFontBold(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetCellFontItalic ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_CellFontItalic(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFontItalic ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_CellFontItalic(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IVSFlexGrid::GetCellFontWidth ( ) {
+    float _result;
+    HRESULT _hr = get_CellFontWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFontWidth ( float pVal ) {
+    HRESULT _hr = put_CellFontWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetCellFontUnderline ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_CellFontUnderline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFontUnderline ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_CellFontUnderline(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetCellFontStrikethru ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_CellFontStrikethru(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFontStrikethru ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_CellFontStrikethru(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IVSFlexGrid::GetFontWidth ( ) {
+    float _result;
+    HRESULT _hr = get_FontWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFontWidth ( float pVal ) {
+    HRESULT _hr = put_FontWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetClip ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Clip(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutClip ( _bstr_t pVal ) {
+    HRESULT _hr = put_Clip(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutSort ( enum SortSettings _arg1 ) {
+    HRESULT _hr = put_Sort(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum SelModeSettings IVSFlexGrid::GetSelectionMode ( ) {
+    enum SelModeSettings _result;
+    HRESULT _hr = get_SelectionMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutSelectionMode ( enum SelModeSettings pVal ) {
+    HRESULT _hr = put_SelectionMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MergeSettings IVSFlexGrid::GetMergeCells ( ) {
+    enum MergeSettings _result;
+    HRESULT _hr = get_MergeCells(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMergeCells ( enum MergeSettings pVal ) {
+    HRESULT _hr = put_MergeCells(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * IVSFlexGrid::GetPicture ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_Picture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum PictureTypeSettings IVSFlexGrid::GetPictureType ( ) {
+    enum PictureTypeSettings _result;
+    HRESULT _hr = get_PictureType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutPictureType ( enum PictureTypeSettings pVal ) {
+    HRESULT _hr = put_PictureType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetAllowBigSelection ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_AllowBigSelection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAllowBigSelection ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowBigSelection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AllowUserResizeSettings IVSFlexGrid::GetAllowUserResizing ( ) {
+    enum AllowUserResizeSettings _result;
+    HRESULT _hr = get_AllowUserResizing(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAllowUserResizing ( enum AllowUserResizeSettings pVal ) {
+    HRESULT _hr = put_AllowUserResizing(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MousePointerSettings IVSFlexGrid::GetMousePointer ( ) {
+    enum MousePointerSettings _result;
+    HRESULT _hr = get_MousePointer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMousePointer ( enum MousePointerSettings pVal ) {
+    HRESULT _hr = put_MousePointer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * IVSFlexGrid::GetMouseIcon ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_MouseIcon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMouseIcon ( IPictureDisp * pVal ) {
+    HRESULT _hr = put_MouseIcon(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefMouseIcon ( IPictureDisp * pVal ) {
+    HRESULT _hr = putref_MouseIcon(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetDataMember ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DataMember(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutDataMember ( _bstr_t pVal ) {
+    HRESULT _hr = put_DataMember(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline DataSourcePtr IVSFlexGrid::GetDataSource ( ) {
+    struct DataSource * _result;
+    HRESULT _hr = get_DataSource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return DataSourcePtr(_result, false);
+}
+
+inline void IVSFlexGrid::PutRefDataSource ( struct DataSource * pVal ) {
+    HRESULT _hr = putref_DataSource(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetVirtualData ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_VirtualData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutVirtualData ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_VirtualData(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EditableSettings IVSFlexGrid::GetEditable ( ) {
+    enum EditableSettings _result;
+    HRESULT _hr = get_Editable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutEditable ( enum EditableSettings pVal ) {
+    HRESULT _hr = put_Editable(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetComboList ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ComboList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutComboList ( _bstr_t pVal ) {
+    HRESULT _hr = put_ComboList(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IVSFlexGrid::GetValue ( ) {
+    double _result;
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline OLE_COLOR IVSFlexGrid::GetFloodColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_FloodColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFloodColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_FloodColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IVSFlexGrid::GetCellFloodPercent ( ) {
+    short _result;
+    HRESULT _hr = get_CellFloodPercent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFloodPercent ( short pVal ) {
+    HRESULT _hr = put_CellFloodPercent(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetCellFloodColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_CellFloodColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellFloodColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_CellFloodColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum SubtotalPositionSettings IVSFlexGrid::GetSubtotalPosition ( ) {
+    enum SubtotalPositionSettings _result;
+    HRESULT _hr = get_SubtotalPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutSubtotalPosition ( enum SubtotalPositionSettings pVal ) {
+    HRESULT _hr = put_SubtotalPosition(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum BorderStyleSettings IVSFlexGrid::GetBorderStyle ( ) {
+    enum BorderStyleSettings _result;
+    HRESULT _hr = get_BorderStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBorderStyle ( enum BorderStyleSettings pVal ) {
+    HRESULT _hr = put_BorderStyle(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IFontDisp * IVSFlexGrid::GetFont ( ) {
+    IFontDisp * _result;
+    HRESULT _hr = get_Font(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFont ( IFontDisp * pVal ) {
+    HRESULT _hr = put_Font(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefFont ( IFontDisp * pVal ) {
+    HRESULT _hr = putref_Font(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetEnabled ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Enabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutEnabled ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Enabled(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AppearanceSettings IVSFlexGrid::GetAppearance ( ) {
+    enum AppearanceSettings _result;
+    HRESULT _hr = get_Appearance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAppearance ( enum AppearanceSettings pVal ) {
+    HRESULT _hr = put_Appearance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum OutlineBarSettings IVSFlexGrid::GetOutlineBar ( ) {
+    enum OutlineBarSettings _result;
+    HRESULT _hr = get_OutlineBar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutOutlineBar ( enum OutlineBarSettings pVal ) {
+    HRESULT _hr = put_OutlineBar(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetTreeColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_TreeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutTreeColor ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_TreeColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IVSFlexGrid::GetGridLineWidth ( ) {
+    short _result;
+    HRESULT _hr = get_GridLineWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutGridLineWidth ( short pVal ) {
+    HRESULT _hr = put_GridLineWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetAutoResize ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_AutoResize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAutoResize ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoResize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetBottomRow ( ) {
+    long _result;
+    HRESULT _hr = get_BottomRow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetRightCol ( ) {
+    long _result;
+    HRESULT _hr = get_RightCol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetExtendLastCol ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ExtendLastCol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutExtendLastCol ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ExtendLastCol(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetClientWidth ( ) {
+    long _result;
+    HRESULT _hr = get_ClientWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetClientHeight ( ) {
+    long _result;
+    HRESULT _hr = get_ClientHeight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IVSFlexGrid::GetEditText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_EditText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutEditText ( _bstr_t pVal ) {
+    HRESULT _hr = put_EditText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GethWnd ( ) {
+    long _result;
+    HRESULT _hr = get_hWnd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum AutoSizeSettings IVSFlexGrid::GetAutoSizeMode ( ) {
+    enum AutoSizeSettings _result;
+    HRESULT _hr = get_AutoSizeMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAutoSizeMode ( enum AutoSizeSettings pVal ) {
+    HRESULT _hr = put_AutoSizeMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetRightToLeft ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_RightToLeft(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRightToLeft ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_RightToLeft(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetMultiTotals ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_MultiTotals(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMultiTotals ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_MultiTotals(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetBackColorAlternate ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColorAlternate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBackColorAlternate ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_BackColorAlternate(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum OwnerDrawSettings IVSFlexGrid::GetOwnerDraw ( ) {
+    enum OwnerDrawSettings _result;
+    HRESULT _hr = get_OwnerDraw(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutOwnerDraw ( enum OwnerDrawSettings pVal ) {
+    HRESULT _hr = put_OwnerDraw(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum DataModeSettings IVSFlexGrid::GetDataMode ( ) {
+    enum DataModeSettings _result;
+    HRESULT _hr = get_DataMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutDataMode ( enum DataModeSettings pVal ) {
+    HRESULT _hr = put_DataMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum OLEDragModeSettings IVSFlexGrid::GetOLEDragMode ( ) {
+    enum OLEDragModeSettings _result;
+    HRESULT _hr = get_OLEDragMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutOLEDragMode ( enum OLEDragModeSettings pVal ) {
+    HRESULT _hr = put_OLEDragMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum OLEDropModeSettings IVSFlexGrid::GetOLEDropMode ( ) {
+    enum OLEDropModeSettings _result;
+    HRESULT _hr = get_OLEDropMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutOLEDropMode ( enum OLEDropModeSettings pVal ) {
+    HRESULT _hr = put_OLEDropMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum TabBehaviorSettings IVSFlexGrid::GetTabBehavior ( ) {
+    enum TabBehaviorSettings _result;
+    HRESULT _hr = get_TabBehavior(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutTabBehavior ( enum TabBehaviorSettings pVal ) {
+    HRESULT _hr = put_TabBehavior(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetSheetBorder ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_SheetBorder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutSheetBorder ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_SheetBorder(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetAllowSelection ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_AllowSelection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAllowSelection ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AllowSelection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetPicturesOver ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_PicturesOver(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutPicturesOver ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_PicturesOver(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum CellCheckedSettings IVSFlexGrid::GetCellChecked ( ) {
+    enum CellCheckedSettings _result;
+    HRESULT _hr = get_CellChecked(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellChecked ( enum CellCheckedSettings pVal ) {
+    HRESULT _hr = put_CellChecked(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum MergeCompareSettings IVSFlexGrid::GetMergeCompare ( ) {
+    enum MergeCompareSettings _result;
+    HRESULT _hr = get_MergeCompare(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMergeCompare ( enum MergeCompareSettings pVal ) {
+    HRESULT _hr = put_MergeCompare(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EllipsisSettings IVSFlexGrid::GetEllipsis ( ) {
+    enum EllipsisSettings _result;
+    HRESULT _hr = get_Ellipsis(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutEllipsis ( enum EllipsisSettings pVal ) {
+    HRESULT _hr = put_Ellipsis(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetOutlineCol ( ) {
+    long _result;
+    HRESULT _hr = get_OutlineCol(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutOutlineCol ( long pVal ) {
+    HRESULT _hr = put_OutlineCol(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetRowHeightMax ( ) {
+    long _result;
+    HRESULT _hr = get_RowHeightMax(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowHeightMax ( long pVal ) {
+    HRESULT _hr = put_RowHeightMax(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AutoSearchSettings IVSFlexGrid::GetAutoSearch ( ) {
+    enum AutoSearchSettings _result;
+    HRESULT _hr = get_AutoSearch(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAutoSearch ( enum AutoSearchSettings pVal ) {
+    HRESULT _hr = put_AutoSearch(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum ExplorerBarSettings IVSFlexGrid::GetExplorerBar ( ) {
+    enum ExplorerBarSettings _result;
+    HRESULT _hr = get_ExplorerBar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutExplorerBar ( enum ExplorerBarSettings pVal ) {
+    HRESULT _hr = put_ExplorerBar(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetEditMask ( ) {
+    BSTR _result;
+    HRESULT _hr = get_EditMask(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutEditMask ( _bstr_t pVal ) {
+    HRESULT _hr = put_EditMask(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetEditSelStart ( ) {
+    long _result;
+    HRESULT _hr = get_EditSelStart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutEditSelStart ( long pVal ) {
+    HRESULT _hr = put_EditSelStart(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetEditSelLength ( ) {
+    long _result;
+    HRESULT _hr = get_EditSelLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutEditSelLength ( long pVal ) {
+    HRESULT _hr = put_EditSelLength(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetEditSelText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_EditSelText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutEditSelText ( _bstr_t pVal ) {
+    HRESULT _hr = put_EditSelText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetEditMaxLength ( ) {
+    long _result;
+    HRESULT _hr = get_EditMaxLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutEditMaxLength ( long pVal ) {
+    HRESULT _hr = put_EditMaxLength(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetComboIndex ( ) {
+    long _result;
+    HRESULT _hr = get_ComboIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutComboIndex ( long pVal ) {
+    HRESULT _hr = put_ComboIndex(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetComboCount ( ) {
+    long _result;
+    HRESULT _hr = get_ComboCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum AlignmentSettings IVSFlexGrid::GetColAlignment ( long Col ) {
+    enum AlignmentSettings _result;
+    HRESULT _hr = get_ColAlignment(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColAlignment ( long Col, enum AlignmentSettings pVal ) {
+    HRESULT _hr = put_ColAlignment(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetColWidth ( long Col ) {
+    long _result;
+    HRESULT _hr = get_ColWidth(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColWidth ( long Col, long pVal ) {
+    HRESULT _hr = put_ColWidth(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetRowHeight ( long Row ) {
+    long _result;
+    HRESULT _hr = get_RowHeight(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowHeight ( long Row, long pVal ) {
+    HRESULT _hr = put_RowHeight(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetMergeRow ( long Row ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_MergeRow(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMergeRow ( long Row, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_MergeRow(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetMergeCol ( long Col ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_MergeCol(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutMergeCol ( long Col, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_MergeCol(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRowPosition ( long Row, long _arg2 ) {
+    HRESULT _hr = put_RowPosition(Row, _arg2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutColPosition ( long Col, long _arg2 ) {
+    HRESULT _hr = put_ColPosition(Col, _arg2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IVSFlexGrid::GetRowData ( long Row ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RowData(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutRowData ( long Row, const _variant_t & pVal ) {
+    HRESULT _hr = put_RowData(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IVSFlexGrid::GetColData ( long Col ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ColData(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutColData ( long Col, const _variant_t & pVal ) {
+    HRESULT _hr = put_ColData(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::AddItem ( _bstr_t Item, const _variant_t & Row ) {
+    HRESULT _hr = raw_AddItem(Item, Row);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::RemoveItem ( const _variant_t & Row ) {
+    HRESULT _hr = raw_RemoveItem(Row);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IVSFlexGrid::GetTextMatrix ( long Row, long Col ) {
+    BSTR _result;
+    HRESULT _hr = get_TextMatrix(Row, Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutTextMatrix ( long Row, long Col, _bstr_t pVal ) {
+    HRESULT _hr = put_TextMatrix(Row, Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::Clear ( const _variant_t & Where, const _variant_t & What ) {
+    HRESULT _hr = raw_Clear(Where, What);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::EditCell ( ) {
+    HRESULT _hr = raw_EditCell();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double IVSFlexGrid::GetValueMatrix ( long Row, long Col ) {
+    double _result;
+    HRESULT _hr = get_ValueMatrix(Row, Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetIsSubtotal ( long Row ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_IsSubtotal(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutIsSubtotal ( long Row, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsSubtotal(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::Subtotal ( enum SubtotalSettings Function, const _variant_t & GroupOn, const _variant_t & TotalOn, const _variant_t & Format, const _variant_t & BackColor, const _variant_t & ForeColor, const _variant_t & FontBold, const _variant_t & Caption, const _variant_t & MatchFrom, const _variant_t & TotalOnly ) {
+    HRESULT _hr = raw_Subtotal(Function, GroupOn, TotalOn, Format, BackColor, ForeColor, FontBold, Caption, MatchFrom, TotalOnly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::Outline ( short Level ) {
+    HRESULT _hr = raw_Outline(Level);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum AlignmentSettings IVSFlexGrid::GetFixedAlignment ( long Col ) {
+    enum AlignmentSettings _result;
+    HRESULT _hr = get_FixedAlignment(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFixedAlignment ( long Col, enum AlignmentSettings pVal ) {
+    HRESULT _hr = put_FixedAlignment(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetRowIsVisible ( long Row ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_RowIsVisible(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetColIsVisible ( long Col ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ColIsVisible(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetRowPos ( long Row ) {
+    long _result;
+    HRESULT _hr = get_RowPos(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetColPos ( long Col ) {
+    long _result;
+    HRESULT _hr = get_ColPos(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetIsSelected ( long Row ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_IsSelected(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutIsSelected ( long Row, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsSelected(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetTextArray ( long Index ) {
+    BSTR _result;
+    HRESULT _hr = get_TextArray(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutTextArray ( long Index, _bstr_t pVal ) {
+    HRESULT _hr = put_TextArray(Index, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum CollapsedSettings IVSFlexGrid::GetIsCollapsed ( long Row ) {
+    enum CollapsedSettings _result;
+    HRESULT _hr = get_IsCollapsed(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutIsCollapsed ( long Row, enum CollapsedSettings pVal ) {
+    HRESULT _hr = put_IsCollapsed(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::Select ( long Row, long Col, const _variant_t & RowSel, const _variant_t & ColSel ) {
+    HRESULT _hr = raw_Select(Row, Col, RowSel, ColSel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::AutoSize ( long Col1, const _variant_t & Col2, const _variant_t & Equal, const _variant_t & ExtraSpace ) {
+    HRESULT _hr = raw_AutoSize(Col1, Col2, Equal, ExtraSpace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::DataRefresh ( ) {
+    HRESULT _hr = raw_DataRefresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::CellBorder ( OLE_COLOR Color, short Left, short Top, short Right, short Bottom, short Vertical, short Horizontal ) {
+    HRESULT _hr = raw_CellBorder(Color, Left, Top, Right, Bottom, Vertical, Horizontal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::OLEDrag ( ) {
+    HRESULT _hr = raw_OLEDrag();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::SaveGrid ( _bstr_t FileName, enum SaveLoadSettings SaveWhat, const _variant_t & FixedCells ) {
+    HRESULT _hr = raw_SaveGrid(FileName, SaveWhat, FixedCells);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::LoadGrid ( _bstr_t FileName, enum SaveLoadSettings LoadWhat, const _variant_t & FixedCells ) {
+    HRESULT _hr = raw_LoadGrid(FileName, LoadWhat, FixedCells);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IVSFlexGrid::Archive ( _bstr_t ArcFileName, _bstr_t FileName, enum ArchiveSettings Action ) {
+    HRESULT _hr = raw_Archive(ArcFileName, FileName, Action);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IVSFlexGrid::GetArchiveInfo ( _bstr_t ArcFileName, enum ArchiveInfoSettings InfoType, const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ArchiveInfo(ArcFileName, InfoType, Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum SortSettings IVSFlexGrid::GetColSort ( long Col ) {
+    enum SortSettings _result;
+    HRESULT _hr = get_ColSort(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColSort ( long Col, enum SortSettings pVal ) {
+    HRESULT _hr = put_ColSort(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetColFormat ( long Col ) {
+    BSTR _result;
+    HRESULT _hr = get_ColFormat(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutColFormat ( long Col, _bstr_t pVal ) {
+    HRESULT _hr = put_ColFormat(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum DataTypeSettings IVSFlexGrid::GetColDataType ( long Col ) {
+    enum DataTypeSettings _result;
+    HRESULT _hr = get_ColDataType(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColDataType ( long Col, enum DataTypeSettings pVal ) {
+    HRESULT _hr = put_ColDataType(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IVSFlexGrid::GetCell ( enum CellPropertySettings Setting, const _variant_t & Row1, const _variant_t & Col1, const _variant_t & Row2, const _variant_t & Col2 ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Cell(Setting, Row1, Col1, Row2, Col2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutCell ( enum CellPropertySettings Setting, const _variant_t & Row1, const _variant_t & Col1, const _variant_t & Row2, const _variant_t & Col2, const _variant_t & pVal ) {
+    HRESULT _hr = put_Cell(Setting, Row1, Col1, Row2, Col2, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefCell ( enum CellPropertySettings Setting, const _variant_t & Row1, const _variant_t & Col1, const _variant_t & Row2, const _variant_t & Col2, const _variant_t & pVal ) {
+    HRESULT _hr = putref_Cell(Setting, Row1, Col1, Row2, Col2, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RowStatusSettings IVSFlexGrid::GetRowStatus ( long Row ) {
+    enum RowStatusSettings _result;
+    HRESULT _hr = get_RowStatus(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowStatus ( long Row, enum RowStatusSettings pVal ) {
+    HRESULT _hr = put_RowStatus(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetFindRow ( const _variant_t & Item, const _variant_t & Row, const _variant_t & Col, const _variant_t & CaseSensitive, const _variant_t & FullMatch ) {
+    long _result;
+    HRESULT _hr = get_FindRow(Item, Row, Col, CaseSensitive, FullMatch, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IVSFlexGrid::GetComboItem ( const _variant_t & Index ) {
+    BSTR _result;
+    HRESULT _hr = get_ComboItem(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IVSFlexGrid::GetComboData ( const _variant_t & Index ) {
+    long _result;
+    HRESULT _hr = get_ComboData(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IVSFlexGrid::BindToArray ( const _variant_t & VariantArray, const _variant_t & RowDim, const _variant_t & ColDim, const _variant_t & PageDim, const _variant_t & CurrentPage ) {
+    HRESULT _hr = raw_BindToArray(VariantArray, RowDim, ColDim, PageDim, CurrentPage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IVSFlexGrid::GetColEditMask ( long Col ) {
+    BSTR _result;
+    HRESULT _hr = get_ColEditMask(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutColEditMask ( long Col, _bstr_t pVal ) {
+    HRESULT _hr = put_ColEditMask(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetColComboList ( long Col ) {
+    BSTR _result;
+    HRESULT _hr = get_ColComboList(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutColComboList ( long Col, _bstr_t pVal ) {
+    HRESULT _hr = put_ColComboList(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IVSFlexGrid::GetRowOutlineLevel ( long Row ) {
+    short _result;
+    HRESULT _hr = get_RowOutlineLevel(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowOutlineLevel ( long Row, short pVal ) {
+    HRESULT _hr = put_RowOutlineLevel(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetSelectedRows ( ) {
+    long _result;
+    HRESULT _hr = get_SelectedRows(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetSelectedRow ( long Index ) {
+    long _result;
+    HRESULT _hr = get_SelectedRow(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetScrollTips ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ScrollTips(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutScrollTips ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ScrollTips(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetScrollTipText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ScrollTipText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutScrollTipText ( _bstr_t pVal ) {
+    HRESULT _hr = put_ScrollTipText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetRowHidden ( long Row ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_RowHidden(Row, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutRowHidden ( long Row, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_RowHidden(Row, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetColHidden ( long Col ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ColHidden(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColHidden ( long Col, VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ColHidden(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetColWidthMin ( ) {
+    long _result;
+    HRESULT _hr = get_ColWidthMin(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColWidthMin ( long pVal ) {
+    HRESULT _hr = put_ColWidthMin(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetColWidthMax ( ) {
+    long _result;
+    HRESULT _hr = get_ColWidthMax(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColWidthMax ( long pVal ) {
+    HRESULT _hr = put_ColWidthMax(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::GetMergedRange ( long Row, long Col, long * R1, long * C1, long * R2, long * C2 ) {
+    HRESULT _hr = raw_GetMergedRange(Row, Col, R1, C1, R2, C2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetShowComboButton ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ShowComboButton(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutShowComboButton ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_ShowComboButton(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * IVSFlexGrid::GetCellButtonPicture ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_CellButtonPicture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutCellButtonPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = put_CellButtonPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefCellButtonPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = putref_CellButtonPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum ComboSearchSettings IVSFlexGrid::GetComboSearch ( ) {
+    enum ComboSearchSettings _result;
+    HRESULT _hr = get_ComboSearch(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutComboSearch ( enum ComboSearchSettings pVal ) {
+    HRESULT _hr = put_ComboSearch(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::LoadArray ( const _variant_t & VariantArray, const _variant_t & RowDim, const _variant_t & ColDim, const _variant_t & PageDim, const _variant_t & CurrentPage ) {
+    HRESULT _hr = raw_LoadArray(VariantArray, RowDim, ColDim, PageDim, CurrentPage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IVSFlexGrid::GetAutoSizeMouse ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_AutoSizeMouse(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAutoSizeMouse ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoSizeMouse(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::GetSelection ( long * Row1, long * Col1, long * Row2, long * Col2 ) {
+    HRESULT _hr = raw_GetSelection(Row1, Col1, Row2, Col2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IVSFlexGrid::GetClipSeparators ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ClipSeparators(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutClipSeparators ( _bstr_t pVal ) {
+    HRESULT _hr = put_ClipSeparators(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::PrintGrid ( const _variant_t & DocName, const _variant_t & ShowDialog, const _variant_t & Orientation, const _variant_t & MarginLR, const _variant_t & MarginTB ) {
+    HRESULT _hr = raw_PrintGrid(DocName, ShowDialog, Orientation, MarginLR, MarginTB);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IVSFlexGrid::GetColImageList ( long Col ) {
+    long _result;
+    HRESULT _hr = get_ColImageList(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutColImageList ( long Col, long pVal ) {
+    HRESULT _hr = put_ColImageList(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IVSFlexGrid::GetColKey ( long Col ) {
+    BSTR _result;
+    HRESULT _hr = get_ColKey(Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IVSFlexGrid::PutColKey ( long Col, _bstr_t pVal ) {
+    HRESULT _hr = put_ColKey(Col, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetColIndex ( _bstr_t Key ) {
+    long _result;
+    HRESULT _hr = get_ColIndex(Key, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexGrid::GetFrozenRows ( ) {
+    long _result;
+    HRESULT _hr = get_FrozenRows(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFrozenRows ( long pVal ) {
+    HRESULT _hr = put_FrozenRows(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetFrozenCols ( ) {
+    long _result;
+    HRESULT _hr = get_FrozenCols(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutFrozenCols ( long pVal ) {
+    HRESULT _hr = put_FrozenCols(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AllowUserFreezeSettings IVSFlexGrid::GetAllowUserFreezing ( ) {
+    enum AllowUserFreezeSettings _result;
+    HRESULT _hr = get_AllowUserFreezing(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAllowUserFreezing ( enum AllowUserFreezeSettings pVal ) {
+    HRESULT _hr = put_AllowUserFreezing(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetBackColorFrozen ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColorFrozen(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutBackColorFrozen ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_BackColorFrozen(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IVSFlexGrid::GetForeColorFrozen ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ForeColorFrozen(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutForeColorFrozen ( OLE_COLOR pVal ) {
+    HRESULT _hr = put_ForeColorFrozen(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IVSFlexDataSourcePtr IVSFlexGrid::GetFlexDataSource ( ) {
+    struct IVSFlexDataSource * _result;
+    HRESULT _hr = get_FlexDataSource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVSFlexDataSourcePtr(_result, false);
+}
+
+inline void IVSFlexGrid::PutFlexDataSource ( struct IVSFlexDataSource * pVal ) {
+    HRESULT _hr = put_FlexDataSource(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetGetOutlineNode ( long Row, enum NodeTypeSettings Which ) {
+    long _result;
+    HRESULT _hr = get_GetOutlineNode(Row, Which, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IVSFlexGrid::BuildComboList ( IDispatch * rs, _bstr_t FieldList, const _variant_t & KeyField, const _variant_t & BackColor ) {
+    BSTR _result;
+    HRESULT _hr = raw_BuildComboList(rs, FieldList, KeyField, BackColor, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IPictureDisp * IVSFlexGrid::GetNodeOpenPicture ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_NodeOpenPicture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutNodeOpenPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = put_NodeOpenPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefNodeOpenPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = putref_NodeOpenPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * IVSFlexGrid::GetNodeClosedPicture ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_NodeClosedPicture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutNodeClosedPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = put_NodeClosedPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefNodeClosedPicture ( IPictureDisp * pVal ) {
+    HRESULT _hr = putref_NodeClosedPicture(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IVSFlexGrid::ShowCell ( long Row, long Col ) {
+    HRESULT _hr = raw_ShowCell(Row, Col);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline float IVSFlexGrid::GetAutoSearchDelay ( ) {
+    float _result;
+    HRESULT _hr = get_AutoSearchDelay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutAutoSearchDelay ( float pVal ) {
+    HRESULT _hr = put_AutoSearchDelay(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IVSFlexGrid::GetEditWindow ( ) {
+    long _result;
+    HRESULT _hr = get_EditWindow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IPictureDisp * IVSFlexGrid::GetWallPaper ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_WallPaper(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutWallPaper ( IPictureDisp * pVal ) {
+    HRESULT _hr = put_WallPaper(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IVSFlexGrid::PutRefWallPaper ( IPictureDisp * pVal ) {
+    HRESULT _hr = putref_WallPaper(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum PictureAlignmentSettings IVSFlexGrid::GetWallPaperAlignment ( ) {
+    enum PictureAlignmentSettings _result;
+    HRESULT _hr = get_WallPaperAlignment(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IVSFlexGrid::PutWallPaperAlignment ( enum PictureAlignmentSettings pVal ) {
+    HRESULT _hr = put_WallPaperAlignment(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IVSFlexGrid::GetAggregate ( enum SubtotalSettings Aggregate, long Row1, long Col1, long Row2, long Col2 ) {
+    double _result;
+    HRESULT _hr = get_Aggregate(Aggregate, Row1, Col1, Row2, Col2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IVSFlexDataSource wrapper method implementations
+//
+
+inline long IVSFlexDataSource::GetFieldCount ( ) {
+    long _result;
+    HRESULT _hr = raw_GetFieldCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IVSFlexDataSource::GetRecordCount ( ) {
+    long _result;
+    HRESULT _hr = raw_GetRecordCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IVSFlexDataSource::GetFieldName ( long Field ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetFieldName(Field, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IVSFlexDataSource::GetData ( long Field, long Record ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetData(Field, Record, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IVSFlexDataSource::SetData ( long Field, long Record, _bstr_t newData ) {
+    HRESULT _hr = raw_SetData(Field, Record, newData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface _IVSFlexGridEvents wrapper method implementations
+//
+
+inline HRESULT _IVSFlexGridEvents::Click ( ) {
+    return _com_dispatch_method(this, DISPID_CLICK, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::DblClick ( ) {
+    return _com_dispatch_method(this, DISPID_DBLCLICK, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::KeyDown ( short * KeyCode, short Shift ) {
+    return _com_dispatch_method(this, DISPID_KEYDOWN, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4002\x0002", KeyCode, Shift);
+}
+
+inline HRESULT _IVSFlexGridEvents::KeyPress ( short * KeyAscii ) {
+    return _com_dispatch_method(this, DISPID_KEYPRESS, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4002", KeyAscii);
+}
+
+inline HRESULT _IVSFlexGridEvents::KeyUp ( short * KeyCode, short Shift ) {
+    return _com_dispatch_method(this, DISPID_KEYUP, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4002\x0002", KeyCode, Shift);
+}
+
+inline HRESULT _IVSFlexGridEvents::MouseDown ( short Button, short Shift, float X, float Y ) {
+    return _com_dispatch_method(this, DISPID_MOUSEDOWN, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0002\x0002\x0004\x0004", Button, Shift, X, Y);
+}
+
+inline HRESULT _IVSFlexGridEvents::MouseMove ( short Button, short Shift, float X, float Y ) {
+    return _com_dispatch_method(this, DISPID_MOUSEMOVE, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0002\x0002\x0004\x0004", Button, Shift, X, Y);
+}
+
+inline HRESULT _IVSFlexGridEvents::MouseUp ( short Button, short Shift, float X, float Y ) {
+    return _com_dispatch_method(this, DISPID_MOUSEUP, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0002\x0002\x0004\x0004", Button, Shift, X, Y);
+}
+
+inline HRESULT _IVSFlexGridEvents::SelChange ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::RowColChange ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::EnterCell ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::LeaveCell ( ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeMouseDown ( short Button, short Shift, float X, float Y, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0002\x0002\x0004\x0004\x400b", Button, Shift, X, Y, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeRowColChange ( long OldRow, long OldCol, long NewRow, long NewCol, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003\x400b", OldRow, OldCol, NewRow, NewCol, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterRowColChange ( long OldRow, long OldCol, long NewRow, long NewCol ) {
+    return _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003", OldRow, OldCol, NewRow, NewCol);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeSelChange ( long OldRowSel, long OldColSel, long NewRowSel, long NewColSel, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003\x400b", OldRowSel, OldColSel, NewRowSel, NewColSel, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterSelChange ( long OldRowSel, long OldColSel, long NewRowSel, long NewCol ) {
+    return _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003", OldRowSel, OldColSel, NewRowSel, NewCol);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeScroll ( long OldTopRow, long OldLeftCol, long NewTopRow, long NewLeftCol, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003\x400b", OldTopRow, OldLeftCol, NewTopRow, NewLeftCol, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterScroll ( long OldTopRow, long OldLeftCol, long NewTopRow, long NewLeftCol ) {
+    return _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003", OldTopRow, OldLeftCol, NewTopRow, NewLeftCol);
+}
+
+inline HRESULT _IVSFlexGridEvents::Compare ( long Row1, long Row2, short * Cmp ) {
+    return _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x4002", Row1, Row2, Cmp);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeSort ( long Col, short * Order ) {
+    return _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x4002", Col, Order);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterSort ( long Col, short * Order ) {
+    return _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x4002", Col, Order);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeMoveColumn ( long Col, long * Position ) {
+    return _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x4003", Col, Position);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterMoveColumn ( long Col, long * Position ) {
+    return _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x4003", Col, Position);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeUserResize ( long Row, long Col, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x11, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x400b", Row, Col, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterUserResize ( long Row, long Col ) {
+    return _com_dispatch_method(this, 0x12, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003", Row, Col);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeCollapse ( long Row, short State, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x13, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0002\x400b", Row, State, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterCollapse ( long Row, short State ) {
+    return _com_dispatch_method(this, 0x14, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0002", Row, State);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeEdit ( long Row, long Col, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x15, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x400b", Row, Col, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::StartEdit ( long Row, long Col, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x16, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x400b", Row, Col, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::ValidateEdit ( long Row, long Col, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x17, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x400b", Row, Col, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterEdit ( long Row, long Col ) {
+    return _com_dispatch_method(this, 0x18, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003", Row, Col);
+}
+
+inline HRESULT _IVSFlexGridEvents::KeyPressEdit ( long Row, long Col, short * KeyAscii ) {
+    return _com_dispatch_method(this, 0x19, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x4002", Row, Col, KeyAscii);
+}
+
+inline HRESULT _IVSFlexGridEvents::KeyDownEdit ( long Row, long Col, short * KeyCode, short Shift ) {
+    return _com_dispatch_method(this, 0x1a, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x4002\x0002", Row, Col, KeyCode, Shift);
+}
+
+inline HRESULT _IVSFlexGridEvents::KeyUpEdit ( long Row, long Col, short * KeyCode, short Shift ) {
+    return _com_dispatch_method(this, 0x1b, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x4002\x0002", Row, Col, KeyCode, Shift);
+}
+
+inline HRESULT _IVSFlexGridEvents::ChangeEdit ( ) {
+    return _com_dispatch_method(this, 0x1c, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforePageBreak ( long Row, VARIANT_BOOL * BreakOK ) {
+    return _com_dispatch_method(this, 0x1d, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x400b", Row, BreakOK);
+}
+
+inline HRESULT _IVSFlexGridEvents::GetHeaderRow ( long Row, long * HeaderRow ) {
+    return _com_dispatch_method(this, 0x1e, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x4003", Row, HeaderRow);
+}
+
+inline HRESULT _IVSFlexGridEvents::StartPage ( long hDC, long Page, VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x1f, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x400b", hDC, Page, Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::DrawCell ( long hDC, long Row, long Col, long Left, long Top, long Right, long Bottom, VARIANT_BOOL * Done ) {
+    return _com_dispatch_method(this, 0x20, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003\x0003\x0003\x0003\x400b", hDC, Row, Col, Left, Top, Right, Bottom, Done);
+}
+
+inline HRESULT _IVSFlexGridEvents::Error ( long ErrorCode, VARIANT_BOOL * ShowMsgBox ) {
+    return _com_dispatch_method(this, 0x21, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x400b", ErrorCode, ShowMsgBox);
+}
+
+inline HRESULT _IVSFlexGridEvents::CellButtonClick ( long Row, long Col ) {
+    return _com_dispatch_method(this, 0x22, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003", Row, Col);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeScrollTip ( long Row ) {
+    return _com_dispatch_method(this, 0x23, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003", Row);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterUserFreeze ( ) {
+    return _com_dispatch_method(this, 0x24, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _IVSFlexGridEvents::OLEStartDrag ( struct IVSDataObject * * Data, long * AllowedEffects ) {
+    return _com_dispatch_method(this, 0x25, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4009\x4003", Data, AllowedEffects);
+}
+
+inline HRESULT _IVSFlexGridEvents::OLEGiveFeedback ( long * Effect, VARIANT_BOOL * DefaultCursors ) {
+    return _com_dispatch_method(this, 0x26, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4003\x400b", Effect, DefaultCursors);
+}
+
+inline HRESULT _IVSFlexGridEvents::OLESetData ( struct IVSDataObject * * Data, short * DataFormat ) {
+    return _com_dispatch_method(this, 0x27, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4009\x4002", Data, DataFormat);
+}
+
+inline HRESULT _IVSFlexGridEvents::OLECompleteDrag ( long * Effect ) {
+    return _com_dispatch_method(this, 0x28, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4003", Effect);
+}
+
+inline HRESULT _IVSFlexGridEvents::OLEDragOver ( struct IVSDataObject * * Data, long * Effect, short Button, short Shift, float X, float Y, short * State ) {
+    return _com_dispatch_method(this, 0x29, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4009\x4003\x0002\x0002\x0004\x0004\x4002", Data, Effect, Button, Shift, X, Y, State);
+}
+
+inline HRESULT _IVSFlexGridEvents::OLEDragDrop ( struct IVSDataObject * * Data, long * Effect, short Button, short Shift, float X, float Y ) {
+    return _com_dispatch_method(this, 0x2a, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4009\x4003\x0002\x0002\x0004\x0004", Data, Effect, Button, Shift, X, Y);
+}
+
+inline HRESULT _IVSFlexGridEvents::CellChanged ( long Row, long Col ) {
+    return _com_dispatch_method(this, 0x2b, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003", Row, Col);
+}
+
+inline HRESULT _IVSFlexGridEvents::FilterData ( long Row, long Col, BSTR * Value, VARIANT_BOOL SavingToDB, VARIANT_BOOL * WantThisCol ) {
+    return _com_dispatch_method(this, 0x50, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x4008\x000b\x400b", Row, Col, Value, SavingToDB, WantThisCol);
+}
+
+inline HRESULT _IVSFlexGridEvents::BeforeDataRefresh ( VARIANT_BOOL * Cancel ) {
+    return _com_dispatch_method(this, 0x51, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x400b", Cancel);
+}
+
+inline HRESULT _IVSFlexGridEvents::AfterDataRefresh ( ) {
+    return _com_dispatch_method(this, 0x52, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// interface IVSDataObject wrapper method implementations
+//
+
+inline HRESULT IVSDataObject::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline short IVSDataObject::GetFileCount ( ) {
+    short _result;
+    HRESULT _hr = get_FileCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IVSDataObject::GetGetData ( short Format ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GetData(Format, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline VARIANT_BOOL IVSDataObject::GetGetFormat ( short Format ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_GetFormat(Format, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IVSDataObject::GetFiles ( short Index ) {
+    BSTR _result;
+    HRESULT _hr = get_Files(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IVSDataObject::SetData ( const _variant_t & Value, const _variant_t & Format ) {
+    HRESULT _hr = raw_SetData(Value, Format);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

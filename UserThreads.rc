@@ -1,0 +1,1396 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Продажи 1.3"
+    IDR_MDIUSERTH           "Продажи 1.3\nMainForm\nUserTh\n\n\nUserThreads.Document\nUserTh Document"
+    IDR_INFOFRAME           "Информационная консоль\nDictionaryForm\nUserTh\n\n\nUserThreads.Document\nUserTh Document"
+    ID_PANE_COMPORT         "COM0"
+    ID_PANE_PA              "TA:28/04/2008 01:01:01   "
+    ID_PANE_KKM             "OffLine"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Продажи 1.3"
+    AFX_IDS_IDLEMESSAGE     "Готов"
+    IDR_FOLDERTABS          "Свойства\nДвижение"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Показ информации о программе , номере версии и т.д.\nО программе"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_LABEL_TOOLBARM      "vzvahgaz"
+    IDS_GOODPROP_QUERY      "SELECT BarCode AS [ШтрихКод:], Name AS [Наименование:], Unit AS [Единица измерения:], PRICE AS [Цена:] FROM catalog"
+    IDS_GOODPROP_FILTER     " WHERE BarCode"
+    IDS_QUERY_GOODS_FROM_PARTID 
+                            "Select catalog.CODE,catalog.BARCODE,catalog.NAME,catalog.PRICE From catalog"
+    IDS_FILTER_GOODS_FROM_PARTID " Where PCODE= "
+    IDS_QUERY_GOOD_MOVE     "SELECT ListDocuments.DocId as [DocId], ListDocuments.DocTime as [DocTime], TypeDocuments.DocName as [DocName], ListDocuments.NumDoc as [NumDoc], Transactions.Quantity as [Quantity], Kontragents.KontragentName as [Who?], Kontragents_1.KontragentName as [Where?] FROM ((Goods INNER JOIN (TypeDocuments INNER JOIN (ListDocuments INNER JOIN Transactions ON ListDocuments.DocId = Transactions.DocId) ON TypeDocuments.DocType = ListDocuments.DocType) ON Goods.BarCode = Transactions.BarCode) INNER JOIN Kontragents ON ListDocuments.Debet = Kontragents.KontragentId) INNER JOIN Kontragents AS Kontragents_1 ON ListDocuments.Credit = Kontragents_1.KontragentId  WHERE (((Transactions.BarCode)='%s')) AND ListDocuments.DocTime Between #%s# And #%s#  ORDER BY ListDocuments.DocTime"
+    IDS_QUERY_TEST          "SELECT ListDocuments.DocId, ListDocuments.DocTime, TypeDocuments.DocName, ListDocuments.NumDoc, Transactions.Quantity, Transactions.BarCode, Kontragents.KontragentName, Kontragents_1.KontragentName, ListDocuments.Debet, ListDocuments.Credit FROM ((Goods INNER JOIN (TypeDocuments INNER JOIN (ListDocuments INNER JOIN Transactions ON ListDocuments.DocId=Transactions.DocId) ON TypeDocuments.DocType=ListDocuments.DocType) ON Goods.BarCode=Transactions.BarCode) INNER JOIN Kontragents ON ListDocuments.Debet=Kontragents.KontragentId) INNER JOIN Kontragents AS Kontragents_1 ON ListDocuments.Credit=Kontragents_1.KontragentId WHERE (((Transactions.BarCode)='%s')) And ListDocuments.DocTime Between #12/20/2005# And #1/9/2006#\nORDER BY ListDocuments.DocTime"
+    IDS_FORMAT_DATE         "%#m/%#d/%#y"
+    IDS_WRONGPERIOD         "Начало периода видимости документов позже периода окончания видимости!"
+    IDS_HEAD_FOR_MOVE_GOODS "Движение    %sв промежутке между    %s    и    %s"
+    IDS_FIRST_TOOLTIP       "Поиск товара в по папкам справочника"
+    IDS_SEC_TOOLTIP         "Поиск по вводимому штрихкоду"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_INFOCONSOLE     "Вызов информации о пробитых чеках, полученном товаре , остатках и клиентах\n Информационная консоль"
+    ID_FILE_DICTIONARY      "Вызов справочника ""Товары и остатки""\nСправочник ""Товары и остатки"""
+    ID_FONT_BOLD            "Сделать шрифт жирным\nЖирный"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_FONTNAME_CB         "Установка шрифта используемого в программе\nВыберите шрифт"
+    IDC_FONTSIZE_CB         "Установка размера шрифта используемого в программе\nВыберите размер шрифта"
+    IDS_CHECK_BUTTON_LABEL  "Печать(Enter)"
+    IDS_SELECT_DLG_CAPTION  "Подбор(Ins)"
+    IDR_FINDVIEW_TMPL       "\nFindView\nFindVi\nFindVi Files (*.fin)\n.fin\nFindView.Document\nFindVi Document"
+    ID_INDICATOR_ROWS       "Rows"
+    ID_INDICATOR_LANG       "LAT"
+    IDS_BUILD_TAB           "События"
+    IDS_DEBUG_TAB           "Ошибки"
+    IDS_FIND_TAB            "Резерв"
+    ID_CHECK                "Режим редактирования о обработки чеков\nЧеки"
+    ID_ZREPORT              "Режим закрытия смены\nОтчет"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FONT_ITALIC          "Сделать шрифт курсивом\nКурсив"
+    ID_SET_PERIOD           "Установите интервал видимости документов\nИнтервал видимости документов"
+    ID_FIND_VIEW_SHOW       "Поиск"
+    ID_FOLDER_VIEW_SHOW     "Папки"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_FINDBTN             "Поиск"
+    IDC_RADIO_ALL           "Поиск осуществляется по всей номенклатуре товаров"
+    IDC_RADIO_CUSTOM        "Вы сможете выбрать область для поиска"
+    IDC_FIND                "Вы можете ввести либо часть наименования, либо точное наименование"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_COMBOEX             "132341657"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_THIRD_TOOLTIP       "Поиск по всему справочнику товары"
+    IDS_CONNSTRING          "File Name=C:\\VisualCStudy1\\UserThreads\\data\\connstring.udl"
+    IDS_DATA_IS_DIRTY       "Внимание!!При загрузке данных обнаружены новые документы.\nВсе существующие регистры будут пересчитаны"
+    IDR_FOLDERTAB           "Breakfast\nLunch\nSnack\nDinner\nNightcap\nAnd More..."
+    IDS_CONNSTRINGSQL       "File Name=C:\\VisualCStudy1\\UserThreads\\data\\connstringSQL.udl"
+    ID_PANE_KKM_ERROR       "Здесь будут отображаться все сообщения об ошибках или изменении в состоянии ККМ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PREVIEW_DOC          "Показать содержимое документа\nПоказать документ"
+    ID_SETINTERVAL          "жадлождячвпь\nsdhasrhigui"
+    ID_MULTBUT_HOLDER       "Ввести мультипликатор\nКратно"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RECIC                "Удалить выбранную позицию\nУдалить"
+    ID_TOOL                 "Настройка оборудования\nНастройка"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RETURN               "Оформление возврата в день продажи\nВозврат"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_FNDDLG_SHOW         "Подбор\nПодбор"
+    IDC_SAMPLE_FONT         "АаБбВвГг\r\n123456"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_OUTPUTWND       "Журнал"
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\UserThreads.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_NAKLFORM_TMPL       ICON                    "mdi.ico"
+IDR_INFOFRAME           ICON                    "res\\MSGBOX04.ICO"
+IDR_DICTFORM_TMPL       ICON                    "res\\BOOKS05.ICO"
+IDR_MAINFRAME           ICON                    "res\\FORM.ICO"
+IDI_OPENFOLDERS         ICON                    "res\\FOLDRS02.ICO"
+IDI_CLOSEFOLDERS        ICON                    "res\\FOLDRS01.ICO"
+IDI_OPENING             ICON                    "res\\FOLDER02.ICO"
+IDI_CLOSEFOLDER         ICON                    "res\\FOLDER01.ICO"
+IDI_FIND                ICON                    "res\\EXPLORER.ICO"
+IDI_QUEST               ICON                    "res\\MSGBOX02.ICO"
+IDI_FOLDER              ICON                    "res\\icon1.ico"
+IDR_FINDVIEW_TMPL       ICON                    "res\\idr_find.ico"
+IDI_ARCHIVE             ICON                    "res\\ico00001.ico"
+IDI_ARRUP               ICON                    "res\\ico00002.ico"
+IDI_ARRDOWN             ICON                    "res\\ico00003.ico"
+IDI_NOMENCLATURA        ICON                    "res\\ROCKET.ICO"
+IDI_JOURNAL             ICON                    "res\\ico00004.ico"
+ID_INSERT               ICON                    "res\\ico00005.ico"
+ID_RECIC                ICON                    "res\\ico00006.ico"
+ID_DELETE               ICON                    "res\\ico00007.ico"
+ID_TOOL                 ICON                    "res\\ico00008.ico"
+ID_RETURN               ICON                    "res\\ico00009.ico"
+IDI_FOLDERSFILE         ICON                    "res\\ico00010.ico"
+IDI_BARCODE             ICON                    "res\\ico00011.ico"
+IDI_ISTRANSACTED        ICON                    "res\\ico00012.ico"
+IDI_ADDINDOCUMENT       ICON                    "res\\ico00013.ico"
+IDI_COPY                ICON                    "res\\ico00014.ico"
+IDI_GOOD_TB             ICON                    "res\\ico00015.ico"
+IDI_SELDOC              ICON                    "res\\selectdoc.ico"
+IDI_SELDOC1             ICON                    "res\\selectdoc1.ico"
+IDI_CALENDAR            ICON                    "res\\Calendar_scheduleHS.ico"
+IDI_SELGOOD             ICON                    "res\\selgood.ico"
+IDI_OK                  ICON                    "res\\OK.ico"
+IDI_SELSALEDOC          ICON                    "res\\REFBAR.ICO"
+IDI_RIGHTARROW          ICON                    "res\\RightArrow.ico"
+IDI_DBLRIGHTARROW       ICON                    "res\\DoubleRightArrow.ico"
+IDI_DBLLEFTARROW        ICON                    "res\\DoubleLeftArrow.ico"
+IDI_DOCNOTRANSACT       ICON                    "res\\CheckNottrans.ico"
+IDI_DOCTRANSACT         ICON                    "res\\Checktransacted.ico"
+IDI_ACCOUNT             ICON                    "res\\AccountUsers.ico"
+IDI_GOOD_GRD            ICON                    "res\\ico00016.ico"
+IDI_INTERVAL            ICON                    "res\\ico00017.ico"
+IDI_DOCVIEW             ICON                    "res\\ico00018.ico"
+IDI_1C                  ICON                    "res\\ico00019.ico"
+IDI_DELETE              ICON                    "res\\Delete.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_INFO_TOOLBAR        BITMAP                  "res\\toolbar1.bmp"
+IDR_DICTFORM_TMPL       BITMAP                  "res\\bmp00001.bmp"
+IDB_FOLDERS             BITMAP                  "res\\ABORT.BMP"
+IDR_FONTTBAR            BITMAP                  "res\\bmp00002.bmp"
+IDB_FOLDER              BITMAP                  "res\\FLDRSHUT.bmp"
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+ID_DLG_TOOLBAR          BITMAP                  "res\\bmp00003.bmp"
+IDB_TOOLBAR1            BITMAP                  "res\\bitmap2.bmp"
+IDB_TOOLBAR2            BITMAP                  "res\\bmp00004.bmp"
+IDB_TOOLBAR1_32         BITMAP                  "res\\bmp00005.bmp"
+IDB_ICONS               BITMAP                  "res\\allbistrue.bmp"
+IDB_SPLASH              BITMAP                  "res\\SPLASH.bmp"
+IDR_RETURN              BITMAP                  "res\\bmp00006.bmp"
+IDR_SELGOODSTB          BITMAP                  "res\\bmp00007.bmp"
+IDR_GENJOURNAL_TB       BITMAP                  "res\\bmp00008.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bmp\\bundle_016.bmp"
+IDB_BMPFS               BITMAP                  "res\\bmp\\bundle_256.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bmp\\bundle_048.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\bmp00009.bmp"
+IDB_BITMAP4             BITMAP                  "res\\bitmap4.bmp"
+IDB_BITMAP5             BITMAP                  "res\\bitmap5.bmp"
+IDR_MULTTOOLBAR         BITMAP                  "res\\toolbar2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_INFO_TOOLBAR TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_DICTIONARY
+    BUTTON      ID_FILE_NAKLAD
+    BUTTON      ID_SET_PERIOD
+    BUTTON      IDC_ARCHIVE
+    BUTTON      ID_CUSTOMIZE
+END
+
+IDR_DICTFORM_TMPL TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FINDGOODS
+END
+
+IDR_FONTTBAR TOOLBAR 20, 20
+BEGIN
+    BUTTON      ID_BUTTON32781
+    BUTTON      ID_FONT_BOLD
+    BUTTON      ID_FONT_ITALIC
+END
+
+ID_DLG_TOOLBAR TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FIND_VIEW_SHOW
+    BUTTON      ID_FOLDER_VIEW_SHOW
+END
+
+IDR_RETURN TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_SELSALEDOC
+    BUTTON      ID_DATESELECT
+    BUTTON      ID_SELGOOD
+    BUTTON      ID_EXECRETURN
+END
+
+IDR_SELGOODSTB TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SEL1GOOD
+    BUTTON      ID_SELALLGOODS
+END
+
+IDR_GENJOURNAL_TB TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PREVIEW_DOC
+    BUTTON      ID_SETINTERVAL
+    BUTTON      ID_FINDDOC
+END
+
+IDR_MULTTOOLBAR TOOLBAR 38, 35
+BEGIN
+    BUTTON      ID_MULTBUT_HOLDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_NAKLFORM_TMPL MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MDI1...",              ID_APP_ABOUT
+    END
+END
+
+IDR_DICTFORM_TMPL MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MDI1...",              ID_APP_ABOUT
+    END
+END
+
+IDR_INFOFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Справочники"
+    BEGIN
+        MENUITEM "Номенклатура",                ID_FILE_DICTIONARY
+    END
+    POPUP "Документы"
+    BEGIN
+        MENUITEM "Общий журнал",                ID_FILE_NAKLAD
+    END
+    MENUITEM "Отчеты",                      65535
+    POPUP "Сервис"
+    BEGIN
+        MENUITEM "Настройка периода видимости документов", ID_SET_PERIOD
+        MENUITEM "Обмен данными",               IDC_ARCHIVE
+        MENUITEM "Настройка системы",           ID_CUSTOMIZE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MDI1...",              ID_APP_ABOUT
+    END
+END
+
+IDR_FINDVIEW_TMPL MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About MDI1...",              ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP MENU
+BEGIN
+    POPUP "ArchiveMenu"
+    BEGIN
+        MENUITEM "Загрузить данные",            ID_DEARCHIVE
+        MENUITEM "Выгрузить данные",            IDC_ARCHIVE
+    END
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_POPUP_COPY
+        MENUITEM "&Clear",                      ID_POPUP_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_VIEW_OUTPUTWND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_USERTHREADS_FORM DIALOGEX 0, 0, 445, 227
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Информация по чеку",IDC_INFO_ABOUT_CHECK,4,155,434,65
+    LTEXT           "Static",IDC_GRID,31,22,407,83,SS_SUNKEN
+    LTEXT           "Num check",IDC_ST_NUM_CHECK,133,167,128,12
+    LTEXT           "NumPos",IDC_ST_NUM_POS,133,198,128,10
+    LTEXT           "Summa",IDC_ST_SUMM,309,167,122,12
+    LTEXT           "Static",IDC_ST_CLIENT,311,198,122,10
+    CONTROL         "Transact",IDC_TRANSACT,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,4,169,97,20
+    CONTROL         "ShowFndDlg",IDC_FNDDLG_SHOW,"Button",BS_OWNERDRAW | WS_TABSTOP,4,194,98,26
+END
+
+IDD_DICT_DLG DIALOG 0, 0, 332, 196
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_NAKL_DLG DIALOG 0, 0, 252, 150
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_TOOLBARPLACE1,7,7,238,16,NOT WS_VISIBLE
+END
+
+IDD_SET_PERIOD DIALOG 0, 0, 218, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Установка периода видимости документов"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,94,50,14
+    CONTROL         "",IDC_DTPICKER1,"{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}",WS_TABSTOP,7,26,120,13
+    CONTROL         "",IDC_DTPICKER2,"{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}",WS_TABSTOP,7,69,119,13
+    LTEXT           "Начало периода видимости документов",IDC_STATIC,7,13,143,11
+    LTEXT           "Конец периода видимости документов",IDC_STATIC,7,50,140,13
+END
+
+IDD_FIND_DLG1 DIALOG 0, 0, 186, 342
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Поиск",IDC_FINDBTN,139,94,40,12
+    GROUPBOX        "Тип поиска",IDC_STATIC,7,7,142,49
+    CONTROL         "По всем категориям",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,20,87,10
+    CONTROL         "Указать область поиска",IDC_RADIO_CUSTOM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,36,100,10
+    EDITTEXT        IDC_FIND,7,94,131,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Укажите либо часть наименования, либо наименование целиком",IDC_STATIC1,7,62,143,24
+    LTEXT           "Вы можете сузить область поиска",IDC_STATIC2,7,118,144,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_COMBOEX,"ComboBoxEx32",CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP,7,137,172,107
+END
+
+IDD_EXPL_DLG DIALOG 0, 0, 227, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выберите папку для поиска"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,170,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,24,50,14
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,7,7,154,144
+    LTEXT           "",IDC_STATIC1,7,171,213,29
+END
+
+IDD_DLGCOMPORT DIALOG 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    COMBOBOX        IDC_COMPORTLIST,64,7,56,76,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "COM порт",IDC_STATIC,13,7,48,12
+END
+
+IDD_DLGINSERT DIALOG 0, 0, 508, 289
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION | WS_THICKFRAME
+CAPTION "Поиск по штрихкоду"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_GRID2,7,37,494,244,SS_SUNKEN | WS_TABSTOP
+    EDITTEXT        IDC_EDIT,7,7,426,17,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_TABSTOP
+    PUSHBUTTON      "Поиск",IDC_BUTTON1,441,7,60,17
+END
+
+IDD_SELGOOD DIALOG 0, 0, 514, 273
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
+CAPTION "Выбор в под&каталогах"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_GRID1,131,6,376,237,SS_SUNKEN | WS_TABSTOP
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER,5,4,123,239
+END
+
+IDD_SETQTY DIALOGEX 0, 0, 266, 223
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,252,22,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,93,180,79,31
+    PUSHBUTTON      "Cancel",IDCANCEL,179,180,79,31
+    PUSHBUTTON      "7",IDC_7NUM,7,33,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "8",IDC_8NUM,93,33,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "9",IDC_9NUM,179,33,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "4",IDC_4NUM,7,71,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "5",IDC_5NUM,93,71,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "6",IDC_6NUM,179,71,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "1",IDC_1NUM,7,108,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "2",IDC_2NUM,93,108,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "3",IDC_3NUM,179,108,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "C",IDC_CLEAR,7,145,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "0",IDC_0NUM,93,145,79,31,NOT WS_TABSTOP
+    PUSHBUTTON      "<-",IDC_BACKSPC,179,145,79,31,NOT WS_TABSTOP
+END
+
+IDD_FINDALL DIALOGEX 0, 0, 372, 249
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT3,7,6,302,18,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_GRID3,7,31,358,211
+    PUSHBUTTON      "&Поиск",IDC_BTN_FIND,316,6,49,17
+END
+
+IDD_DLGCHANGE DIALOG 0, 0, 205, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ввод наличных"
+FONT 10, "Arial"
+BEGIN
+    EDITTEXT        IDC_CASH,7,7,191,17,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,93,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,58,50,14
+    LTEXT           "",IDC_CHANGE,66,34,132,21
+    LTEXT           "Сдача",IDC_LABEL,7,34,21,8,NOT WS_GROUP
+END
+
+IDD_LOGIN DIALOG 0, 0, 265, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Авторизация доступа"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PASSWORD,114,24,124,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,67,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,208,42,50,14
+    COMBOBOX        IDC_CBUSERS,114,10,144,62,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Пользователь",IDC_STATIC,55,10,55,12
+    LTEXT           "Пароль",IDC_STATIC,55,26,47,12
+    ICON            IDI_ACCOUNT,IDC_STATIC,18,16,21,20
+    PUSHBUTTON      "...",IDC_GETDIGIT,240,24,18,13
+END
+
+IDD_RETURN DIALOG 0, 0, 425, 246
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_DOCLIST,7,26,411,84,SS_SUNKEN | WS_TABSTOP
+    PUSHBUTTON      "Продажа",IDC_BTNSELDOC,368,7,50,13,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT,7,7,340,16,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "Static",IDC_ENTRYDOC,7,151,147,88,SS_SUNKEN | WS_TABSTOP
+    LTEXT           "Static",IDC_RETGOODS,170,126,241,24,SS_SUNKEN | WS_TABSTOP
+    DEFPUSHBUTTON   "Оформить",IDC_BTNEXEC,341,218,65,15
+    GROUPBOX        "Информация",IDC_INFO,169,156,243,83
+    PUSHBUTTON      "Подбор(Ins)",IDC_BTNPODBOR,337,175,68,18
+    CONTROL         "",IDC_TOOLBARPLACE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,159,147,7,92
+END
+
+IDD_RECICLING DIALOG 0, 0, 394, 191
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ReciclingView",IDC_LABEL,61,145,294,39
+END
+
+IDD_DLGSELDATE DIALOG 0, 0, 138, 106
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "MonthCalendar1",IDC_MONTHCALENDAR1,"SysMonthCal32",0x0,0,0,124,92
+END
+
+IDD_ZREPORT DIALOG 0, 0, 436, 369
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Отчет по кассе",IDOK,299,42,135,16
+    LTEXT           "Отчет по кассе",IDC_LBL_OSTATOK,266,7,133,16
+    LTEXT           "Static",IDC_LBL_SUMSALE,7,25,170,13
+    LTEXT           "Static",IDC_LBL_SUMRETURN,7,42,206,13
+    LTEXT           "Отчет по кассе",IDC_CAPTION,7,7,143,16
+    LTEXT           "Static",IDC_LBL_CURSUMMA,266,25,159,16
+    LTEXT           "",IDC_GRIDZREPORT,7,112,422,246,SS_SUNKEN
+    LTEXT           "Static",IDC_FOLDERTAB,7,70,270,12
+END
+
+IDD_FIRSTSTEP DIALOG 0, 0, 254, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Отчет по кассе--Первый шаг"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "First step",IDC_STATICFP,93,3,154,46
+    CONTROL         241,IDC_STATIC,"Static",SS_BITMAP,7,7,32,30
+    LTEXT           "Begin Amount",IDC_FSBEGAMOUNT,7,65,97,11
+    LTEXT           "End Amount",IDC_FSENDAMOUNT,138,65,97,11
+    LTEXT           "Saler",IDC_FSEMPLOYER,7,44,71,11
+    LTEXT           "Oklad",IDC_FSOKLAD,7,107,97,11
+    LTEXT           "Premia",IDC_FSPREMIA,138,107,97,11
+    LTEXT           "Itogo",IDC_FSITOGO,7,128,236,11
+    LTEXT           "Kassa",IDC_FSKASSA,7,85,236,11
+END
+
+IDD_SECONDSTEP DIALOG 0, 0, 268, 196
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Отчет по кассе--Второй шаг"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDZABRAL,149,76,112,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDZABRAL2,149,145,112,16,ES_AUTOHSCROLL
+    LTEXT           "Second Step",IDC_SSSALER,7,7,254,14
+    LTEXT           "Ostatok",IDC_SSOSTATOK,7,30,254,14
+    LTEXT           "Zarplata",IDC_SSZARPLATA,7,53,254,14
+    LTEXT           "Zabral",IDC_SSZABRAL,7,76,97,14
+    LTEXT           "Ostatok na konez",IDC_SSOSTEND,7,99,254,14
+    LTEXT           "Sdana kassa",IDC_SSCASHMOVE,7,145,97,14
+    LTEXT           "Ostatok kassa na konez",IDC_SSCASHOSTEND,7,168,254,14
+    LTEXT           "Cash Now",IDC_SSCASHNOW,7,122,254,14
+END
+
+IDD_THIRDSTEP DIALOG 0, 0, 266, 196
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Отчет по кассе--Третий шаг"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Begin Amount",IDC_BEGAMOUNT,7,34,251,15
+    LTEXT           "End Amount",IDC_ENDAMOUNT,7,55,251,15
+    LTEXT           "Cash Value",IDC_CASHVAL,7,76,251,15
+    LTEXT           "Salary",IDC_SALARY,7,97,251,15
+    LTEXT           "Zabral",IDC_ZABRAL,7,118,251,15
+    LTEXT           "Sdano",IDC_SDANO,7,139,251,15
+    LTEXT           "Ostatok v kasse",IDC_OSTATOK,7,160,251,15
+    LTEXT           "Saler",IDC_SALER,8,12,231,15
+END
+
+IDD_DLGKKM DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройка работы с ККМ"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Настройка ККМ",IDOK,7,74,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,46,18,50,14,NOT WS_VISIBLE
+    LTEXT           "COMPORT:",IDC_STATIC,7,28,41,11,SS_CENTERIMAGE
+    LTEXT           "ККМ:",IDC_STATIC,7,8,41,11
+    EDITTEXT        IDC_KKM_INFO,73,7,106,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_COM_KKM,73,24,106,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Статус ККМ",IDC_STATIC,7,44,41,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_STATUS_KKM,73,44,106,27,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_MULQTY DIALOG 0, 0, 184, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Введите мультипликатор количества"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,127,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,24,50,14
+    EDITTEXT        IDC_EDIT1,7,14,112,17,ES_NUMBER
+END
+
+IDD_FONTDLG DIALOGEX 0, 0, 316, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
+CAPTION "Шрифт"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SAMPLE_FONT,179,7,125,41,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Выбор шрифта",IDC_BTN_SEL_FNT,121,7,55,16
+    PUSHBUTTON      "Применить",IDC_SET_FNT,119,31,57,16
+    LTEXT           "Static",IDC_FONT_DESCR,7,56,297,17,SS_SUNKEN
+    LISTBOX         IDC_LST_FONTS,7,7,110,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_USERTHREADS_FORM, DIALOG
+    BEGIN
+        MOCKUP, 0, 40, 14, 14, "..\..\Program Files\Microsoft Visual Studio\Common\Graphics\Bitmaps\Assorted\CLUB.BMP"
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 438
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_DICT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_NAKL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_SET_PERIOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_FIND_DLG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+
+    IDD_EXPL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DLGCOMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DLGINSERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 501
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_SELGOOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 507
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_SETQTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_FINDALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DLGCHANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_RETURN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_RECICLING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DLGSELDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_ZREPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+    END
+
+    IDD_FIRSTSTEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_SECONDSTEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_THIRDSTEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_DLGKKM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MULQTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_FONTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SET_PERIOD DLGINIT
+BEGIN
+    IDC_DTPICKER1, 0x37a, 239, 0
+0x0024, 0x0000, 0x0036, 0x0035, 0x0031, 0x0041, 0x0038, 0x0039, 0x0034, 
+0x0030, 0x002d, 0x0038, 0x0037, 0x0043, 0x0035, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0038, 0x0042, 0x0045, 0x0033, 0x002d, 0x0030, 
+0x0030, 0x0030, 0x0030, 0x0046, 0x0038, 0x0037, 0x0035, 0x0034, 0x0044, 
+0x0041, 0x0031, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0014, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x9b00, 0x0012, 0x2c00, 0x0002, 
+0x4100, 0x7f28, 0x000e, 0x0600, 0x2000, 0x0000, 0xd600, 0x0907, 0x0500, 
+0x0800, 0x0000, 0x0000, 0x0000, 0x0000, 0x0f00, 0x0c27, 0x0500, 0x1f00, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4100, 0x0106, 0x0100, 0x0100, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0800, 0x0000, 0x0000, 0x0000, 0x0100, 0xcdef, 
+0x00ab, 0x0500, 0x2000, 0x13ee, 0x0600, 0x6700, 0xff00, 0xffff, 0xffff, 
+0xffff, 0xf8ff, 0xc943, 0x0002, 0x0000, 0x1f00, 0xecde, 0x01bd, 0x0500, 
+0x6800, 0x13ee, "\000" 
+    IDC_DTPICKER2, 0x37a, 239, 0
+0x0024, 0x0000, 0x0036, 0x0035, 0x0031, 0x0041, 0x0038, 0x0039, 0x0034, 
+0x0030, 0x002d, 0x0038, 0x0037, 0x0043, 0x0035, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0038, 0x0042, 0x0045, 0x0033, 0x002d, 0x0030, 
+0x0030, 0x0030, 0x0030, 0x0046, 0x0038, 0x0037, 0x0035, 0x0034, 0x0044, 
+0x0041, 0x0031, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0014, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x8000, 0x0012, 0x2c00, 0x0002, 
+0x4100, 0x7f28, 0x000e, 0x0600, 0x2000, 0x0000, 0xd600, 0x0907, 0x0500, 
+0x0800, 0x0000, 0x0000, 0x0000, 0x0000, 0x0f00, 0x0c27, 0x0500, 0x1f00, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4100, 0x0106, 0x0100, 0x0100, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0800, 0x0000, 0x0000, 0x0000, 0x0100, 0xcdef, 
+0x00ab, 0x0500, 0x2000, 0x13ee, 0x0600, 0x0b00, 0xff4d, 0xffff, 0xffff, 
+0xffff, 0xf8ff, 0xc943, 0x0002, 0x0000, 0x1f00, 0xecde, 0x01bd, 0x0500, 
+0x6800, 0x13ee, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_USERTHREADS         REGISTRY                "UserThreads.rgs"
+IDR_BARCODEREADER       REGISTRY                "BarCodeReader.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_ANIMATION           AVI                     "res\\FILEDEL_16.AVI"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_NAKLFORM_TMPL       "NaklForm\nNaklForm\nNaklFo\nNaklFo Files (*.nak)\n.nak\nNaklForm.Document\nNaklFo Document"
+    IDR_DICTFORM_TMPL       "\nDictionaryForm\nDictFo\nDictFo Files (*.nak)\n.nak\nDictionaryForm.Document\nDictFo Document"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_USERTHTYPE          ICON                    "res\\UserThreadsDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 38, 35
+BEGIN
+    BUTTON      ID_CHECK
+    BUTTON      ID_ZREPORT
+    BUTTON      ID_RECIC
+    BUTTON      ID_RETURN
+    BUTTON      ID_TOOL
+    BUTTON      ID_VIEW_INFOCONSOLE
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Обновить базу",               ID_REFRESH_CATALOG
+        MENUITEM "Moniker",                     ID_MONIKER
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "InfoConsole",                 ID_VIEW_INFOCONSOLE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About UserThreads...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About UserThreads"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "UserThreads Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_ACCEL32807,          VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD0,     ID_ACCEL32808,          VIRTKEY, NOINVERT
+    VK_F1,          ID_APP_ABOUT,           VIRTKEY, NOINVERT
+    VK_F2,          ID_CHECK,               VIRTKEY, NOINVERT
+    VK_MULTIPLY,    ID_MULTBUT_HOLDER,      VIRTKEY, NOINVERT
+    VK_INSERT,      ID_INSERT,              VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_RECIC,               VIRTKEY, NOINVERT
+    VK_F4,          ID_RETURN,              VIRTKEY, NOINVERT
+    VK_F5,          ID_TOOL,                VIRTKEY, NOINVERT
+    VK_F6,          ID_VIEW_INFOCONSOLE,    VIRTKEY, NOINVERT
+    VK_F10,         ID_ZREPORT,             VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_TRANSACT,           VIRTKEY, NOINVERT
+END
+
+IDD_SECONDSTEP ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_RETURNED,            VIRTKEY, NOINVERT
+    VK_TAB,         ID_NEXT_FIELD,          VIRTKEY, NOINVERT
+    VK_TAB,         ID_PREV_FIELD,          VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "UserThreads MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "UserThreads"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "UserThreads.EXE"
+            VALUE "ProductName", "UserThreads Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_MULTBUT_HOLDER       "????????????? ??????????????\n?????????"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\UserThreads.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

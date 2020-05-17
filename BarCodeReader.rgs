@@ -1,0 +1,24 @@
+HKCR
+{
+	UserThreads.BarCodeReader.1 = s 'BarCodeReader Class'
+	{
+		CLSID = s '{DE856718-3667-4989-9DEA-209E3943E079}'
+	}
+	UserThreads.BarCodeReader = s 'BarCodeReader Class'
+	{
+		CLSID = s '{DE856718-3667-4989-9DEA-209E3943E079}'
+		CurVer = s 'UserThreads.BarCodeReader.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DE856718-3667-4989-9DEA-209E3943E079} = s 'BarCodeReader Class'
+		{
+			ProgID = s 'UserThreads.BarCodeReader.1'
+			VersionIndependentProgID = s 'UserThreads.BarCodeReader'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{07D70AD1-7C14-402F-97E8-8E096D9E7432}'
+			'TypeLib' = s '{3E60D31D-0B0C-46B1-BA00-038E848BF7C1}'
+		}
+	}
+}

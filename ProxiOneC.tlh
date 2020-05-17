@@ -1,0 +1,118 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (91258073).
+//
+// ProxiOneC.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy1\ProxiOneC\ReleaseUMinDependency\ProxiOneC.exe
+// compiler-generated file created 03/14/14 at 18:39:28 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("da04e9ee-f9cf-4489-b71d-41c32fe15481"))
+/* dispinterface */ _IProxiOneCObjectEvents;
+struct /* coclass */ ProxiOneCObject;
+struct __declspec(uuid("5654b82b-e01f-4f4c-a9a9-21a95f91c376"))
+/* dual interface */ IProxiOneCObject;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IProxiOneCObjectEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IProxiOneCObject, __uuidof(IProxiOneCObject));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("da04e9ee-f9cf-4489-b71d-41c32fe15481"))
+_IProxiOneCObjectEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT AfterTransactDocument (
+        _bstr_t bstrNumDoc );
+    HRESULT ConnectToServer ( );
+    HRESULT RefreshData ( );
+    HRESULT RaiseError (
+        _bstr_t strErrSource,
+        _bstr_t strErrDescription );
+};
+
+struct __declspec(uuid("ece6eebd-4835-44f6-b946-c8a59cc32d7e"))
+ProxiOneCObject;
+    // [ default ] interface IProxiOneCObject
+    // [ default, source ] dispinterface _IProxiOneCObjectEvents
+
+struct __declspec(uuid("5654b82b-e01f-4f4c-a9a9-21a95f91c376"))
+IProxiOneCObject : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT TransactDocument (
+        _bstr_t bstr );
+    HRESULT AdvisePointConnected (
+        _bstr_t bstrMachine );
+    HRESULT ThrowError (
+        _bstr_t strErrSource,
+        _bstr_t strErrDescription );
+    HRESULT UnadvisePoint (
+        _bstr_t bstrMachine );
+    IDispatchPtr GetCashUsers (
+        _bstr_t bstrCashName );
+    HRESULT RefreshData ( );
+    HRESULT IsConnectedToService (
+        VARIANT * pVar );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_TransactDocument (
+        BSTR bstr ) = 0;
+    virtual HRESULT __stdcall raw_AdvisePointConnected (
+        BSTR bstrMachine ) = 0;
+    virtual HRESULT __stdcall raw_ThrowError (
+        BSTR strErrSource,
+        BSTR strErrDescription ) = 0;
+    virtual HRESULT __stdcall raw_UnadvisePoint (
+        BSTR bstrMachine ) = 0;
+    virtual HRESULT __stdcall raw_GetCashUsers (
+        BSTR bstrCashName,
+        IDispatch * * pDocHolder ) = 0;
+    virtual HRESULT __stdcall raw_RefreshData ( ) = 0;
+    virtual HRESULT __stdcall raw_IsConnectedToService (
+        VARIANT * pVar ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_PROXIONECLib =
+    {0x49428f6e,0xc559,0x4a7e,{0x85,0x57,0x8e,0x9f,0x14,0x7b,0xbb,0x3f}};
+extern "C" const GUID __declspec(selectany) DIID__IProxiOneCObjectEvents =
+    {0xda04e9ee,0xf9cf,0x4489,{0xb7,0x1d,0x41,0xc3,0x2f,0xe1,0x54,0x81}};
+extern "C" const GUID __declspec(selectany) CLSID_ProxiOneCObject =
+    {0xece6eebd,0x4835,0x44f6,{0xb9,0x46,0xc8,0xa5,0x9c,0xc3,0x2d,0x7e}};
+extern "C" const GUID __declspec(selectany) IID_IProxiOneCObject =
+    {0x5654b82b,0xe01f,0x4f4c,{0xa9,0xa9,0x21,0xa9,0x5f,0x91,0xc3,0x76}};
+
+//
+// Wrapper method implementations
+//
+
+#include "ProxiOneC.tli"
+
+#pragma pack(pop)

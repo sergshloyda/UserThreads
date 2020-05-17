@@ -1,0 +1,54 @@
+<Suppress Comment="Version 8.2.0 (Build 1062)">
+	<ErrType Category=5 >
+		<Module Name="UserThreads.exe" >
+			<File Name="Splash.cpp" >
+				<Function Name="public: virtual class CWnd * __thiscall CSplash::OnCreateSplashWnd(unsigned int,unsigned int,unsigned short)" >
+				</Function>
+			</File>
+			<File Name="UserThreads.cpp" >
+				<Function Name="public: virtual int __thiscall CUserThreadsApp::InitInstance(void)" >
+				</Function>
+			</File>
+		</Module>
+		<Module Name="Vsflex7.ocx" >
+			<Address Value=0x00003AD6 >
+			</Address>
+		</Module>
+	</ErrType>
+	<ErrType Category=46 >
+		<ValidateMod Name="gdi32.dll" >
+			<ValidateFunc Name="DeleteObject" >
+				<ValidateParm Value=1 >
+					<Module Name="MFC42D.DLL" >
+						<File Name="wingdi.cpp" >
+							<Function Name="public: int __thiscall CGdiObject::DeleteObject(void)" >
+							</Function>
+						</File>
+					</Module>
+				</ValidateParm>
+			</ValidateFunc>
+		</ValidateMod>
+	</ErrType>
+	<ErrType Category=47 >
+		<ValidateMod Name="kernel32.dll" >
+			<ValidateFunc Name="EnterCriticalSection" >
+				<Module Name="MFC42D.DLL" >
+					<File Name="afxcrit.cpp" >
+						<Function Name="void __stdcall AfxLockGlobals(int)" >
+						</Function>
+					</File>
+					<File Name="afxtls.cpp" >
+						<Function Name="public: int __thiscall CThreadSlotData::AllocSlot(void)" >
+						</Function>
+						<Function Name="public: void __thiscall CThreadSlotData::DeleteValues(struct CThreadData *,struct HINSTANCE__ *)" >
+						</Function>
+						<Function Name="public: void __thiscall CThreadSlotData::DeleteValues(struct HINSTANCE__ *,int)" >
+						</Function>
+						<Function Name="public: void __thiscall CThreadSlotData::SetValue(int,void *)" >
+						</Function>
+					</File>
+				</Module>
+			</ValidateFunc>
+		</ValidateMod>
+	</ErrType>
+</Suppress>

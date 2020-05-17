@@ -1,0 +1,105 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (fba3e5ef).
+//
+// c:\visualcstudy\userthreads\release\msdatsrc.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy\UserThreads\DLL\MSDATSRC.TLB
+// compiler-generated file created 05/12/20 at 14:19:07 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7c0ffab0-cd84-11d0-949a-00a0c91110ed"))
+/* LIBID */ __MSDATASRC;
+struct __declspec(uuid("7c0ffab2-cd84-11d0-949a-00a0c91110ed"))
+/* interface */ DataSourceListener;
+struct __declspec(uuid("7c0ffab3-cd84-11d0-949a-00a0c91110ed"))
+/* interface */ DataSource;
+typedef BSTR DataMember;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(DataSourceListener, __uuidof(DataSourceListener));
+_COM_SMARTPTR_TYPEDEF(DataSource, __uuidof(DataSource));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("7c0ffab2-cd84-11d0-949a-00a0c91110ed"))
+DataSourceListener : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT dataMemberChanged (
+        DataMember bstrDM );
+    HRESULT dataMemberAdded (
+        DataMember bstrDM );
+    HRESULT dataMemberRemoved (
+        DataMember bstrDM );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_dataMemberChanged (
+        /*[in]*/ DataMember bstrDM ) = 0;
+      virtual HRESULT __stdcall raw_dataMemberAdded (
+        /*[in]*/ DataMember bstrDM ) = 0;
+      virtual HRESULT __stdcall raw_dataMemberRemoved (
+        /*[in]*/ DataMember bstrDM ) = 0;
+};
+
+struct __declspec(uuid("7c0ffab3-cd84-11d0-949a-00a0c91110ed"))
+DataSource : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr getDataMember (
+        DataMember bstrDM,
+        GUID * riid );
+    DataMember getDataMemberName (
+        long lIndex );
+    long getDataMemberCount ( );
+    HRESULT addDataSourceListener (
+        struct DataSourceListener * pDSL );
+    HRESULT removeDataSourceListener (
+        struct DataSourceListener * pDSL );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_getDataMember (
+        /*[in]*/ DataMember bstrDM,
+        /*[in]*/ GUID * riid,
+        /*[out,retval]*/ IUnknown * * ppunk ) = 0;
+      virtual HRESULT __stdcall raw_getDataMemberName (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ DataMember * pbstrDM ) = 0;
+      virtual HRESULT __stdcall raw_getDataMemberCount (
+        /*[out,retval]*/ long * plCount ) = 0;
+      virtual HRESULT __stdcall raw_addDataSourceListener (
+        /*[in]*/ struct DataSourceListener * pDSL ) = 0;
+      virtual HRESULT __stdcall raw_removeDataSourceListener (
+        /*[in]*/ struct DataSourceListener * pDSL ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\visualcstudy\userthreads\release\msdatsrc.tli"
+
+#pragma pack(pop)

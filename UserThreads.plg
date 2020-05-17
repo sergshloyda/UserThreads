@@ -1,0 +1,222 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UserThreads - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Debug/UserThreads.res" /d "_DEBUG" /d "_AFXDLL" "C:\VisualCStudy\UserThreads\UserThreads.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/UserThreads.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\VisualCStudy\UserThreads\1CHelper.cpp"
+"C:\VisualCStudy\UserThreads\Barcode.cpp"
+"C:\VisualCStudy\UserThreads\BarcodeEdit.cpp"
+"C:\VisualCStudy\UserThreads\CashDoc.cpp"
+"C:\VisualCStudy\UserThreads\CashPrinter.cpp"
+"C:\VisualCStudy\UserThreads\CategoryTree.cpp"
+"C:\VisualCStudy\UserThreads\CheckButton.cpp"
+"C:\VisualCStudy\UserThreads\CheckDoc.cpp"
+"C:\VisualCStudy\UserThreads\cmercury.cpp"
+"C:\VisualCStudy\UserThreads\ComPortDlg.cpp"
+"C:\VisualCStudy\UserThreads\DBDoc.cpp"
+"C:\VisualCStudy\UserThreads\DialogView.cpp"
+"C:\VisualCStudy\UserThreads\DictGoodsFrame.cpp"
+"C:\VisualCStudy\UserThreads\DlgEnterCash.cpp"
+"C:\VisualCStudy\UserThreads\DlgFindAll.cpp"
+"C:\VisualCStudy\UserThreads\DlgInsert.cpp"
+"C:\VisualCStudy\UserThreads\DlgLogin.cpp"
+"C:\VisualCStudy\UserThreads\DlgManageKKM.cpp"
+"C:\VisualCStudy\UserThreads\DlgMultQty.cpp"
+"C:\VisualCStudy\UserThreads\DlgSelDate.cpp"
+"C:\VisualCStudy\UserThreads\DlgSelectGood.cpp"
+"C:\VisualCStudy\UserThreads\DlgSetPeriod.cpp"
+"C:\VisualCStudy\UserThreads\DlgSetQuantity.cpp"
+"C:\VisualCStudy\UserThreads\drvfr.cpp"
+"C:\VisualCStudy\UserThreads\dtpicker.cpp"
+"C:\VisualCStudy\UserThreads\ExplorerDlg.cpp"
+"C:\VisualCStudy\UserThreads\FileDialog2K.cpp"
+"C:\VisualCStudy\UserThreads\FindEdit.cpp"
+"C:\VisualCStudy\UserThreads\FindView.cpp"
+"C:\VisualCStudy\UserThreads\FirstStepPage.cpp"
+"C:\VisualCStudy\UserThreads\FolderFrame.cpp"
+"C:\VisualCStudy\UserThreads\font.cpp"
+"C:\VisualCStudy\UserThreads\FontCombo.cpp"
+"C:\VisualCStudy\UserThreads\FontToolBar.cpp"
+"C:\VisualCStudy\UserThreads\Ftab.cpp"
+"C:\VisualCStudy\UserThreads\GoodsGrid.cpp"
+"C:\VisualCStudy\UserThreads\InfoConsole.cpp"
+"C:\VisualCStudy\UserThreads\InfoFrame.cpp"
+"C:\VisualCStudy\UserThreads\Label.cpp"
+"C:\VisualCStudy\UserThreads\MainChildFrame.cpp"
+"C:\VisualCStudy\UserThreads\MainDocument.cpp"
+"C:\VisualCStudy\UserThreads\MainFrm.cpp"
+"C:\VisualCStudy\UserThreads\MDIChild.cpp"
+"C:\VisualCStudy\UserThreads\MDIClient.cpp"
+"C:\VisualCStudy\UserThreads\MultButton.cpp"
+"C:\VisualCStudy\UserThreads\MultiSplitterView.cpp"
+"C:\VisualCStudy\UserThreads\MyTabCtrl.cpp"
+"C:\VisualCStudy\UserThreads\NaklForm.cpp"
+"C:\VisualCStudy\UserThreads\NodeItem.cpp"
+"C:\VisualCStudy\UserThreads\NTree.cpp"
+"C:\VisualCStudy\UserThreads\picture.cpp"
+"C:\VisualCStudy\UserThreads\PopupMenu.cpp"
+"C:\VisualCStudy\UserThreads\PPLAPrinter.cpp"
+"C:\VisualCStudy\UserThreads\PSDlgInsertGood.cpp"
+"C:\VisualCStudy\UserThreads\PupText.cpp"
+"C:\VisualCStudy\UserThreads\ReciclingView.cpp"
+"C:\VisualCStudy\UserThreads\Register.cpp"
+"C:\VisualCStudy\UserThreads\ReportFrame.cpp"
+"C:\VisualCStudy\UserThreads\ReportView.cpp"
+"C:\VisualCStudy\UserThreads\ReturnDoc.cpp"
+"C:\VisualCStudy\UserThreads\ReturnView.cpp"
+"C:\VisualCStudy\UserThreads\SalaryDoc.cpp"
+"C:\VisualCStudy\UserThreads\SecondStepPage.cpp"
+"C:\VisualCStudy\UserThreads\Splash.cpp"
+"C:\VisualCStudy\UserThreads\StatLink.cpp"
+"C:\VisualCStudy\UserThreads\SuperTree.cpp"
+"C:\VisualCStudy\UserThreads\TableValue1.cpp"
+"C:\VisualCStudy\UserThreads\ThirdStepPage.cpp"
+"C:\VisualCStudy\UserThreads\TreeNode.cpp"
+"C:\VisualCStudy\UserThreads\UpFolderTabCtrl.cpp"
+"C:\VisualCStudy\UserThreads\UserThreads.cpp"
+"C:\VisualCStudy\UserThreads\UserThreadsView.cpp"
+"C:\VisualCStudy\UserThreads\ViewManager.cpp"
+"C:\VisualCStudy\UserThreads\vsflexdatasource.cpp"
+"C:\VisualCStudy\UserThreads\vsflexgrid.cpp"
+"C:\VisualCStudy\UserThreads\WindowTabCtrl.cpp"
+"C:\VisualCStudy\UserThreads\WntRetEdit.cpp"
+"C:\VisualCStudy\UserThreads\ZReportDoc.cpp"
+"C:\VisualCStudy\UserThreads\ZReportView.cpp"
+"C:\VisualCStudy\UserThreads\ZReportWizard.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/UserThreads.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\VisualCStudy\UserThreads\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/UserThreads.pdb" /debug /machine:I386 /out:"Debug/UserThreads.exe" /pdbtype:sept 
+.\Debug\1CHelper.obj
+.\Debug\Barcode.obj
+.\Debug\BarcodeEdit.obj
+.\Debug\CashDoc.obj
+.\Debug\CashPrinter.obj
+.\Debug\CategoryTree.obj
+.\Debug\CheckButton.obj
+.\Debug\CheckDoc.obj
+.\Debug\cmercury.obj
+.\Debug\ComPortDlg.obj
+.\Debug\DBDoc.obj
+.\Debug\DialogView.obj
+.\Debug\DictGoodsFrame.obj
+.\Debug\DlgEnterCash.obj
+.\Debug\DlgFindAll.obj
+.\Debug\DlgInsert.obj
+.\Debug\DlgLogin.obj
+.\Debug\DlgManageKKM.obj
+.\Debug\DlgMultQty.obj
+.\Debug\DlgSelDate.obj
+.\Debug\DlgSelectGood.obj
+.\Debug\DlgSetPeriod.obj
+.\Debug\DlgSetQuantity.obj
+.\Debug\drvfr.obj
+.\Debug\dtpicker.obj
+.\Debug\ExplorerDlg.obj
+.\Debug\FileDialog2K.obj
+.\Debug\FindEdit.obj
+.\Debug\FindView.obj
+.\Debug\FirstStepPage.obj
+.\Debug\FolderFrame.obj
+.\Debug\font.obj
+.\Debug\FontCombo.obj
+.\Debug\FontToolBar.obj
+.\Debug\Ftab.obj
+.\Debug\GoodsGrid.obj
+.\Debug\InfoConsole.obj
+.\Debug\InfoFrame.obj
+.\Debug\Label.obj
+.\Debug\MainChildFrame.obj
+.\Debug\MainDocument.obj
+.\Debug\MainFrm.obj
+.\Debug\MDIChild.obj
+.\Debug\MDIClient.obj
+.\Debug\MultButton.obj
+.\Debug\MultiSplitterView.obj
+.\Debug\MyTabCtrl.obj
+.\Debug\NaklForm.obj
+.\Debug\NodeItem.obj
+.\Debug\NTree.obj
+.\Debug\picture.obj
+.\Debug\PopupMenu.obj
+.\Debug\PPLAPrinter.obj
+.\Debug\PSDlgInsertGood.obj
+.\Debug\PupText.obj
+.\Debug\ReciclingView.obj
+.\Debug\Register.obj
+.\Debug\ReportFrame.obj
+.\Debug\ReportView.obj
+.\Debug\ReturnDoc.obj
+.\Debug\ReturnView.obj
+.\Debug\SalaryDoc.obj
+.\Debug\SecondStepPage.obj
+.\Debug\Splash.obj
+.\Debug\StatLink.obj
+.\Debug\StdAfx.obj
+.\Debug\SuperTree.obj
+.\Debug\TableValue1.obj
+.\Debug\ThirdStepPage.obj
+.\Debug\TreeNode.obj
+.\Debug\UpFolderTabCtrl.obj
+.\Debug\UserThreads.obj
+.\Debug\UserThreadsView.obj
+.\Debug\ViewManager.obj
+.\Debug\vsflexdatasource.obj
+.\Debug\vsflexgrid.obj
+.\Debug\WindowTabCtrl.obj
+.\Debug\WntRetEdit.obj
+.\Debug\ZReportDoc.obj
+.\Debug\ZReportView.obj
+.\Debug\ZReportWizard.obj
+.\Debug\UserThreads.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+
+NOTE: WINVER has been defined as 0x0500 or greater which enables
+Windows NT 5.0 and Windows 98 features. When these headers were released,
+Windows NT 5.0 beta 1 and Windows 98 beta 2.1 were the current versions.
+
+For this release when WINVER is defined as 0x0500 or greater, you can only
+build beta or test applications.  To build a retail application,
+set WINVER to 0x0400 or visit http://www.microsoft.com/msdn/sdk
+to see if retail Windows NT 5.0 or Windows 98 headers are available.
+
+See the SDK release notes for more information.
+
+c:\visualcstudy\userthreads\stdafx.h(56) : error C2065: 'CComPtr' : undeclared identifier
+c:\visualcstudy\userthreads\stdafx.h(56) : error C2275: 'ICreateErrorInfo' : illegal use of this type as an expression
+        c:\program files\microsoft visual studio\vc98\include\oaidl.h(5394) : see declaration of 'ICreateErrorInfo'
+c:\visualcstudy\userthreads\stdafx.h(56) : error C2065: 'pCER' : undeclared identifier
+c:\visualcstudy\userthreads\stdafx.h(59) : error C2227: left of '->SetDescription' must point to class/struct/union
+c:\visualcstudy\userthreads\stdafx.h(60) : error C2227: left of '->SetSource' must point to class/struct/union
+c:\visualcstudy\userthreads\stdafx.h(61) : error C2065: 'CComQIPtr' : undeclared identifier
+c:\visualcstudy\userthreads\stdafx.h(61) : error C2275: 'IErrorInfo' : illegal use of this type as an expression
+        c:\program files\microsoft visual studio\vc98\include\oaidl.h(5209) : see declaration of 'IErrorInfo'
+c:\visualcstudy\userthreads\stdafx.h(61) : error C2065: 'pEI' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+UserThreads.exe - 8 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

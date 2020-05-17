@@ -1,0 +1,64 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (8297f0df).
+//
+// c:\visualcstudy1\userthreads\debug\MFCATLAuto.tli
+//
+// Wrapper implementations for Win32 type library C:\VisualCStudy1\MFCATLAuto\Debug\MFCATLAuto.tlb
+// compiler-generated file created 06/20/09 at 13:56:37 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface _IApplicationEvents wrapper method implementations
+//
+
+inline HRESULT _IApplicationEvents::NomenclatureChanged ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+//
+// interface IApplication wrapper method implementations
+//
+
+inline HRESULT IApplication::Beep ( ) {
+    HRESULT _hr = raw_Beep();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplication::GetNomenclatureRecSet ( IUnknown * * pUnk ) {
+    HRESULT _hr = raw_GetNomenclatureRecSet(pUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplication::InterfaceSupportsErrorInfo ( GUID * riid ) {
+    HRESULT _hr = raw_InterfaceSupportsErrorInfo(riid);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplication::GetSQLServerConnection ( IUnknown * * pUnk ) {
+    HRESULT _hr = raw_GetSQLServerConnection(pUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplication::GetLocalDBFConnection ( IUnknown * * pUnk ) {
+    HRESULT _hr = raw_GetLocalDBFConnection(pUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplication::RefreshNomenclature ( long * status ) {
+    HRESULT _hr = raw_RefreshNomenclature(status);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IApplication::Open1C ( _bstr_t bstrPath, _bstr_t bstrPassword, _bstr_t bstrUser ) {
+    HRESULT _hr = raw_Open1C(bstrPath, bstrPassword, bstrUser);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

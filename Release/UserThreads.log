@@ -1,0 +1,209 @@
+﻿Build started 12.05.2020 14:20:21.
+     1>Project "C:\visualcstudy\UserThreads\UserThreads.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file ".\Release\UserThreads.lastbuildstate".
+       InitializeBuildStatus:
+         Creating ".\Release\UserThreads.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\boost_1_57_0 /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release/UserThreads.pch" /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\boost_1_57_0 /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release/UserThreads.pch" /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt 1CHelper.cpp Barcode.cpp BarcodeEdit.cpp CashDoc.cpp CashPrinter.cpp CategoryTree.cpp CheckButton.cpp CheckDoc.cpp cmercury.cpp ComPortDlg.cpp DBDoc.cpp DialogView.cpp DictGoodsFrame.cpp DlgEnterCash.cpp DlgFindAll.cpp DlgInsert.cpp DlgLogin.cpp DlgManageKKM.cpp DlgMultQty.cpp DlgSelDate.cpp DlgSelectGood.cpp DlgSetPeriod.cpp DlgSetQuantity.cpp drvfr.cpp dtpicker.cpp ExplorerDlg.cpp FileDialog2K.cpp FindEdit.cpp FindView.cpp FirstStepPage.cpp FolderFrame.cpp font.cpp FontCombo.cpp FontDlgPage.cpp FontToolBar.cpp Ftab.cpp GoodsGrid.cpp InfoConsole.cpp InfoFrame.cpp Label.cpp MainChildFrame.cpp MainDocument.cpp MainFrm.cpp MDIChild.cpp MDIClient.cpp MessageBoxHelper.cpp MultButton.cpp MultButtonEx.cpp MultiSplitterView.cpp MyTabCtrl.cpp NaklForm.cpp NodeItem.cpp NTree.cpp OutputWnd.cpp picture.cpp PointSettings.cpp PopupMenu.cpp PPLAPrinter.cpp PSDlgInsertGood.cpp PupText.cpp ReciclingView.cpp Register.cpp ReportFrame.cpp ReportView.cpp Repository.cpp ReturnDoc.cpp ReturnView.cpp SalaryDoc.cpp SecondStepPage.cpp Splash.cpp StatLink.cpp SuperTree.cpp TableValue1.cpp ThirdStepPage.cpp TreeNode.cpp UpFolderTabCtrl.cpp UserThreads.cpp UserThreadsView.cpp ViewManager.cpp vsflexdatasource.cpp vsflexgrid.cpp WindowTabCtrl.cpp WntRetComboBox.cpp WntRetEdit.cpp ZReportDoc.cpp ZReportView.cpp ZReportWizard.cpp
+         1CHelper.cpp
+         Barcode.cpp
+         BarcodeEdit.cpp
+         CashDoc.cpp
+         CashPrinter.cpp
+         CategoryTree.cpp
+         CheckButton.cpp
+         CheckDoc.cpp
+         cmercury.cpp
+         ComPortDlg.cpp
+         DBDoc.cpp
+         DialogView.cpp
+         DictGoodsFrame.cpp
+         DlgEnterCash.cpp
+         DlgFindAll.cpp
+         DlgInsert.cpp
+         DlgLogin.cpp
+         DlgManageKKM.cpp
+         DlgMultQty.cpp
+         DlgSelDate.cpp
+         Generating Code...
+         Compiling...
+         DlgSelectGood.cpp
+         DlgSetPeriod.cpp
+         DlgSetQuantity.cpp
+         drvfr.cpp
+         dtpicker.cpp
+         ExplorerDlg.cpp
+         FileDialog2K.cpp
+         FindEdit.cpp
+         FindView.cpp
+         FirstStepPage.cpp
+         FolderFrame.cpp
+         font.cpp
+         FontCombo.cpp
+         FontDlgPage.cpp
+         FontToolBar.cpp
+         Ftab.cpp
+         GoodsGrid.cpp
+         InfoConsole.cpp
+         InfoFrame.cpp
+         Label.cpp
+         Generating Code...
+         Compiling...
+         MainChildFrame.cpp
+         MainDocument.cpp
+         MainFrm.cpp
+         MDIChild.cpp
+         MDIClient.cpp
+         MessageBoxHelper.cpp
+         MultButton.cpp
+         MultButtonEx.cpp
+         MultiSplitterView.cpp
+         MyTabCtrl.cpp
+         NaklForm.cpp
+         NodeItem.cpp
+         NTree.cpp
+         OutputWnd.cpp
+         picture.cpp
+         PointSettings.cpp
+         PopupMenu.cpp
+         PPLAPrinter.cpp
+         PSDlgInsertGood.cpp
+         PupText.cpp
+         Generating Code...
+         Compiling...
+         ReciclingView.cpp
+         Register.cpp
+         ReportFrame.cpp
+         ReportView.cpp
+         Repository.cpp
+         ReturnDoc.cpp
+         ReturnView.cpp
+         SalaryDoc.cpp
+         SecondStepPage.cpp
+         Splash.cpp
+         StatLink.cpp
+         SuperTree.cpp
+         TableValue1.cpp
+         ThirdStepPage.cpp
+         TreeNode.cpp
+         UpFolderTabCtrl.cpp
+         UserThreads.cpp
+         UserThreadsView.cpp
+         ViewManager.cpp
+         vsflexdatasource.cpp
+         Generating Code...
+         Compiling...
+         vsflexgrid.cpp
+         WindowTabCtrl.cpp
+         WntRetComboBox.cpp
+         WntRetEdit.cpp
+         ZReportDoc.cpp
+         ZReportView.cpp
+         ZReportWizard.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0419" /nologo /fo".\Release\UserThreads.res" UserThreads.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release/UserThreads.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:".\Release\UserThreads.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Release/UserThreads.pdb" /MAP:".\Release/UserThreads.map" /SUBSYSTEM:WINDOWS /OPT:REF /TLBID:1 /DYNAMICBASE /NXCOMPAT:NO /IMPLIB:".\Release\UserThreads.lib" /MACHINE:X86 .\Release\UserThreads.res
+         .\Release/1CHelper.obj
+         .\Release/Barcode.obj
+         .\Release/BarcodeEdit.obj
+         .\Release/CashDoc.obj
+         .\Release/CashPrinter.obj
+         .\Release/CategoryTree.obj
+         .\Release/CheckButton.obj
+         .\Release/CheckDoc.obj
+         .\Release/cmercury.obj
+         .\Release/ComPortDlg.obj
+         .\Release/DBDoc.obj
+         .\Release/DialogView.obj
+         .\Release/DictGoodsFrame.obj
+         .\Release/DlgEnterCash.obj
+         .\Release/DlgFindAll.obj
+         .\Release/DlgInsert.obj
+         .\Release/DlgLogin.obj
+         .\Release/DlgManageKKM.obj
+         .\Release/DlgMultQty.obj
+         .\Release/DlgSelDate.obj
+         .\Release/DlgSelectGood.obj
+         .\Release/DlgSetPeriod.obj
+         .\Release/DlgSetQuantity.obj
+         .\Release/drvfr.obj
+         .\Release/dtpicker.obj
+         .\Release/ExplorerDlg.obj
+         .\Release/FileDialog2K.obj
+         .\Release/FindEdit.obj
+         .\Release/FindView.obj
+         .\Release/FirstStepPage.obj
+         .\Release/FolderFrame.obj
+         .\Release/font.obj
+         .\Release/FontCombo.obj
+         .\Release/FontDlgPage.obj
+         .\Release/FontToolBar.obj
+         .\Release/Ftab.obj
+         .\Release/GoodsGrid.obj
+         .\Release/InfoConsole.obj
+         .\Release/InfoFrame.obj
+         .\Release/Label.obj
+         .\Release/MainChildFrame.obj
+         .\Release/MainDocument.obj
+         .\Release/MainFrm.obj
+         .\Release/MDIChild.obj
+         .\Release/MDIClient.obj
+         .\Release/MessageBoxHelper.obj
+         .\Release/MultButton.obj
+         .\Release/MultButtonEx.obj
+         .\Release/MultiSplitterView.obj
+         .\Release/MyTabCtrl.obj
+         .\Release/NaklForm.obj
+         .\Release/NodeItem.obj
+         .\Release/NTree.obj
+         .\Release/OutputWnd.obj
+         .\Release/picture.obj
+         .\Release/PointSettings.obj
+         .\Release/PopupMenu.obj
+         .\Release/PPLAPrinter.obj
+         .\Release/PSDlgInsertGood.obj
+         .\Release/PupText.obj
+         .\Release/ReciclingView.obj
+         .\Release/Register.obj
+         .\Release/ReportFrame.obj
+         .\Release/ReportView.obj
+         .\Release/Repository.obj
+         .\Release/ReturnDoc.obj
+         .\Release/ReturnView.obj
+         .\Release/SalaryDoc.obj
+         .\Release/SecondStepPage.obj
+         .\Release/Splash.obj
+         .\Release/StatLink.obj
+         .\Release/StdAfx.obj
+         .\Release/SuperTree.obj
+         .\Release/TableValue1.obj
+         .\Release/ThirdStepPage.obj
+         .\Release/TreeNode.obj
+         .\Release/UpFolderTabCtrl.obj
+         .\Release/UserThreads.obj
+         .\Release/UserThreadsView.obj
+         .\Release/ViewManager.obj
+         .\Release/vsflexdatasource.obj
+         .\Release/vsflexgrid.obj
+         .\Release/WindowTabCtrl.obj
+         .\Release/WntRetComboBox.obj
+         .\Release/WntRetEdit.obj
+         .\Release/ZReportDoc.obj
+         .\Release/ZReportView.obj
+         .\Release/ZReportWizard.obj
+         UserThreads.vcxproj -> C:\visualcstudy\UserThreads\.\Release\UserThreads.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\Release/UserThreads.exe;#1" /manifest .\Release\UserThreads.exe.intermediate.manifest "C:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file ".\Release\UserThreads.unsuccessfulbuild".
+         Touching ".\Release\UserThreads.lastbuildstate".
+     1>Done Building Project "C:\visualcstudy\UserThreads\UserThreads.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:06:12.73

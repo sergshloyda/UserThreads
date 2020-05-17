@@ -1,0 +1,92 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (92cb00ae).
+//
+// PrinterSamsung.tlh
+//
+// C++ source equivalent of Win32 type library .\dll\PrinterSamsung.dll
+// compiler-generated file created 09/02/17 at 10:01:09 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("453f845f-c4cd-4369-8d3f-05aeb22f05b9"))
+/* dispinterface */ _IPrinterEvents;
+struct /* coclass */ Printer;
+struct __declspec(uuid("69e2090f-4282-42d4-acd6-90907e688c3f"))
+/* dual interface */ IPrinter;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IPrinterEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IPrinter, __uuidof(IPrinter));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("453f845f-c4cd-4369-8d3f-05aeb22f05b9"))
+_IPrinterEvents : IDispatch
+{};
+
+struct __declspec(uuid("62025fc7-a491-4f91-9c2f-5c57d74388c7"))
+Printer;
+    // [ default ] interface IPrinter
+    // [ default, source ] dispinterface _IPrinterEvents
+
+struct __declspec(uuid("69e2090f-4282-42d4-acd6-90907e688c3f"))
+IPrinter : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT NewCheck ( );
+    HRESULT AddNewLine (
+        int nLeftMargin,
+        int nSizeFont,
+        int blBold,
+        int nInt,
+        _bstr_t bstrData );
+    HRESULT PrintCheck ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_NewCheck ( ) = 0;
+    virtual HRESULT __stdcall raw_AddNewLine (
+        int nLeftMargin,
+        int nSizeFont,
+        int blBold,
+        int nInt,
+        BSTR bstrData ) = 0;
+    virtual HRESULT __stdcall raw_PrintCheck ( ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_PRINTERSAMSUNGLib =
+    {0xcb660d74,0x6b3b,0x4568,{0x9f,0x9e,0x9f,0x8a,0x16,0x32,0x0b,0xda}};
+extern "C" const GUID __declspec(selectany) DIID__IPrinterEvents =
+    {0x453f845f,0xc4cd,0x4369,{0x8d,0x3f,0x05,0xae,0xb2,0x2f,0x05,0xb9}};
+extern "C" const GUID __declspec(selectany) CLSID_Printer =
+    {0x62025fc7,0xa491,0x4f91,{0x9c,0x2f,0x5c,0x57,0xd7,0x43,0x88,0xc7}};
+extern "C" const GUID __declspec(selectany) IID_IPrinter =
+    {0x69e2090f,0x4282,0x42d4,{0xac,0xd6,0x90,0x90,0x7e,0x68,0x8c,0x3f}};
+
+//
+// Wrapper method implementations
+//
+
+#include "PrinterSamsung.tli"
+
+#pragma pack(pop)

@@ -1,0 +1,85 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (24bbbcdc).
+//
+// c:\visualcstudy1\userthreads\debug\ProxiOneC.tli
+//
+// Wrapper implementations for Win32 type library C:\VisualCStudy1\ProxiOneC\ReleaseUMinDependency\ProxiOneC.exe
+// compiler-generated file created 01/02/15 at 16:11:17 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface _IProxiOneCObjectEvents wrapper method implementations
+//
+
+inline HRESULT _IProxiOneCObjectEvents::AfterTransactDocument ( _bstr_t bstrNumDoc ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008", (BSTR)bstrNumDoc);
+    return _result;
+}
+
+inline HRESULT _IProxiOneCObjectEvents::ConnectToServer ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _IProxiOneCObjectEvents::RefreshData ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _IProxiOneCObjectEvents::RaiseError ( _bstr_t strErrSource, _bstr_t strErrDescription ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008\x0008", (BSTR)strErrSource, (BSTR)strErrDescription);
+    return _result;
+}
+
+//
+// interface IProxiOneCObject wrapper method implementations
+//
+
+inline HRESULT IProxiOneCObject::TransactDocument ( _bstr_t bstr ) {
+    HRESULT _hr = raw_TransactDocument(bstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProxiOneCObject::AdvisePointConnected ( _bstr_t bstrMachine ) {
+    HRESULT _hr = raw_AdvisePointConnected(bstrMachine);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProxiOneCObject::ThrowError ( _bstr_t strErrSource, _bstr_t strErrDescription ) {
+    HRESULT _hr = raw_ThrowError(strErrSource, strErrDescription);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProxiOneCObject::UnadvisePoint ( _bstr_t bstrMachine ) {
+    HRESULT _hr = raw_UnadvisePoint(bstrMachine);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDispatchPtr IProxiOneCObject::GetCashUsers ( _bstr_t bstrCashName ) {
+    IDispatch * _result;
+    HRESULT _hr = raw_GetCashUsers(bstrCashName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT IProxiOneCObject::RefreshData ( ) {
+    HRESULT _hr = raw_RefreshData();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProxiOneCObject::IsConnectedToService ( VARIANT * pVar ) {
+    HRESULT _hr = raw_IsConnectedToService(pVar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

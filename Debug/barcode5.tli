@@ -1,0 +1,41 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (77438523).
+//
+// c:\visualcstudy\userthreads\debug\barcode5.tli
+//
+// Wrapper implementations for Win32 type library C:\Saler\ActiveX\BarCode5\Debug\barcode5.dll
+// compiler-generated file created 02/05/09 at 01:39:08 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface _IReaderEvents wrapper method implementations
+//
+
+inline HRESULT _IReaderEvents::ReceiveBarCode ( _bstr_t BarCode ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008", (BSTR)BarCode);
+    return _result;
+}
+
+//
+// interface IReader wrapper method implementations
+//
+
+inline HRESULT IReader::OpenCommPort ( _bstr_t CommPort ) {
+    HRESULT _hr = raw_OpenCommPort(CommPort);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IReader::CloseCommPort ( ) {
+    HRESULT _hr = raw_CloseCommPort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IReader::Execute ( ) {
+    HRESULT _hr = raw_Execute();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

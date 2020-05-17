@@ -1,0 +1,30 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (92cb00ae).
+//
+// PrinterSamsung.tli
+//
+// Wrapper implementations for Win32 type library .\dll\PrinterSamsung.dll
+// compiler-generated file created 09/02/17 at 10:01:09 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IPrinter wrapper method implementations
+//
+
+inline HRESULT IPrinter::NewCheck ( ) {
+    HRESULT _hr = raw_NewCheck();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPrinter::AddNewLine ( int nLeftMargin, int nSizeFont, int blBold, int nInt, _bstr_t bstrData ) {
+    HRESULT _hr = raw_AddNewLine(nLeftMargin, nSizeFont, blBold, nInt, bstrData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPrinter::PrintCheck ( ) {
+    HRESULT _hr = raw_PrintCheck();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

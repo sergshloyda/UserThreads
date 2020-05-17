@@ -1,0 +1,113 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (d6992938).
+//
+// MFCATLAuto.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy1\MFCATLAuto\Debug\MFCATLAuto.tlb
+// compiler-generated file created 07/04/09 at 13:14:10 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("590defa0-c08b-4a4e-95e3-98379bc191f0"))
+/* dispinterface */ _IApplicationEvents;
+struct /* coclass */ Application;
+struct __declspec(uuid("71a4d55c-ebc3-456e-9193-b8f284a066ae"))
+/* dual interface */ IApplication;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IApplicationEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IApplication, __uuidof(IApplication));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("590defa0-c08b-4a4e-95e3-98379bc191f0"))
+_IApplicationEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT NomenclatureChanged ( );
+};
+
+struct __declspec(uuid("887cf6a7-b959-449e-bdda-7abdc54ad5c6"))
+Application;
+    // [ default ] interface IApplication
+    // [ default, source ] dispinterface _IApplicationEvents
+
+struct __declspec(uuid("71a4d55c-ebc3-456e-9193-b8f284a066ae"))
+IApplication : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Beep ( );
+    HRESULT GetNomenclatureRecSet (
+        IUnknown * * pUnk );
+    HRESULT InterfaceSupportsErrorInfo (
+        GUID * riid );
+    HRESULT GetSQLServerConnection (
+        IUnknown * * pUnk );
+    HRESULT GetLocalDBFConnection (
+        IUnknown * * pUnk );
+    HRESULT RefreshNomenclature (
+        long * status );
+    HRESULT Open1C (
+        _bstr_t bstrPath,
+        _bstr_t bstrPassword,
+        _bstr_t bstrUser );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Beep ( ) = 0;
+    virtual HRESULT __stdcall raw_GetNomenclatureRecSet (
+        IUnknown * * pUnk ) = 0;
+    virtual HRESULT __stdcall raw_InterfaceSupportsErrorInfo (
+        GUID * riid ) = 0;
+    virtual HRESULT __stdcall raw_GetSQLServerConnection (
+        IUnknown * * pUnk ) = 0;
+    virtual HRESULT __stdcall raw_GetLocalDBFConnection (
+        IUnknown * * pUnk ) = 0;
+    virtual HRESULT __stdcall raw_RefreshNomenclature (
+        long * status ) = 0;
+    virtual HRESULT __stdcall raw_Open1C (
+        BSTR bstrPath,
+        BSTR bstrPassword,
+        BSTR bstrUser ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_MFCATLAutoLib =
+    {0xf66eebd5,0x01b6,0x44fb,{0x8b,0x4c,0xb1,0x5a,0xfd,0x9f,0x01,0x57}};
+extern "C" const GUID __declspec(selectany) DIID__IApplicationEvents =
+    {0x590defa0,0xc08b,0x4a4e,{0x95,0xe3,0x98,0x37,0x9b,0xc1,0x91,0xf0}};
+extern "C" const GUID __declspec(selectany) CLSID_Application =
+    {0x887cf6a7,0xb959,0x449e,{0xbd,0xda,0x7a,0xbd,0xc5,0x4a,0xd5,0xc6}};
+extern "C" const GUID __declspec(selectany) IID_IApplication =
+    {0x71a4d55c,0xebc3,0x456e,{0x91,0x93,0xb8,0xf2,0x84,0xa0,0x66,0xae}};
+
+//
+// Wrapper method implementations
+//
+
+#include "MFCATLAuto.tli"
+
+#pragma pack(pop)

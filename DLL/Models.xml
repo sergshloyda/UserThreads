@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Root>
+    <UseModelsInfo Value="1"/>
+	<Models>
+		<Model ID="0" Name="ШТРИХ-ФР-Ф">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="1"/>
+			<CapJrnLeverSensor Value="1"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value="17"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="1" Name="ШТРИХ-ФР-Ф (КАЗ)">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="1"/>
+			<CapJrnLeverSensor Value="1"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "17"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="2" Name="ЭЛВЕС-МИНИ-ФР-Ф">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="0"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "17"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="3" Name="ФЕЛИКС-РФ">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="0"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "17"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="4" Name="ШТРИХ-ФР-К">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="1"/>
+			<CapJrnLeverSensor Value="1"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "17"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="5" Name="ШТРИХ-950К">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="1"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="1"/>
+			<CapSlpDocumentLoSensor Value="1"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "16"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="1"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="6" Name="ЭЛВЕС-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="0"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "14"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="7" Name="ШТРИХ-МИНИ-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "15"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="8" Name="ШТРИХ-ФР-Ф (Белоруссия)">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="1"/>
+			<CapJrnLeverSensor Value="1"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="0"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "17"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="9" Name="ШТРИХ-КОМБО-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="1"/>
+			<CapSlpDocumentLoSensor Value="1"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "15"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="1"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="10" Name="Фискальный блок Штрих-POS-Ф">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="0"/>
+			<CapRecOpticalSensor Value="0"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="0"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "0"/>
+			<TaxCalcField Value = "0"/>
+			
+			<CapCashDrawerSensor Value="0"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="11" Name="ШТРИХ-950К (версия 02)">
+			<CapJrnSensor Value="1"/>
+			<CapJrnOpticalSensor Value="1"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="1"/>
+			<CapSlpDocumentLoSensor Value="1"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "16"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="1"/> 
+			<CapSlip Value="1"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="12" Name="ШТРИХ-КОМБО-ФР-К (версия 02)">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="1"/>
+			<CapSlpDocumentLoSensor Value="1"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "15"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="1"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="14" Name="ШТРИХ-МИНИ-ФР-К (версия 02, 57 мм)">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "15"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="15" Name="ШТРИХ-КИОСК-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="0"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "15"/>
+			
+			<CapCashDrawerSensor Value="0"/>
+			<CapPrsPaperInSensor Value="1"/>
+			<CapPrsPaperOutSensor Value="1"/>
+			<CapPresenter Value="1"/>
+			<CapPresenterCommands Value="1"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="17" Name="NCR-001К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "11"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+
+		<Model ID="19" Name="ШТРИХ-MOBILE-ПТК">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="0"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "6"/>
+			
+			<CapCashDrawerSensor Value="0"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+
+		<Model ID="239" Name="ШТРИХ-М 200">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "14"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "2"/> 
+		</Model>
+
+		<Model ID="250" Name="ШТРИХ-М-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="1"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "14"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "2"/> 
+		</Model>
+                
+                <Model ID="251" Name="ШТРИХ-LightPOS-K">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="0"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "14"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		
+
+		<Model ID="252" Name="ШТРИХ-LIGHT-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="0"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "0"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "14"/>
+			
+			<CapCashDrawerSensor Value="1"/>
+			<CapPrsPaperInSensor Value="0"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="0"/>
+			<Font2Width Value="0"/>
+			<SwapLineBytes Value = "0"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="243" Name="ЯРУС-01К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "1"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "9"/>
+			
+			<CapCashDrawerSensor Value="0"/>
+			<CapPrsPaperInSensor Value="1"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="1"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="1"/>
+			<CapTaxKeyboard Value="1"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="1"/>
+			<Font1Width Value="40"/>
+			<Font2Width Value="19"/>
+			<SwapLineBytes Value = "1"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="244" Name="ШТРИХ-КИОСК-ФР-К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="0"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "1"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "9"/>
+			
+			<CapCashDrawerSensor Value="0"/>
+			<CapPrsPaperInSensor Value="1"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="0"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="0"/>
+			<CapTaxKeyboard Value="0"/>
+			<CapJournal Value="0"/> 
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="0"/>
+			<Font1Width Value="42"/>
+			<Font2Width Value="21"/>
+			<SwapLineBytes Value = "1"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+		<Model ID="248" Name="ЯРУС-02К">
+			<CapJrnSensor Value="0"/>
+			<CapJrnOpticalSensor Value="0"/>
+			<CapJrnLeverSensor Value="0"/>
+			<CapRecSensor Value="1"/>
+			<CapRecOpticalSensor Value="1"/>
+			<CapRecLeverSensor Value="0"/>
+			<CapSlpDocumentHiSensor Value="0"/>
+			<CapSlpDocumentLoSensor Value="0"/>
+			<CapCoverSensor Value="1"/>
+			<CapEKLZOverflowSensor Value="1"/>
+			<CapCashDrawerAsPresenter Value = "1"/>
+			<CapTaxCalc Value = "1"/>
+			<TaxCalcField Value = "9"/>
+			
+			<CapCashDrawerSensor Value="0"/>
+			<CapPrsPaperInSensor Value="1"/>
+			<CapPrsPaperOutSensor Value="0"/>
+			<CapPresenter Value="1"/>
+			<CapPresenterCommands Value="0"/>
+			<CapBillAcceptor Value="1"/>
+			<CapTaxKeyboard Value="1"/>
+			<CapJournal Value="0"/>
+			<CapSlip Value="0"/>
+			<CapNonfiscalDocument Value="1"/>
+			<Font1Width Value="46"/>
+			<Font2Width Value="22"/>
+			<SwapLineBytes Value = "1"/>
+                        <FirstDrawLine Value = "1"/> 
+		</Model>
+	</Models>
+</Root>

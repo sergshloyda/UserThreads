@@ -1,0 +1,2691 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (c3866b49).
+//
+// c:\visualcstudy\userthreads\release\vsflex7.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy\UserThreads\DLL\vsflex7.ocx
+// compiler-generated file created 05/12/20 at 14:19:07 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("d76d7128-4a96-11d3-bd95-d296dc2dd072"))
+/* LIBID */ __VSFlex7;
+enum ClearWhatSettings;
+enum ClearWhereSettings;
+struct __declspec(uuid("d76d712b-4a96-11d3-bd95-d296dc2dd072"))
+/* dual interface */ IVSFlexGrid;
+enum TextStyleSettings;
+enum FocusRectSettings;
+enum ShowSelSettings;
+enum RedrawSettings;
+enum ScrollBarsSettings;
+enum FillStyleSettings;
+enum GridStyleSettings;
+enum AlignmentSettings;
+enum PictureAlignmentSettings;
+enum SortSettings;
+enum SelModeSettings;
+enum MergeSettings;
+enum PictureTypeSettings;
+enum AllowUserResizeSettings;
+enum MousePointerSettings;
+enum EditableSettings;
+enum SubtotalPositionSettings;
+enum BorderStyleSettings;
+enum AppearanceSettings;
+enum OutlineBarSettings;
+enum AutoSizeSettings;
+enum OwnerDrawSettings;
+enum DataModeSettings;
+enum OLEDragModeSettings;
+enum OLEDropModeSettings;
+enum TabBehaviorSettings;
+enum CellCheckedSettings;
+enum MergeCompareSettings;
+enum EllipsisSettings;
+enum AutoSearchSettings;
+enum ExplorerBarSettings;
+enum SubtotalSettings;
+enum CollapsedSettings;
+enum SaveLoadSettings;
+enum ArchiveSettings;
+enum ArchiveInfoSettings;
+enum DataTypeSettings;
+enum CellPropertySettings;
+enum RowStatusSettings;
+enum ComboSearchSettings;
+enum AllowUserFreezeSettings;
+struct __declspec(uuid("8e203240-537d-11d3-bd8c-000000000000"))
+/* dual interface */ IVSFlexDataSource;
+enum NodeTypeSettings;
+struct __declspec(uuid("d76d712c-4a96-11d3-bd95-d296dc2dd072"))
+/* dispinterface */ _IVSFlexGridEvents;
+struct /* coclass */ VSDataObject;
+struct __declspec(uuid("d76d7129-4a96-11d3-bd95-d296dc2dd072"))
+/* dual interface */ IVSDataObject;
+struct /* coclass */ VSFlexGrid;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IVSFlexDataSource, __uuidof(IVSFlexDataSource));
+_COM_SMARTPTR_TYPEDEF(IVSFlexGrid, __uuidof(IVSFlexGrid));
+_COM_SMARTPTR_TYPEDEF(_IVSFlexGridEvents, __uuidof(_IVSFlexGridEvents));
+_COM_SMARTPTR_TYPEDEF(IVSDataObject, __uuidof(IVSDataObject));
+
+//
+// Type library items
+//
+
+enum ClearWhatSettings
+{
+    flexClearEverything = 0,
+    flexClearText = 1,
+    flexClearFormatting = 2,
+    flexClearData = 3
+};
+
+enum ClearWhereSettings
+{
+    flexClearEverywhere = 0,
+    flexClearScrollable = 1,
+    flexClearSelection = 2
+};
+
+enum TextStyleSettings
+{
+    flexTextFlat = 0,
+    flexTextRaised = 1,
+    flexTextInset = 2,
+    flexTextRaisedLight = 3,
+    flexTextInsetLight = 4
+};
+
+enum FocusRectSettings
+{
+    flexFocusNone = 0,
+    flexFocusLight = 1,
+    flexFocusHeavy = 2,
+    flexFocusSolid = 3,
+    flexFocusRaised = 4,
+    flexFocusInset = 5
+};
+
+enum ShowSelSettings
+{
+    flexHighlightNever = 0,
+    flexHighlightAlways = 1,
+    flexHighlightWithFocus = 2
+};
+
+enum RedrawSettings
+{
+    flexRDNone = 0,
+    flexRDDirect = 1,
+    flexRDBuffered = 2
+};
+
+enum ScrollBarsSettings
+{
+    flexScrollBarNone = 0,
+    flexScrollBarHorizontal = 1,
+    flexScrollBarVertical = 2,
+    flexScrollBarBoth = 3
+};
+
+enum FillStyleSettings
+{
+    flexFillSingle = 0,
+    flexFillRepeat = 1
+};
+
+enum GridStyleSettings
+{
+    flexGridNone = 0,
+    flexGridFlat = 1,
+    flexGridInset = 2,
+    flexGridRaised = 3,
+    flexGridFlatHorz = 4,
+    flexGridInsetHorz = 5,
+    flexGridRaisedHorz = 6,
+    flexGridSkipHorz = 7,
+    flexGridFlatVert = 8,
+    flexGridInsetVert = 9,
+    flexGridRaisedVert = 10,
+    flexGridSkipVert = 11,
+    flexGridExplorer = 12,
+    flexGridExcel = 13
+};
+
+enum AlignmentSettings
+{
+    flexAlignLeftTop = 0,
+    flexAlignLeftCenter = 1,
+    flexAlignLeftBottom = 2,
+    flexAlignCenterTop = 3,
+    flexAlignCenterCenter = 4,
+    flexAlignCenterBottom = 5,
+    flexAlignRightTop = 6,
+    flexAlignRightCenter = 7,
+    flexAlignRightBottom = 8,
+    flexAlignGeneral = 9
+};
+
+enum PictureAlignmentSettings
+{
+    flexPicAlignLeftTop = 0,
+    flexPicAlignLeftCenter = 1,
+    flexPicAlignLeftBottom = 2,
+    flexPicAlignCenterTop = 3,
+    flexPicAlignCenterCenter = 4,
+    flexPicAlignCenterBottom = 5,
+    flexPicAlignRightTop = 6,
+    flexPicAlignRightCenter = 7,
+    flexPicAlignRightBottom = 8,
+    flexPicAlignStretch = 9,
+    flexPicAlignTile = 10
+};
+
+enum SortSettings
+{
+    flexSortNone = 0,
+    flexSortGenericAscending = 1,
+    flexSortGenericDescending = 2,
+    flexSortNumericAscending = 3,
+    flexSortNumericDescending = 4,
+    flexSortStringNoCaseAscending = 5,
+    flexSortStringNoCaseDescending = 6,
+    flexSortStringAscending = 7,
+    flexSortStringDescending = 8,
+    flexSortCustom = 9,
+    flexSortUseColSort = 10
+};
+
+enum SelModeSettings
+{
+    flexSelectionFree = 0,
+    flexSelectionByRow = 1,
+    flexSelectionByColumn = 2,
+    flexSelectionListBox = 3
+};
+
+enum MergeSettings
+{
+    flexMergeNever = 0,
+    flexMergeFree = 1,
+    flexMergeRestrictRows = 2,
+    flexMergeRestrictColumns = 3,
+    flexMergeRestrictAll = 4,
+    flexMergeFixedOnly = 5,
+    flexMergeSpill = 6
+};
+
+enum PictureTypeSettings
+{
+    flexPictureColor = 0,
+    flexPictureMonochrome = 1
+};
+
+enum AllowUserResizeSettings
+{
+    flexResizeNone = 0,
+    flexResizeColumns = 1,
+    flexResizeRows = 2,
+    flexResizeBoth = 3,
+    flexResizeBothUniform = 4
+};
+
+enum MousePointerSettings
+{
+    flexDefault = 0,
+    flexArrow = 1,
+    flexCross = 2,
+    flexIBeam = 3,
+    flexIcon = 4,
+    flexSize = 5,
+    flexSizeNESW = 6,
+    flexSizeNS = 7,
+    flexSizeNWSE = 8,
+    flexSizeEW = 9,
+    flexUpArrow = 10,
+    flexHourglass = 11,
+    flexNoDrop = 12,
+    flexArrowHourGlass = 13,
+    flexArrowQuestion = 14,
+    flexSizeAll = 15,
+    flexCustom = 99
+};
+
+enum EditableSettings
+{
+    flexEDNone = 0,
+    flexEDKbd = 1,
+    flexEDKbdMouse = 2
+};
+
+enum SubtotalPositionSettings
+{
+    flexSTBelow = 0,
+    flexSTAbove = 1
+};
+
+enum BorderStyleSettings
+{
+    flexBorderNone = 0,
+    flexBorderFlat = 1
+};
+
+enum AppearanceSettings
+{
+    flexFlat = 0,
+    flex3D = 1
+};
+
+enum OutlineBarSettings
+{
+    flexOutlineBarNone = 0,
+    flexOutlineBarComplete = 1,
+    flexOutlineBarSimple = 2,
+    flexOutlineBarSymbols = 3,
+    flexOutlineBarCompleteLeaf = 4,
+    flexOutlineBarSimpleLeaf = 5,
+    flexOutlineBarSymbolsLeaf = 6
+};
+
+enum AutoSizeSettings
+{
+    flexAutoSizeColWidth = 0,
+    flexAutoSizeRowHeight = 1
+};
+
+enum OwnerDrawSettings
+{
+    flexODNone = 0,
+    flexODOver = 1,
+    flexODContent = 2,
+    flexODComplete = 3,
+    flexODOverFixed = 4,
+    flexODContentFixed = 5,
+    flexODCompleteFixed = 6
+};
+
+enum DataModeSettings
+{
+    flexDMFree = 0,
+    flexDMBound = 1,
+    flexDMBoundBatch = 2,
+    flexDMBoundImmediate = 3
+};
+
+enum OLEDragModeSettings
+{
+    flexOLEDragManual = 0,
+    flexOLEDragAutomatic = 1
+};
+
+enum OLEDropModeSettings
+{
+    flexOLEDropNone = 0,
+    flexOLEDropManual = 1,
+    flexOLEDropAutomatic = 2
+};
+
+enum TabBehaviorSettings
+{
+    flexTabControls = 0,
+    flexTabCells = 1
+};
+
+enum CellCheckedSettings
+{
+    flexNoCheckbox = 0,
+    flexChecked = 1,
+    flexUnchecked = 2
+};
+
+enum MergeCompareSettings
+{
+    flexMCExact = 0,
+    flexMCNoCase = 1,
+    flexMCTrimNoCase = 2
+};
+
+enum EllipsisSettings
+{
+    flexNoEllipsis = 0,
+    flexEllipsisEnd = 1,
+    flexEllipsisPath = 2
+};
+
+enum AutoSearchSettings
+{
+    flexSearchNone = 0,
+    flexSearchFromTop = 1,
+    flexSearchFromCursor = 2
+};
+
+enum ExplorerBarSettings
+{
+    flexExNone = 0,
+    flexExSort = 1,
+    flexExMove = 2,
+    flexExSortAndMove = 3,
+    flexExSortShow = 5,
+    flexExSortShowAndMove = 7
+};
+
+enum SubtotalSettings
+{
+    flexSTNone = 0,
+    flexSTClear = 1,
+    flexSTSum = 2,
+    flexSTPercent = 3,
+    flexSTCount = 4,
+    flexSTAverage = 5,
+    flexSTMax = 6,
+    flexSTMin = 7,
+    flexSTStd = 8,
+    flexSTVar = 9
+};
+
+enum CollapsedSettings
+{
+    flexOutlineExpanded = 0,
+    flexOutlineSubtotals = 1,
+    flexOutlineCollapsed = 2
+};
+
+enum SaveLoadSettings
+{
+    flexFileAll = 0,
+    flexFileData = 1,
+    flexFileFormat = 2,
+    flexFileCommaText = 3,
+    flexFileTabText = 4,
+    flexFileCustomText = 5
+};
+
+enum ArchiveSettings
+{
+    arcAdd = 0,
+    arcStore = 1,
+    arcExtract = 2,
+    arcDelete = 3
+};
+
+enum ArchiveInfoSettings
+{
+    arcFileCount = 0,
+    ArcFileName = 1,
+    arcFileSize = 2,
+    arcFileCompressedSize = 3,
+    arcFileDate = 4
+};
+
+enum DataTypeSettings
+{
+    flexDTEmpty = 0,
+    flexDTNull = 1,
+    flexDTShort = 2,
+    flexDTLong = 3,
+    flexDTSingle = 4,
+    flexDTDouble = 5,
+    flexDTCurrency = 6,
+    flexDTDate = 7,
+    flexDTString = 8,
+    flexDTDispatch = 9,
+    flexDTError = 10,
+    flexDTBoolean = 11,
+    flexDTVariant = 12,
+    flexDTUnknown = 13,
+    flexDTDecimal = 14,
+    flexDTLong8 = 20,
+    flexDTStringC = 30,
+    flexDTStringW = 31
+};
+
+enum CellPropertySettings
+{
+    flexcpText = 0,
+    flexcpTextStyle = 1,
+    flexcpAlignment = 2,
+    flexcpPicture = 3,
+    flexcpPictureAlignment = 4,
+    flexcpChecked = 5,
+    flexcpBackColor = 6,
+    flexcpForeColor = 7,
+    flexcpFloodPercent = 8,
+    flexcpFloodColor = 9,
+    flexcpFont = 10,
+    flexcpFontName = 11,
+    flexcpFontSize = 12,
+    flexcpFontBold = 13,
+    flexcpFontItalic = 14,
+    flexcpFontUnderline = 15,
+    flexcpFontStrikethru = 16,
+    flexcpFontWidth = 17,
+    flexcpValue = 18,
+    flexcpTextDisplay = 19,
+    flexcpData = 20,
+    flexcpCustomFormat = 21,
+    flexcpLeft = 22,
+    flexcpTop = 23,
+    flexcpWidth = 24,
+    flexcpHeight = 25,
+    flexcpVariantValue = 26,
+    flexcpRefresh = 27
+};
+
+enum RowStatusSettings
+{
+    flexrsNew = 0,
+    flexrsUpdated = 1,
+    flexrsModified = 2,
+    flexrsDeleted = 3
+};
+
+enum ComboSearchSettings
+{
+    flexCmbSearchNone = 0,
+    flexCmbSearchLists = 1,
+    flexCmbSearchCombos = 2,
+    flexCmbSearchAll = 3
+};
+
+enum AllowUserFreezeSettings
+{
+    flexFreezeNone = 0,
+    flexFreezeColumns = 1,
+    flexFreezeRows = 2,
+    flexFreezeBoth = 3
+};
+
+struct __declspec(uuid("8e203240-537d-11d3-bd8c-000000000000"))
+IVSFlexDataSource : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetFieldCount ( );
+    long GetRecordCount ( );
+    _bstr_t GetFieldName (
+        long Field );
+    _bstr_t GetData (
+        long Field,
+        long Record );
+    HRESULT SetData (
+        long Field,
+        long Record,
+        _bstr_t newData );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetFieldCount (
+        /*[out,retval]*/ long * pFields ) = 0;
+      virtual HRESULT __stdcall raw_GetRecordCount (
+        /*[out,retval]*/ long * pRecords ) = 0;
+      virtual HRESULT __stdcall raw_GetFieldName (
+        /*[in]*/ long Field,
+        /*[out,retval]*/ BSTR * pFieldName ) = 0;
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ long Field,
+        /*[in]*/ long Record,
+        /*[out,retval]*/ BSTR * pData ) = 0;
+      virtual HRESULT __stdcall raw_SetData (
+        /*[in]*/ long Field,
+        /*[in]*/ long Record,
+        /*[in]*/ BSTR newData ) = 0;
+};
+
+enum NodeTypeSettings
+{
+    flexNTParent = 0,
+    flexNTFirstChild = 1,
+    flexNTLastChild = 2
+};
+
+struct __declspec(uuid("d76d712b-4a96-11d3-bd95-d296dc2dd072"))
+IVSFlexGrid : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetText,put=PutText))
+    _bstr_t Text;
+    __declspec(property(get=GetFontName,put=PutFontName))
+    _bstr_t FontName;
+    __declspec(property(get=GetFontSize,put=PutFontSize))
+    float FontSize;
+    __declspec(property(get=GetFontBold,put=PutFontBold))
+    VARIANT_BOOL FontBold;
+    __declspec(property(get=GetFontItalic,put=PutFontItalic))
+    VARIANT_BOOL FontItalic;
+    __declspec(property(get=GetFontStrikethru,put=PutFontStrikethru))
+    VARIANT_BOOL FontStrikethru;
+    __declspec(property(get=GetFontUnderline,put=PutFontUnderline))
+    VARIANT_BOOL FontUnderline;
+    __declspec(property(get=GetRows,put=PutRows))
+    long Rows;
+    __declspec(property(get=GetCols,put=PutCols))
+    long Cols;
+    __declspec(property(get=GetVersion,put=PutVersion))
+    short Version;
+    __declspec(property(get=GetFormatString,put=PutFormatString))
+    _bstr_t FormatString;
+    __declspec(property(get=GetFixedRows,put=PutFixedRows))
+    long FixedRows;
+    __declspec(property(get=GetFixedCols,put=PutFixedCols))
+    long FixedCols;
+    __declspec(property(get=GetTopRow,put=PutTopRow))
+    long TopRow;
+    __declspec(property(get=GetLeftCol,put=PutLeftCol))
+    long LeftCol;
+    __declspec(property(get=GetRowSel,put=PutRowSel))
+    long RowSel;
+    __declspec(property(get=GetColSel,put=PutColSel))
+    long ColSel;
+    __declspec(property(get=GetRow,put=PutRow))
+    long Row;
+    __declspec(property(get=GetCol,put=PutCol))
+    long Col;
+    __declspec(property(get=GetBackColorFixed,put=PutBackColorFixed))
+    OLE_COLOR BackColorFixed;
+    __declspec(property(get=GetForeColorFixed,put=PutForeColorFixed))
+    OLE_COLOR ForeColorFixed;
+    __declspec(property(get=GetBackColorSel,put=PutBackColorSel))
+    OLE_COLOR BackColorSel;
+    __declspec(property(get=GetForeColorSel,put=PutForeColorSel))
+    OLE_COLOR ForeColorSel;
+    __declspec(property(get=GetBackColorBkg,put=PutBackColorBkg))
+    OLE_COLOR BackColorBkg;
+    __declspec(property(get=GetWordWrap,put=PutWordWrap))
+    VARIANT_BOOL WordWrap;
+    __declspec(property(get=GetTextStyle,put=PutTextStyle))
+    enum TextStyleSettings TextStyle;
+    __declspec(property(get=GetTextStyleFixed,put=PutTextStyleFixed))
+    enum TextStyleSettings TextStyleFixed;
+    __declspec(property(get=GetScrollTrack,put=PutScrollTrack))
+    VARIANT_BOOL ScrollTrack;
+    __declspec(property(get=GetFocusRect,put=PutFocusRect))
+    enum FocusRectSettings FocusRect;
+    __declspec(property(get=GetHighLight,put=PutHighLight))
+    enum ShowSelSettings HighLight;
+    __declspec(property(get=GetRedraw,put=PutRedraw))
+    enum RedrawSettings Redraw;
+    __declspec(property(get=GetScrollBars,put=PutScrollBars))
+    enum ScrollBarsSettings ScrollBars;
+    __declspec(property(get=GetMouseRow))
+    long MouseRow;
+    __declspec(property(get=GetMouseCol))
+    long MouseCol;
+    __declspec(property(get=GetCellLeft))
+    long CellLeft;
+    __declspec(property(get=GetCellTop))
+    long CellTop;
+    __declspec(property(get=GetCellWidth))
+    long CellWidth;
+    __declspec(property(get=GetCellHeight))
+    long CellHeight;
+    __declspec(property(get=GetRowHeightMin,put=PutRowHeightMin))
+    long RowHeightMin;
+    __declspec(property(get=GetFillStyle,put=PutFillStyle))
+    enum FillStyleSettings FillStyle;
+    __declspec(property(get=GetGridLines,put=PutGridLines))
+    enum GridStyleSettings GridLines;
+    __declspec(property(get=GetGridLinesFixed,put=PutGridLinesFixed))
+    enum GridStyleSettings GridLinesFixed;
+    __declspec(property(get=GetGridColor,put=PutGridColor))
+    OLE_COLOR GridColor;
+    __declspec(property(get=GetGridColorFixed,put=PutGridColorFixed))
+    OLE_COLOR GridColorFixed;
+    __declspec(property(get=GetCellBackColor,put=PutCellBackColor))
+    OLE_COLOR CellBackColor;
+    __declspec(property(get=GetCellForeColor,put=PutCellForeColor))
+    OLE_COLOR CellForeColor;
+    __declspec(property(get=GetCellAlignment,put=PutCellAlignment))
+    enum AlignmentSettings CellAlignment;
+    __declspec(property(get=GetCellTextStyle,put=PutCellTextStyle))
+    enum TextStyleSettings CellTextStyle;
+    __declspec(property(get=GetCellPictureAlignment,put=PutCellPictureAlignment))
+    enum PictureAlignmentSettings CellPictureAlignment;
+    __declspec(property(get=GetCellFontName,put=PutCellFontName))
+    _bstr_t CellFontName;
+    __declspec(property(get=GetCellFontSize,put=PutCellFontSize))
+    float CellFontSize;
+    __declspec(property(get=GetCellFontBold,put=PutCellFontBold))
+    VARIANT_BOOL CellFontBold;
+    __declspec(property(get=GetCellFontItalic,put=PutCellFontItalic))
+    VARIANT_BOOL CellFontItalic;
+    __declspec(property(get=GetCellFontWidth,put=PutCellFontWidth))
+    float CellFontWidth;
+    __declspec(property(get=GetCellFontUnderline,put=PutCellFontUnderline))
+    VARIANT_BOOL CellFontUnderline;
+    __declspec(property(get=GetCellFontStrikethru,put=PutCellFontStrikethru))
+    VARIANT_BOOL CellFontStrikethru;
+    __declspec(property(get=GetFontWidth,put=PutFontWidth))
+    float FontWidth;
+    __declspec(property(get=GetClip,put=PutClip))
+    _bstr_t Clip;
+    __declspec(property(put=PutSort))
+    enum SortSettings Sort;
+    __declspec(property(get=GetSelectionMode,put=PutSelectionMode))
+    enum SelModeSettings SelectionMode;
+    __declspec(property(get=GetMergeCells,put=PutMergeCells))
+    enum MergeSettings MergeCells;
+    __declspec(property(get=GetPictureType,put=PutPictureType))
+    enum PictureTypeSettings PictureType;
+    __declspec(property(get=GetAllowBigSelection,put=PutAllowBigSelection))
+    VARIANT_BOOL AllowBigSelection;
+    __declspec(property(get=GetAllowUserResizing,put=PutAllowUserResizing))
+    enum AllowUserResizeSettings AllowUserResizing;
+    __declspec(property(get=GetDataMember,put=PutDataMember))
+    _bstr_t DataMember;
+    __declspec(property(get=GetDataSource,put=PutRefDataSource))
+    DataSourcePtr DataSource;
+    __declspec(property(get=GetVirtualData,put=PutVirtualData))
+    VARIANT_BOOL VirtualData;
+    __declspec(property(get=GetEditable,put=PutEditable))
+    enum EditableSettings Editable;
+    __declspec(property(get=GetComboList,put=PutComboList))
+    _bstr_t ComboList;
+    __declspec(property(get=GetValue))
+    double Value;
+    __declspec(property(get=GetFloodColor,put=PutFloodColor))
+    OLE_COLOR FloodColor;
+    __declspec(property(get=GetCellFloodPercent,put=PutCellFloodPercent))
+    short CellFloodPercent;
+    __declspec(property(get=GetCellFloodColor,put=PutCellFloodColor))
+    OLE_COLOR CellFloodColor;
+    __declspec(property(get=GetSubtotalPosition,put=PutSubtotalPosition))
+    enum SubtotalPositionSettings SubtotalPosition;
+    __declspec(property(get=GetOutlineBar,put=PutOutlineBar))
+    enum OutlineBarSettings OutlineBar;
+    __declspec(property(get=GetTreeColor,put=PutTreeColor))
+    OLE_COLOR TreeColor;
+    __declspec(property(get=GetGridLineWidth,put=PutGridLineWidth))
+    short GridLineWidth;
+    __declspec(property(get=GetAutoResize,put=PutAutoResize))
+    VARIANT_BOOL AutoResize;
+    __declspec(property(get=GetBottomRow))
+    long BottomRow;
+    __declspec(property(get=GetRightCol))
+    long RightCol;
+    __declspec(property(get=GetExtendLastCol,put=PutExtendLastCol))
+    VARIANT_BOOL ExtendLastCol;
+    __declspec(property(get=GetClientWidth))
+    long ClientWidth;
+    __declspec(property(get=GetClientHeight))
+    long ClientHeight;
+    __declspec(property(get=GetEditText,put=PutEditText))
+    _bstr_t EditText;
+    __declspec(property(get=GetAutoSizeMode,put=PutAutoSizeMode))
+    enum AutoSizeSettings AutoSizeMode;
+    __declspec(property(get=GetRightToLeft,put=PutRightToLeft))
+    VARIANT_BOOL RightToLeft;
+    __declspec(property(get=GetMultiTotals,put=PutMultiTotals))
+    VARIANT_BOOL MultiTotals;
+    __declspec(property(get=GetBackColorAlternate,put=PutBackColorAlternate))
+    OLE_COLOR BackColorAlternate;
+    __declspec(property(get=GetOwnerDraw,put=PutOwnerDraw))
+    enum OwnerDrawSettings OwnerDraw;
+    __declspec(property(get=GetDataMode,put=PutDataMode))
+    enum DataModeSettings DataMode;
+    __declspec(property(get=GetOLEDragMode,put=PutOLEDragMode))
+    enum OLEDragModeSettings OLEDragMode;
+    __declspec(property(get=GetOLEDropMode,put=PutOLEDropMode))
+    enum OLEDropModeSettings OLEDropMode;
+    __declspec(property(get=GetTabBehavior,put=PutTabBehavior))
+    enum TabBehaviorSettings TabBehavior;
+    __declspec(property(get=GetSheetBorder,put=PutSheetBorder))
+    OLE_COLOR SheetBorder;
+    __declspec(property(get=GetAllowSelection,put=PutAllowSelection))
+    VARIANT_BOOL AllowSelection;
+    __declspec(property(get=GetPicturesOver,put=PutPicturesOver))
+    VARIANT_BOOL PicturesOver;
+    __declspec(property(get=GetCellChecked,put=PutCellChecked))
+    enum CellCheckedSettings CellChecked;
+    __declspec(property(get=GetMergeCompare,put=PutMergeCompare))
+    enum MergeCompareSettings MergeCompare;
+    __declspec(property(get=GetEllipsis,put=PutEllipsis))
+    enum EllipsisSettings Ellipsis;
+    __declspec(property(get=GetOutlineCol,put=PutOutlineCol))
+    long OutlineCol;
+    __declspec(property(get=GetRowHeightMax,put=PutRowHeightMax))
+    long RowHeightMax;
+    __declspec(property(get=GetAutoSearch,put=PutAutoSearch))
+    enum AutoSearchSettings AutoSearch;
+    __declspec(property(get=GetExplorerBar,put=PutExplorerBar))
+    enum ExplorerBarSettings ExplorerBar;
+    __declspec(property(get=GetEditMask,put=PutEditMask))
+    _bstr_t EditMask;
+    __declspec(property(get=GetEditSelStart,put=PutEditSelStart))
+    long EditSelStart;
+    __declspec(property(get=GetEditSelLength,put=PutEditSelLength))
+    long EditSelLength;
+    __declspec(property(get=GetEditSelText,put=PutEditSelText))
+    _bstr_t EditSelText;
+    __declspec(property(get=GetEditMaxLength,put=PutEditMaxLength))
+    long EditMaxLength;
+    __declspec(property(get=GetComboIndex,put=PutComboIndex))
+    long ComboIndex;
+    __declspec(property(get=GetComboCount))
+    long ComboCount;
+    __declspec(property(get=GetSelectedRows))
+    long SelectedRows;
+    __declspec(property(get=GetScrollTips,put=PutScrollTips))
+    VARIANT_BOOL ScrollTips;
+    __declspec(property(get=GetScrollTipText,put=PutScrollTipText))
+    _bstr_t ScrollTipText;
+    __declspec(property(get=GetColWidthMin,put=PutColWidthMin))
+    long ColWidthMin;
+    __declspec(property(get=GetColWidthMax,put=PutColWidthMax))
+    long ColWidthMax;
+    __declspec(property(get=GetShowComboButton,put=PutShowComboButton))
+    VARIANT_BOOL ShowComboButton;
+    __declspec(property(get=GetComboSearch,put=PutComboSearch))
+    enum ComboSearchSettings ComboSearch;
+    __declspec(property(get=GetAutoSizeMouse,put=PutAutoSizeMouse))
+    VARIANT_BOOL AutoSizeMouse;
+    __declspec(property(get=GetClipSeparators,put=PutClipSeparators))
+    _bstr_t ClipSeparators;
+    __declspec(property(get=GetFrozenRows,put=PutFrozenRows))
+    long FrozenRows;
+    __declspec(property(get=GetFrozenCols,put=PutFrozenCols))
+    long FrozenCols;
+    __declspec(property(get=GetAllowUserFreezing,put=PutAllowUserFreezing))
+    enum AllowUserFreezeSettings AllowUserFreezing;
+    __declspec(property(get=GetBackColorFrozen,put=PutBackColorFrozen))
+    OLE_COLOR BackColorFrozen;
+    __declspec(property(get=GetForeColorFrozen,put=PutForeColorFrozen))
+    OLE_COLOR ForeColorFrozen;
+    __declspec(property(get=GetFlexDataSource,put=PutFlexDataSource))
+    IVSFlexDataSourcePtr FlexDataSource;
+    __declspec(property(get=GetGetOutlineNode))
+    long GetOutlineNode[][];
+    __declspec(property(get=GetAutoSearchDelay,put=PutAutoSearchDelay))
+    float AutoSearchDelay;
+    __declspec(property(get=GetEditWindow))
+    long EditWindow;
+    __declspec(property(get=GetWallPaperAlignment,put=PutWallPaperAlignment))
+    enum PictureAlignmentSettings WallPaperAlignment;
+    __declspec(property(get=GetPicture))
+    IPictureDisp * Picture;
+    __declspec(property(get=GetMousePointer,put=PutMousePointer))
+    enum MousePointerSettings MousePointer;
+    __declspec(property(get=GetAppearance,put=PutAppearance))
+    enum AppearanceSettings Appearance;
+    __declspec(property(get=GethWnd))
+    long hWnd;
+    __declspec(property(get=GetEnabled,put=PutEnabled))
+    VARIANT_BOOL Enabled;
+    __declspec(property(get=GetForeColor,put=PutForeColor))
+    OLE_COLOR ForeColor;
+    __declspec(property(get=GetBorderStyle,put=PutBorderStyle))
+    enum BorderStyleSettings BorderStyle;
+    __declspec(property(get=GetBackColor,put=PutBackColor))
+    OLE_COLOR BackColor;
+    __declspec(property(get=Get_ConvInfo,put=Put_ConvInfo))
+    long _ConvInfo;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT About ( );
+    long Get_ConvInfo ( );
+    void Put_ConvInfo (
+        long pVal );
+    _bstr_t GetFontName ( );
+    void PutFontName (
+        _bstr_t pVal );
+    float GetFontSize ( );
+    void PutFontSize (
+        float pVal );
+    VARIANT_BOOL GetFontBold ( );
+    void PutFontBold (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetFontItalic ( );
+    void PutFontItalic (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetFontStrikethru ( );
+    void PutFontStrikethru (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetFontUnderline ( );
+    void PutFontUnderline (
+        VARIANT_BOOL pVal );
+    long GetRows ( );
+    void PutRows (
+        long pVal );
+    long GetCols ( );
+    void PutCols (
+        long pVal );
+    short GetVersion ( );
+    void PutVersion (
+        short pVal );
+    _bstr_t GetFormatString ( );
+    void PutFormatString (
+        _bstr_t pVal );
+    long GetFixedRows ( );
+    void PutFixedRows (
+        long pVal );
+    long GetFixedCols ( );
+    void PutFixedCols (
+        long pVal );
+    long GetTopRow ( );
+    void PutTopRow (
+        long pVal );
+    long GetLeftCol ( );
+    void PutLeftCol (
+        long pVal );
+    long GetRowSel ( );
+    void PutRowSel (
+        long pVal );
+    long GetColSel ( );
+    void PutColSel (
+        long pVal );
+    long GetRow ( );
+    void PutRow (
+        long pVal );
+    long GetCol ( );
+    void PutCol (
+        long pVal );
+    _bstr_t GetText ( );
+    void PutText (
+        _bstr_t pVal );
+    OLE_COLOR GetBackColor ( );
+    void PutBackColor (
+        OLE_COLOR pVal );
+    OLE_COLOR GetForeColor ( );
+    void PutForeColor (
+        OLE_COLOR pVal );
+    OLE_COLOR GetBackColorFixed ( );
+    void PutBackColorFixed (
+        OLE_COLOR pVal );
+    OLE_COLOR GetForeColorFixed ( );
+    void PutForeColorFixed (
+        OLE_COLOR pVal );
+    OLE_COLOR GetBackColorSel ( );
+    void PutBackColorSel (
+        OLE_COLOR pVal );
+    OLE_COLOR GetForeColorSel ( );
+    void PutForeColorSel (
+        OLE_COLOR pVal );
+    OLE_COLOR GetBackColorBkg ( );
+    void PutBackColorBkg (
+        OLE_COLOR pVal );
+    VARIANT_BOOL GetWordWrap ( );
+    void PutWordWrap (
+        VARIANT_BOOL pVal );
+    enum TextStyleSettings GetTextStyle ( );
+    void PutTextStyle (
+        enum TextStyleSettings pVal );
+    enum TextStyleSettings GetTextStyleFixed ( );
+    void PutTextStyleFixed (
+        enum TextStyleSettings pVal );
+    VARIANT_BOOL GetScrollTrack ( );
+    void PutScrollTrack (
+        VARIANT_BOOL pVal );
+    enum FocusRectSettings GetFocusRect ( );
+    void PutFocusRect (
+        enum FocusRectSettings pVal );
+    enum ShowSelSettings GetHighLight ( );
+    void PutHighLight (
+        enum ShowSelSettings pVal );
+    enum RedrawSettings GetRedraw ( );
+    void PutRedraw (
+        enum RedrawSettings pVal );
+    enum ScrollBarsSettings GetScrollBars ( );
+    void PutScrollBars (
+        enum ScrollBarsSettings pVal );
+    long GetMouseRow ( );
+    long GetMouseCol ( );
+    long GetCellLeft ( );
+    long GetCellTop ( );
+    long GetCellWidth ( );
+    long GetCellHeight ( );
+    long GetRowHeightMin ( );
+    void PutRowHeightMin (
+        long pVal );
+    enum FillStyleSettings GetFillStyle ( );
+    void PutFillStyle (
+        enum FillStyleSettings pVal );
+    enum GridStyleSettings GetGridLines ( );
+    void PutGridLines (
+        enum GridStyleSettings pVal );
+    enum GridStyleSettings GetGridLinesFixed ( );
+    void PutGridLinesFixed (
+        enum GridStyleSettings pVal );
+    OLE_COLOR GetGridColor ( );
+    void PutGridColor (
+        OLE_COLOR pVal );
+    OLE_COLOR GetGridColorFixed ( );
+    void PutGridColorFixed (
+        OLE_COLOR pVal );
+    OLE_COLOR GetCellBackColor ( );
+    void PutCellBackColor (
+        OLE_COLOR pVal );
+    OLE_COLOR GetCellForeColor ( );
+    void PutCellForeColor (
+        OLE_COLOR pVal );
+    enum AlignmentSettings GetCellAlignment ( );
+    void PutCellAlignment (
+        enum AlignmentSettings pVal );
+    enum TextStyleSettings GetCellTextStyle ( );
+    void PutCellTextStyle (
+        enum TextStyleSettings pVal );
+    IPictureDisp * GetCellPicture ( );
+    void PutCellPicture (
+        IPictureDisp * pVal );
+    void PutRefCellPicture (
+        IPictureDisp * pVal );
+    enum PictureAlignmentSettings GetCellPictureAlignment ( );
+    void PutCellPictureAlignment (
+        enum PictureAlignmentSettings pVal );
+    _bstr_t GetCellFontName ( );
+    void PutCellFontName (
+        _bstr_t pVal );
+    float GetCellFontSize ( );
+    void PutCellFontSize (
+        float pVal );
+    VARIANT_BOOL GetCellFontBold ( );
+    void PutCellFontBold (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetCellFontItalic ( );
+    void PutCellFontItalic (
+        VARIANT_BOOL pVal );
+    float GetCellFontWidth ( );
+    void PutCellFontWidth (
+        float pVal );
+    VARIANT_BOOL GetCellFontUnderline ( );
+    void PutCellFontUnderline (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetCellFontStrikethru ( );
+    void PutCellFontStrikethru (
+        VARIANT_BOOL pVal );
+    float GetFontWidth ( );
+    void PutFontWidth (
+        float pVal );
+    _bstr_t GetClip ( );
+    void PutClip (
+        _bstr_t pVal );
+    void PutSort (
+        enum SortSettings _arg1 );
+    enum SelModeSettings GetSelectionMode ( );
+    void PutSelectionMode (
+        enum SelModeSettings pVal );
+    enum MergeSettings GetMergeCells ( );
+    void PutMergeCells (
+        enum MergeSettings pVal );
+    IPictureDisp * GetPicture ( );
+    enum PictureTypeSettings GetPictureType ( );
+    void PutPictureType (
+        enum PictureTypeSettings pVal );
+    VARIANT_BOOL GetAllowBigSelection ( );
+    void PutAllowBigSelection (
+        VARIANT_BOOL pVal );
+    enum AllowUserResizeSettings GetAllowUserResizing ( );
+    void PutAllowUserResizing (
+        enum AllowUserResizeSettings pVal );
+    enum MousePointerSettings GetMousePointer ( );
+    void PutMousePointer (
+        enum MousePointerSettings pVal );
+    IPictureDisp * GetMouseIcon ( );
+    void PutMouseIcon (
+        IPictureDisp * pVal );
+    void PutRefMouseIcon (
+        IPictureDisp * pVal );
+    _bstr_t GetDataMember ( );
+    void PutDataMember (
+        _bstr_t pVal );
+    DataSourcePtr GetDataSource ( );
+    void PutRefDataSource (
+        struct DataSource * pVal );
+    VARIANT_BOOL GetVirtualData ( );
+    void PutVirtualData (
+        VARIANT_BOOL pVal );
+    enum EditableSettings GetEditable ( );
+    void PutEditable (
+        enum EditableSettings pVal );
+    _bstr_t GetComboList ( );
+    void PutComboList (
+        _bstr_t pVal );
+    double GetValue ( );
+    OLE_COLOR GetFloodColor ( );
+    void PutFloodColor (
+        OLE_COLOR pVal );
+    short GetCellFloodPercent ( );
+    void PutCellFloodPercent (
+        short pVal );
+    OLE_COLOR GetCellFloodColor ( );
+    void PutCellFloodColor (
+        OLE_COLOR pVal );
+    enum SubtotalPositionSettings GetSubtotalPosition ( );
+    void PutSubtotalPosition (
+        enum SubtotalPositionSettings pVal );
+    enum BorderStyleSettings GetBorderStyle ( );
+    void PutBorderStyle (
+        enum BorderStyleSettings pVal );
+    IFontDisp * GetFont ( );
+    void PutFont (
+        IFontDisp * pVal );
+    void PutRefFont (
+        IFontDisp * pVal );
+    VARIANT_BOOL GetEnabled ( );
+    void PutEnabled (
+        VARIANT_BOOL pVal );
+    enum AppearanceSettings GetAppearance ( );
+    void PutAppearance (
+        enum AppearanceSettings pVal );
+    enum OutlineBarSettings GetOutlineBar ( );
+    void PutOutlineBar (
+        enum OutlineBarSettings pVal );
+    OLE_COLOR GetTreeColor ( );
+    void PutTreeColor (
+        OLE_COLOR pVal );
+    short GetGridLineWidth ( );
+    void PutGridLineWidth (
+        short pVal );
+    VARIANT_BOOL GetAutoResize ( );
+    void PutAutoResize (
+        VARIANT_BOOL pVal );
+    long GetBottomRow ( );
+    long GetRightCol ( );
+    VARIANT_BOOL GetExtendLastCol ( );
+    void PutExtendLastCol (
+        VARIANT_BOOL pVal );
+    long GetClientWidth ( );
+    long GetClientHeight ( );
+    _bstr_t GetEditText ( );
+    void PutEditText (
+        _bstr_t pVal );
+    long GethWnd ( );
+    enum AutoSizeSettings GetAutoSizeMode ( );
+    void PutAutoSizeMode (
+        enum AutoSizeSettings pVal );
+    VARIANT_BOOL GetRightToLeft ( );
+    void PutRightToLeft (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetMultiTotals ( );
+    void PutMultiTotals (
+        VARIANT_BOOL pVal );
+    OLE_COLOR GetBackColorAlternate ( );
+    void PutBackColorAlternate (
+        OLE_COLOR pVal );
+    enum OwnerDrawSettings GetOwnerDraw ( );
+    void PutOwnerDraw (
+        enum OwnerDrawSettings pVal );
+    enum DataModeSettings GetDataMode ( );
+    void PutDataMode (
+        enum DataModeSettings pVal );
+    enum OLEDragModeSettings GetOLEDragMode ( );
+    void PutOLEDragMode (
+        enum OLEDragModeSettings pVal );
+    enum OLEDropModeSettings GetOLEDropMode ( );
+    void PutOLEDropMode (
+        enum OLEDropModeSettings pVal );
+    enum TabBehaviorSettings GetTabBehavior ( );
+    void PutTabBehavior (
+        enum TabBehaviorSettings pVal );
+    OLE_COLOR GetSheetBorder ( );
+    void PutSheetBorder (
+        OLE_COLOR pVal );
+    VARIANT_BOOL GetAllowSelection ( );
+    void PutAllowSelection (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetPicturesOver ( );
+    void PutPicturesOver (
+        VARIANT_BOOL pVal );
+    enum CellCheckedSettings GetCellChecked ( );
+    void PutCellChecked (
+        enum CellCheckedSettings pVal );
+    enum MergeCompareSettings GetMergeCompare ( );
+    void PutMergeCompare (
+        enum MergeCompareSettings pVal );
+    enum EllipsisSettings GetEllipsis ( );
+    void PutEllipsis (
+        enum EllipsisSettings pVal );
+    long GetOutlineCol ( );
+    void PutOutlineCol (
+        long pVal );
+    long GetRowHeightMax ( );
+    void PutRowHeightMax (
+        long pVal );
+    enum AutoSearchSettings GetAutoSearch ( );
+    void PutAutoSearch (
+        enum AutoSearchSettings pVal );
+    enum ExplorerBarSettings GetExplorerBar ( );
+    void PutExplorerBar (
+        enum ExplorerBarSettings pVal );
+    _bstr_t GetEditMask ( );
+    void PutEditMask (
+        _bstr_t pVal );
+    long GetEditSelStart ( );
+    void PutEditSelStart (
+        long pVal );
+    long GetEditSelLength ( );
+    void PutEditSelLength (
+        long pVal );
+    _bstr_t GetEditSelText ( );
+    void PutEditSelText (
+        _bstr_t pVal );
+    long GetEditMaxLength ( );
+    void PutEditMaxLength (
+        long pVal );
+    long GetComboIndex ( );
+    void PutComboIndex (
+        long pVal );
+    long GetComboCount ( );
+    enum AlignmentSettings GetColAlignment (
+        long Col );
+    void PutColAlignment (
+        long Col,
+        enum AlignmentSettings pVal );
+    long GetColWidth (
+        long Col );
+    void PutColWidth (
+        long Col,
+        long pVal );
+    long GetRowHeight (
+        long Row );
+    void PutRowHeight (
+        long Row,
+        long pVal );
+    VARIANT_BOOL GetMergeRow (
+        long Row );
+    void PutMergeRow (
+        long Row,
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetMergeCol (
+        long Col );
+    void PutMergeCol (
+        long Col,
+        VARIANT_BOOL pVal );
+    void PutRowPosition (
+        long Row,
+        long _arg2 );
+    void PutColPosition (
+        long Col,
+        long _arg2 );
+    _variant_t GetRowData (
+        long Row );
+    void PutRowData (
+        long Row,
+        const _variant_t & pVal );
+    _variant_t GetColData (
+        long Col );
+    void PutColData (
+        long Col,
+        const _variant_t & pVal );
+    HRESULT AddItem (
+        _bstr_t Item,
+        const _variant_t & Row = vtMissing );
+    HRESULT RemoveItem (
+        const _variant_t & Row = vtMissing );
+    _bstr_t GetTextMatrix (
+        long Row,
+        long Col );
+    void PutTextMatrix (
+        long Row,
+        long Col,
+        _bstr_t pVal );
+    HRESULT Clear (
+        const _variant_t & Where = vtMissing,
+        const _variant_t & What = vtMissing );
+    HRESULT EditCell ( );
+    double GetValueMatrix (
+        long Row,
+        long Col );
+    VARIANT_BOOL GetIsSubtotal (
+        long Row );
+    void PutIsSubtotal (
+        long Row,
+        VARIANT_BOOL pVal );
+    HRESULT Subtotal (
+        enum SubtotalSettings Function,
+        const _variant_t & GroupOn = vtMissing,
+        const _variant_t & TotalOn = vtMissing,
+        const _variant_t & Format = vtMissing,
+        const _variant_t & BackColor = vtMissing,
+        const _variant_t & ForeColor = vtMissing,
+        const _variant_t & FontBold = vtMissing,
+        const _variant_t & Caption = vtMissing,
+        const _variant_t & MatchFrom = vtMissing,
+        const _variant_t & TotalOnly = vtMissing );
+    HRESULT Refresh ( );
+    HRESULT Outline (
+        short Level );
+    enum AlignmentSettings GetFixedAlignment (
+        long Col );
+    void PutFixedAlignment (
+        long Col,
+        enum AlignmentSettings pVal );
+    VARIANT_BOOL GetRowIsVisible (
+        long Row );
+    VARIANT_BOOL GetColIsVisible (
+        long Col );
+    long GetRowPos (
+        long Row );
+    long GetColPos (
+        long Col );
+    VARIANT_BOOL GetIsSelected (
+        long Row );
+    void PutIsSelected (
+        long Row,
+        VARIANT_BOOL pVal );
+    _bstr_t GetTextArray (
+        long Index );
+    void PutTextArray (
+        long Index,
+        _bstr_t pVal );
+    enum CollapsedSettings GetIsCollapsed (
+        long Row );
+    void PutIsCollapsed (
+        long Row,
+        enum CollapsedSettings pVal );
+    HRESULT Select (
+        long Row,
+        long Col,
+        const _variant_t & RowSel = vtMissing,
+        const _variant_t & ColSel = vtMissing );
+    HRESULT AutoSize (
+        long Col1,
+        const _variant_t & Col2 = vtMissing,
+        const _variant_t & Equal = vtMissing,
+        const _variant_t & ExtraSpace = vtMissing );
+    HRESULT DataRefresh ( );
+    HRESULT CellBorder (
+        OLE_COLOR Color,
+        short Left,
+        short Top,
+        short Right,
+        short Bottom,
+        short Vertical,
+        short Horizontal );
+    HRESULT OLEDrag ( );
+    HRESULT SaveGrid (
+        _bstr_t FileName,
+        enum SaveLoadSettings SaveWhat,
+        const _variant_t & FixedCells = vtMissing );
+    HRESULT LoadGrid (
+        _bstr_t FileName,
+        enum SaveLoadSettings LoadWhat,
+        const _variant_t & FixedCells = vtMissing );
+    HRESULT Archive (
+        _bstr_t ArcFileName,
+        _bstr_t FileName,
+        enum ArchiveSettings Action );
+    _variant_t GetArchiveInfo (
+        _bstr_t ArcFileName,
+        enum ArchiveInfoSettings InfoType,
+        const _variant_t & Index = vtMissing );
+    enum SortSettings GetColSort (
+        long Col );
+    void PutColSort (
+        long Col,
+        enum SortSettings pVal );
+    _bstr_t GetColFormat (
+        long Col );
+    void PutColFormat (
+        long Col,
+        _bstr_t pVal );
+    enum DataTypeSettings GetColDataType (
+        long Col );
+    void PutColDataType (
+        long Col,
+        enum DataTypeSettings pVal );
+    _variant_t GetCell (
+        enum CellPropertySettings Setting,
+        const _variant_t & Row1 = vtMissing,
+        const _variant_t & Col1 = vtMissing,
+        const _variant_t & Row2 = vtMissing,
+        const _variant_t & Col2 = vtMissing );
+    void PutCell (
+        enum CellPropertySettings Setting,
+        const _variant_t & Row1,
+        const _variant_t & Col1,
+        const _variant_t & Row2,
+        const _variant_t & Col2,
+        const _variant_t & pVal );
+    void PutRefCell (
+        enum CellPropertySettings Setting,
+        const _variant_t & Row1,
+        const _variant_t & Col1,
+        const _variant_t & Row2,
+        const _variant_t & Col2,
+        const _variant_t & pVal );
+    enum RowStatusSettings GetRowStatus (
+        long Row );
+    void PutRowStatus (
+        long Row,
+        enum RowStatusSettings pVal );
+    long GetFindRow (
+        const _variant_t & Item,
+        const _variant_t & Row = vtMissing,
+        const _variant_t & Col = vtMissing,
+        const _variant_t & CaseSensitive = vtMissing,
+        const _variant_t & FullMatch = vtMissing );
+    _bstr_t GetComboItem (
+        const _variant_t & Index = vtMissing );
+    long GetComboData (
+        const _variant_t & Index = vtMissing );
+    HRESULT BindToArray (
+        const _variant_t & VariantArray = vtMissing,
+        const _variant_t & RowDim = vtMissing,
+        const _variant_t & ColDim = vtMissing,
+        const _variant_t & PageDim = vtMissing,
+        const _variant_t & CurrentPage = vtMissing );
+    _bstr_t GetColEditMask (
+        long Col );
+    void PutColEditMask (
+        long Col,
+        _bstr_t pVal );
+    _bstr_t GetColComboList (
+        long Col );
+    void PutColComboList (
+        long Col,
+        _bstr_t pVal );
+    short GetRowOutlineLevel (
+        long Row );
+    void PutRowOutlineLevel (
+        long Row,
+        short pVal );
+    long GetSelectedRows ( );
+    long GetSelectedRow (
+        long Index );
+    VARIANT_BOOL GetScrollTips ( );
+    void PutScrollTips (
+        VARIANT_BOOL pVal );
+    _bstr_t GetScrollTipText ( );
+    void PutScrollTipText (
+        _bstr_t pVal );
+    VARIANT_BOOL GetRowHidden (
+        long Row );
+    void PutRowHidden (
+        long Row,
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetColHidden (
+        long Col );
+    void PutColHidden (
+        long Col,
+        VARIANT_BOOL pVal );
+    long GetColWidthMin ( );
+    void PutColWidthMin (
+        long pVal );
+    long GetColWidthMax ( );
+    void PutColWidthMax (
+        long pVal );
+    HRESULT GetMergedRange (
+        long Row,
+        long Col,
+        long * R1,
+        long * C1,
+        long * R2,
+        long * C2 );
+    VARIANT_BOOL GetShowComboButton ( );
+    void PutShowComboButton (
+        VARIANT_BOOL pVal );
+    IPictureDisp * GetCellButtonPicture ( );
+    void PutCellButtonPicture (
+        IPictureDisp * pVal );
+    void PutRefCellButtonPicture (
+        IPictureDisp * pVal );
+    enum ComboSearchSettings GetComboSearch ( );
+    void PutComboSearch (
+        enum ComboSearchSettings pVal );
+    HRESULT LoadArray (
+        const _variant_t & VariantArray = vtMissing,
+        const _variant_t & RowDim = vtMissing,
+        const _variant_t & ColDim = vtMissing,
+        const _variant_t & PageDim = vtMissing,
+        const _variant_t & CurrentPage = vtMissing );
+    VARIANT_BOOL GetAutoSizeMouse ( );
+    void PutAutoSizeMouse (
+        VARIANT_BOOL pVal );
+    HRESULT GetSelection (
+        long * Row1,
+        long * Col1,
+        long * Row2,
+        long * Col2 );
+    _bstr_t GetClipSeparators ( );
+    void PutClipSeparators (
+        _bstr_t pVal );
+    HRESULT PrintGrid (
+        const _variant_t & DocName = vtMissing,
+        const _variant_t & ShowDialog = vtMissing,
+        const _variant_t & Orientation = vtMissing,
+        const _variant_t & MarginLR = vtMissing,
+        const _variant_t & MarginTB = vtMissing );
+    long GetColImageList (
+        long Col );
+    void PutColImageList (
+        long Col,
+        long pVal );
+    _bstr_t GetColKey (
+        long Col );
+    void PutColKey (
+        long Col,
+        _bstr_t pVal );
+    long GetColIndex (
+        _bstr_t Key );
+    long GetFrozenRows ( );
+    void PutFrozenRows (
+        long pVal );
+    long GetFrozenCols ( );
+    void PutFrozenCols (
+        long pVal );
+    enum AllowUserFreezeSettings GetAllowUserFreezing ( );
+    void PutAllowUserFreezing (
+        enum AllowUserFreezeSettings pVal );
+    OLE_COLOR GetBackColorFrozen ( );
+    void PutBackColorFrozen (
+        OLE_COLOR pVal );
+    OLE_COLOR GetForeColorFrozen ( );
+    void PutForeColorFrozen (
+        OLE_COLOR pVal );
+    IVSFlexDataSourcePtr GetFlexDataSource ( );
+    void PutFlexDataSource (
+        struct IVSFlexDataSource * pVal );
+    long GetGetOutlineNode (
+        long Row,
+        enum NodeTypeSettings Which );
+    _bstr_t BuildComboList (
+        IDispatch * rs,
+        _bstr_t FieldList,
+        const _variant_t & KeyField = vtMissing,
+        const _variant_t & BackColor = vtMissing );
+    IPictureDisp * GetNodeOpenPicture ( );
+    void PutNodeOpenPicture (
+        IPictureDisp * pVal );
+    void PutRefNodeOpenPicture (
+        IPictureDisp * pVal );
+    IPictureDisp * GetNodeClosedPicture ( );
+    void PutNodeClosedPicture (
+        IPictureDisp * pVal );
+    void PutRefNodeClosedPicture (
+        IPictureDisp * pVal );
+    HRESULT ShowCell (
+        long Row,
+        long Col );
+    float GetAutoSearchDelay ( );
+    void PutAutoSearchDelay (
+        float pVal );
+    long GetEditWindow ( );
+    IPictureDisp * GetWallPaper ( );
+    void PutWallPaper (
+        IPictureDisp * pVal );
+    void PutRefWallPaper (
+        IPictureDisp * pVal );
+    enum PictureAlignmentSettings GetWallPaperAlignment ( );
+    void PutWallPaperAlignment (
+        enum PictureAlignmentSettings pVal );
+    double GetAggregate (
+        enum SubtotalSettings Aggregate,
+        long Row1,
+        long Col1,
+        long Row2,
+        long Col2 );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_About ( ) = 0;
+      virtual HRESULT __stdcall get__ConvInfo (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put__ConvInfo (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_FontName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FontSize (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontSize (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_FontBold (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontBold (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_FontItalic (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontItalic (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_FontStrikethru (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontStrikethru (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_FontUnderline (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontUnderline (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Rows (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Rows (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Cols (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Cols (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Version (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_FormatString (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FormatString (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FixedRows (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_FixedRows (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_FixedCols (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_FixedCols (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_TopRow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_TopRow (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LeftCol (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LeftCol (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_RowSel (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowSel (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ColSel (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColSel (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Row (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Row (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Col (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Col (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Text (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Text (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BackColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BackColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_ForeColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ForeColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_BackColorFixed (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BackColorFixed (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_ForeColorFixed (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ForeColorFixed (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_BackColorSel (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BackColorSel (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_ForeColorSel (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ForeColorSel (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_BackColorBkg (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BackColorBkg (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_WordWrap (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_WordWrap (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_TextStyle (
+        /*[out,retval]*/ enum TextStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_TextStyle (
+        /*[in]*/ enum TextStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_TextStyleFixed (
+        /*[out,retval]*/ enum TextStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_TextStyleFixed (
+        /*[in]*/ enum TextStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_ScrollTrack (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScrollTrack (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_FocusRect (
+        /*[out,retval]*/ enum FocusRectSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_FocusRect (
+        /*[in]*/ enum FocusRectSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_HighLight (
+        /*[out,retval]*/ enum ShowSelSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_HighLight (
+        /*[in]*/ enum ShowSelSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_Redraw (
+        /*[out,retval]*/ enum RedrawSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_Redraw (
+        /*[in]*/ enum RedrawSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_ScrollBars (
+        /*[out,retval]*/ enum ScrollBarsSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScrollBars (
+        /*[in]*/ enum ScrollBarsSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_MouseRow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MouseCol (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_CellLeft (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_CellTop (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_CellWidth (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_CellHeight (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_RowHeightMin (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowHeightMin (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_FillStyle (
+        /*[out,retval]*/ enum FillStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_FillStyle (
+        /*[in]*/ enum FillStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_GridLines (
+        /*[out,retval]*/ enum GridStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_GridLines (
+        /*[in]*/ enum GridStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_GridLinesFixed (
+        /*[out,retval]*/ enum GridStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_GridLinesFixed (
+        /*[in]*/ enum GridStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_GridColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_GridColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_GridColorFixed (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_GridColorFixed (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_CellBackColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellBackColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_CellForeColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellForeColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_CellAlignment (
+        /*[out,retval]*/ enum AlignmentSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellAlignment (
+        /*[in]*/ enum AlignmentSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_CellTextStyle (
+        /*[out,retval]*/ enum TextStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellTextStyle (
+        /*[in]*/ enum TextStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_CellPicture (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_CellPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall get_CellPictureAlignment (
+        /*[out,retval]*/ enum PictureAlignmentSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellPictureAlignment (
+        /*[in]*/ enum PictureAlignmentSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontSize (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontSize (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontBold (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontBold (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontItalic (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontItalic (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontWidth (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontWidth (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontUnderline (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontUnderline (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFontStrikethru (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFontStrikethru (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_FontWidth (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_FontWidth (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_Clip (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Clip (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall put_Sort (
+        /*[in]*/ enum SortSettings _arg1 ) = 0;
+      virtual HRESULT __stdcall get_SelectionMode (
+        /*[out,retval]*/ enum SelModeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_SelectionMode (
+        /*[in]*/ enum SelModeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_MergeCells (
+        /*[out,retval]*/ enum MergeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_MergeCells (
+        /*[in]*/ enum MergeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_Picture (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall get_PictureType (
+        /*[out,retval]*/ enum PictureTypeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_PictureType (
+        /*[in]*/ enum PictureTypeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowBigSelection (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowBigSelection (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowUserResizing (
+        /*[out,retval]*/ enum AllowUserResizeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowUserResizing (
+        /*[in]*/ enum AllowUserResizeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_MousePointer (
+        /*[out,retval]*/ enum MousePointerSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_MousePointer (
+        /*[in]*/ enum MousePointerSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_MouseIcon (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_MouseIcon (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_MouseIcon (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall get_DataMember (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DataMember (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DataSource (
+        /*[out,retval]*/ struct DataSource * * pVal ) = 0;
+      virtual HRESULT __stdcall putref_DataSource (
+        /*[in]*/ struct DataSource * pVal ) = 0;
+      virtual HRESULT __stdcall get_VirtualData (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_VirtualData (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Editable (
+        /*[out,retval]*/ enum EditableSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_Editable (
+        /*[in]*/ enum EditableSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_ComboList (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ComboList (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_FloodColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FloodColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFloodPercent (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFloodPercent (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_CellFloodColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellFloodColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_SubtotalPosition (
+        /*[out,retval]*/ enum SubtotalPositionSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_SubtotalPosition (
+        /*[in]*/ enum SubtotalPositionSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_BorderStyle (
+        /*[out,retval]*/ enum BorderStyleSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_BorderStyle (
+        /*[in]*/ enum BorderStyleSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_Font (
+        /*[out,retval]*/ IFontDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Font (
+        /*[in]*/ IFontDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_Font (
+        /*[in]*/ IFontDisp * pVal ) = 0;
+      virtual HRESULT __stdcall get_Enabled (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Enabled (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Appearance (
+        /*[out,retval]*/ enum AppearanceSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_Appearance (
+        /*[in]*/ enum AppearanceSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_OutlineBar (
+        /*[out,retval]*/ enum OutlineBarSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_OutlineBar (
+        /*[in]*/ enum OutlineBarSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_TreeColor (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TreeColor (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_GridLineWidth (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_GridLineWidth (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoResize (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoResize (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_BottomRow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_RightCol (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ExtendLastCol (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExtendLastCol (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ClientWidth (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ClientHeight (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_EditText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EditText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_hWnd (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoSizeMode (
+        /*[out,retval]*/ enum AutoSizeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoSizeMode (
+        /*[in]*/ enum AutoSizeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_RightToLeft (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RightToLeft (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_MultiTotals (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_MultiTotals (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_BackColorAlternate (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BackColorAlternate (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_OwnerDraw (
+        /*[out,retval]*/ enum OwnerDrawSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_OwnerDraw (
+        /*[in]*/ enum OwnerDrawSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_DataMode (
+        /*[out,retval]*/ enum DataModeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_DataMode (
+        /*[in]*/ enum DataModeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_OLEDragMode (
+        /*[out,retval]*/ enum OLEDragModeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_OLEDragMode (
+        /*[in]*/ enum OLEDragModeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_OLEDropMode (
+        /*[out,retval]*/ enum OLEDropModeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_OLEDropMode (
+        /*[in]*/ enum OLEDropModeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_TabBehavior (
+        /*[out,retval]*/ enum TabBehaviorSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_TabBehavior (
+        /*[in]*/ enum TabBehaviorSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_SheetBorder (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SheetBorder (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowSelection (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowSelection (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_PicturesOver (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_PicturesOver (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CellChecked (
+        /*[out,retval]*/ enum CellCheckedSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellChecked (
+        /*[in]*/ enum CellCheckedSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_MergeCompare (
+        /*[out,retval]*/ enum MergeCompareSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_MergeCompare (
+        /*[in]*/ enum MergeCompareSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_Ellipsis (
+        /*[out,retval]*/ enum EllipsisSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_Ellipsis (
+        /*[in]*/ enum EllipsisSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_OutlineCol (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_OutlineCol (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_RowHeightMax (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowHeightMax (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoSearch (
+        /*[out,retval]*/ enum AutoSearchSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoSearch (
+        /*[in]*/ enum AutoSearchSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_ExplorerBar (
+        /*[out,retval]*/ enum ExplorerBarSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExplorerBar (
+        /*[in]*/ enum ExplorerBarSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_EditMask (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EditMask (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EditSelStart (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_EditSelStart (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_EditSelLength (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_EditSelLength (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_EditSelText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EditSelText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EditMaxLength (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_EditMaxLength (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ComboIndex (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ComboIndex (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ComboCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ColAlignment (
+        long Col,
+        /*[out,retval]*/ enum AlignmentSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColAlignment (
+        long Col,
+        /*[in]*/ enum AlignmentSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_ColWidth (
+        long Col,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColWidth (
+        long Col,
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_RowHeight (
+        long Row,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowHeight (
+        long Row,
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MergeRow (
+        long Row,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_MergeRow (
+        long Row,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_MergeCol (
+        long Col,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_MergeCol (
+        long Col,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall put_RowPosition (
+        long Row,
+        /*[in]*/ long _arg2 ) = 0;
+      virtual HRESULT __stdcall put_ColPosition (
+        long Col,
+        /*[in]*/ long _arg2 ) = 0;
+      virtual HRESULT __stdcall get_RowData (
+        long Row,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowData (
+        long Row,
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_ColData (
+        long Col,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColData (
+        long Col,
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall raw_AddItem (
+        BSTR Item,
+        VARIANT Row = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_RemoveItem (
+        VARIANT Row = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_TextMatrix (
+        long Row,
+        long Col,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TextMatrix (
+        long Row,
+        long Col,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_Clear (
+        VARIANT Where = vtMissing,
+        VARIANT What = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_EditCell ( ) = 0;
+      virtual HRESULT __stdcall get_ValueMatrix (
+        long Row,
+        long Col,
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsSubtotal (
+        long Row,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsSubtotal (
+        long Row,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_Subtotal (
+        enum SubtotalSettings Function,
+        VARIANT GroupOn = vtMissing,
+        VARIANT TotalOn = vtMissing,
+        VARIANT Format = vtMissing,
+        VARIANT BackColor = vtMissing,
+        VARIANT ForeColor = vtMissing,
+        VARIANT FontBold = vtMissing,
+        VARIANT Caption = vtMissing,
+        VARIANT MatchFrom = vtMissing,
+        VARIANT TotalOnly = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+      virtual HRESULT __stdcall raw_Outline (
+        short Level ) = 0;
+      virtual HRESULT __stdcall get_FixedAlignment (
+        long Col,
+        /*[out,retval]*/ enum AlignmentSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_FixedAlignment (
+        long Col,
+        /*[in]*/ enum AlignmentSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_RowIsVisible (
+        long Row,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_ColIsVisible (
+        long Col,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_RowPos (
+        long Row,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ColPos (
+        long Col,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsSelected (
+        long Row,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsSelected (
+        long Row,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_TextArray (
+        long Index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TextArray (
+        long Index,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_IsCollapsed (
+        long Row,
+        /*[out,retval]*/ enum CollapsedSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsCollapsed (
+        long Row,
+        /*[in]*/ enum CollapsedSettings pVal ) = 0;
+      virtual HRESULT __stdcall raw_Select (
+        long Row,
+        long Col,
+        VARIANT RowSel = vtMissing,
+        VARIANT ColSel = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_AutoSize (
+        long Col1,
+        VARIANT Col2 = vtMissing,
+        VARIANT Equal = vtMissing,
+        VARIANT ExtraSpace = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_DataRefresh ( ) = 0;
+      virtual HRESULT __stdcall raw_CellBorder (
+        OLE_COLOR Color,
+        short Left,
+        short Top,
+        short Right,
+        short Bottom,
+        short Vertical,
+        short Horizontal ) = 0;
+      virtual HRESULT __stdcall raw_OLEDrag ( ) = 0;
+      virtual HRESULT __stdcall raw_SaveGrid (
+        BSTR FileName,
+        enum SaveLoadSettings SaveWhat,
+        VARIANT FixedCells = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_LoadGrid (
+        BSTR FileName,
+        enum SaveLoadSettings LoadWhat,
+        VARIANT FixedCells = vtMissing ) = 0;
+      virtual HRESULT __stdcall raw_Archive (
+        BSTR ArcFileName,
+        BSTR FileName,
+        enum ArchiveSettings Action ) = 0;
+      virtual HRESULT __stdcall get_ArchiveInfo (
+        BSTR ArcFileName,
+        enum ArchiveInfoSettings InfoType,
+        VARIANT Index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_ColSort (
+        long Col,
+        /*[out,retval]*/ enum SortSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColSort (
+        long Col,
+        /*[in]*/ enum SortSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_ColFormat (
+        long Col,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColFormat (
+        long Col,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ColDataType (
+        long Col,
+        /*[out,retval]*/ enum DataTypeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColDataType (
+        long Col,
+        /*[in]*/ enum DataTypeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_Cell (
+        enum CellPropertySettings Setting,
+        VARIANT Row1,
+        VARIANT Col1,
+        VARIANT Row2,
+        VARIANT Col2,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Cell (
+        enum CellPropertySettings Setting,
+        VARIANT Row1,
+        VARIANT Col1,
+        VARIANT Row2,
+        VARIANT Col2,
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall putref_Cell (
+        enum CellPropertySettings Setting,
+        VARIANT Row1,
+        VARIANT Col1,
+        VARIANT Row2,
+        VARIANT Col2,
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_RowStatus (
+        long Row,
+        /*[out,retval]*/ enum RowStatusSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowStatus (
+        long Row,
+        /*[in]*/ enum RowStatusSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_FindRow (
+        VARIANT Item,
+        VARIANT Row,
+        VARIANT Col,
+        VARIANT CaseSensitive,
+        VARIANT FullMatch,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ComboItem (
+        VARIANT Index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ComboData (
+        VARIANT Index,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_BindToArray (
+        VARIANT VariantArray = vtMissing,
+        VARIANT RowDim = vtMissing,
+        VARIANT ColDim = vtMissing,
+        VARIANT PageDim = vtMissing,
+        VARIANT CurrentPage = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_ColEditMask (
+        long Col,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColEditMask (
+        long Col,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ColComboList (
+        long Col,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColComboList (
+        long Col,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RowOutlineLevel (
+        long Row,
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowOutlineLevel (
+        long Row,
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_SelectedRows (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_SelectedRow (
+        long Index,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ScrollTips (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScrollTips (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ScrollTipText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScrollTipText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RowHidden (
+        long Row,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RowHidden (
+        long Row,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ColHidden (
+        long Col,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColHidden (
+        long Col,
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ColWidthMin (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColWidthMin (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ColWidthMax (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColWidthMax (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMergedRange (
+        long Row,
+        long Col,
+        long * R1,
+        long * C1,
+        long * R2,
+        long * C2 ) = 0;
+      virtual HRESULT __stdcall get_ShowComboButton (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ShowComboButton (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CellButtonPicture (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_CellButtonPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_CellButtonPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall get_ComboSearch (
+        /*[out,retval]*/ enum ComboSearchSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_ComboSearch (
+        /*[in]*/ enum ComboSearchSettings pVal ) = 0;
+      virtual HRESULT __stdcall raw_LoadArray (
+        VARIANT VariantArray = vtMissing,
+        VARIANT RowDim = vtMissing,
+        VARIANT ColDim = vtMissing,
+        VARIANT PageDim = vtMissing,
+        VARIANT CurrentPage = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_AutoSizeMouse (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoSizeMouse (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetSelection (
+        long * Row1,
+        long * Col1,
+        long * Row2,
+        long * Col2 ) = 0;
+      virtual HRESULT __stdcall get_ClipSeparators (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ClipSeparators (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_PrintGrid (
+        /*[in]*/ VARIANT DocName = vtMissing,
+        /*[in]*/ VARIANT ShowDialog = vtMissing,
+        /*[in]*/ VARIANT Orientation = vtMissing,
+        /*[in]*/ VARIANT MarginLR = vtMissing,
+        /*[in]*/ VARIANT MarginTB = vtMissing ) = 0;
+      virtual HRESULT __stdcall get_ColImageList (
+        long Col,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColImageList (
+        long Col,
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ColKey (
+        long Col,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ColKey (
+        long Col,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ColIndex (
+        BSTR Key,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_FrozenRows (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_FrozenRows (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_FrozenCols (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_FrozenCols (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowUserFreezing (
+        /*[out,retval]*/ enum AllowUserFreezeSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowUserFreezing (
+        /*[in]*/ enum AllowUserFreezeSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_BackColorFrozen (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BackColorFrozen (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_ForeColorFrozen (
+        /*[out,retval]*/ OLE_COLOR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ForeColorFrozen (
+        /*[in]*/ OLE_COLOR pVal ) = 0;
+      virtual HRESULT __stdcall get_FlexDataSource (
+        /*[out,retval]*/ struct IVSFlexDataSource * * pVal ) = 0;
+      virtual HRESULT __stdcall put_FlexDataSource (
+        /*[in]*/ struct IVSFlexDataSource * pVal ) = 0;
+      virtual HRESULT __stdcall get_GetOutlineNode (
+        /*[in]*/ long Row,
+        /*[in]*/ enum NodeTypeSettings Which,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_BuildComboList (
+        IDispatch * rs,
+        BSTR FieldList,
+        VARIANT KeyField,
+        VARIANT BackColor,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_NodeOpenPicture (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_NodeOpenPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_NodeOpenPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall get_NodeClosedPicture (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_NodeClosedPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_NodeClosedPicture (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ShowCell (
+        long Row,
+        long Col ) = 0;
+      virtual HRESULT __stdcall get_AutoSearchDelay (
+        /*[out,retval]*/ float * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoSearchDelay (
+        /*[in]*/ float pVal ) = 0;
+      virtual HRESULT __stdcall get_EditWindow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_WallPaper (
+        /*[out,retval]*/ IPictureDisp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_WallPaper (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall putref_WallPaper (
+        /*[in]*/ IPictureDisp * pVal ) = 0;
+      virtual HRESULT __stdcall get_WallPaperAlignment (
+        /*[out,retval]*/ enum PictureAlignmentSettings * pVal ) = 0;
+      virtual HRESULT __stdcall put_WallPaperAlignment (
+        /*[in]*/ enum PictureAlignmentSettings pVal ) = 0;
+      virtual HRESULT __stdcall get_Aggregate (
+        enum SubtotalSettings Aggregate,
+        long Row1,
+        long Col1,
+        long Row2,
+        long Col2,
+        /*[out,retval]*/ double * pVal ) = 0;
+};
+
+struct __declspec(uuid("d76d712c-4a96-11d3-bd95-d296dc2dd072"))
+_IVSFlexGridEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT Click ( );
+    HRESULT DblClick ( );
+    HRESULT KeyDown (
+        short * KeyCode,
+        short Shift );
+    HRESULT KeyPress (
+        short * KeyAscii );
+    HRESULT KeyUp (
+        short * KeyCode,
+        short Shift );
+    HRESULT MouseDown (
+        short Button,
+        short Shift,
+        float X,
+        float Y );
+    HRESULT MouseMove (
+        short Button,
+        short Shift,
+        float X,
+        float Y );
+    HRESULT MouseUp (
+        short Button,
+        short Shift,
+        float X,
+        float Y );
+    HRESULT SelChange ( );
+    HRESULT RowColChange ( );
+    HRESULT EnterCell ( );
+    HRESULT LeaveCell ( );
+    HRESULT BeforeMouseDown (
+        short Button,
+        short Shift,
+        float X,
+        float Y,
+        VARIANT_BOOL * Cancel );
+    HRESULT BeforeRowColChange (
+        long OldRow,
+        long OldCol,
+        long NewRow,
+        long NewCol,
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterRowColChange (
+        long OldRow,
+        long OldCol,
+        long NewRow,
+        long NewCol );
+    HRESULT BeforeSelChange (
+        long OldRowSel,
+        long OldColSel,
+        long NewRowSel,
+        long NewColSel,
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterSelChange (
+        long OldRowSel,
+        long OldColSel,
+        long NewRowSel,
+        long NewCol );
+    HRESULT BeforeScroll (
+        long OldTopRow,
+        long OldLeftCol,
+        long NewTopRow,
+        long NewLeftCol,
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterScroll (
+        long OldTopRow,
+        long OldLeftCol,
+        long NewTopRow,
+        long NewLeftCol );
+    HRESULT Compare (
+        long Row1,
+        long Row2,
+        short * Cmp );
+    HRESULT BeforeSort (
+        long Col,
+        short * Order );
+    HRESULT AfterSort (
+        long Col,
+        short * Order );
+    HRESULT BeforeMoveColumn (
+        long Col,
+        long * Position );
+    HRESULT AfterMoveColumn (
+        long Col,
+        long * Position );
+    HRESULT BeforeUserResize (
+        long Row,
+        long Col,
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterUserResize (
+        long Row,
+        long Col );
+    HRESULT BeforeCollapse (
+        long Row,
+        short State,
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterCollapse (
+        long Row,
+        short State );
+    HRESULT BeforeEdit (
+        long Row,
+        long Col,
+        VARIANT_BOOL * Cancel );
+    HRESULT StartEdit (
+        long Row,
+        long Col,
+        VARIANT_BOOL * Cancel );
+    HRESULT ValidateEdit (
+        long Row,
+        long Col,
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterEdit (
+        long Row,
+        long Col );
+    HRESULT KeyPressEdit (
+        long Row,
+        long Col,
+        short * KeyAscii );
+    HRESULT KeyDownEdit (
+        long Row,
+        long Col,
+        short * KeyCode,
+        short Shift );
+    HRESULT KeyUpEdit (
+        long Row,
+        long Col,
+        short * KeyCode,
+        short Shift );
+    HRESULT ChangeEdit ( );
+    HRESULT BeforePageBreak (
+        long Row,
+        VARIANT_BOOL * BreakOK );
+    HRESULT GetHeaderRow (
+        long Row,
+        long * HeaderRow );
+    HRESULT StartPage (
+        long hDC,
+        long Page,
+        VARIANT_BOOL * Cancel );
+    HRESULT DrawCell (
+        long hDC,
+        long Row,
+        long Col,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        VARIANT_BOOL * Done );
+    HRESULT Error (
+        long ErrorCode,
+        VARIANT_BOOL * ShowMsgBox );
+    HRESULT CellButtonClick (
+        long Row,
+        long Col );
+    HRESULT BeforeScrollTip (
+        long Row );
+    HRESULT AfterUserFreeze ( );
+    HRESULT OLEStartDrag (
+        struct IVSDataObject * * Data,
+        long * AllowedEffects );
+    HRESULT OLEGiveFeedback (
+        long * Effect,
+        VARIANT_BOOL * DefaultCursors );
+    HRESULT OLESetData (
+        struct IVSDataObject * * Data,
+        short * DataFormat );
+    HRESULT OLECompleteDrag (
+        long * Effect );
+    HRESULT OLEDragOver (
+        struct IVSDataObject * * Data,
+        long * Effect,
+        short Button,
+        short Shift,
+        float X,
+        float Y,
+        short * State );
+    HRESULT OLEDragDrop (
+        struct IVSDataObject * * Data,
+        long * Effect,
+        short Button,
+        short Shift,
+        float X,
+        float Y );
+    HRESULT CellChanged (
+        long Row,
+        long Col );
+    HRESULT FilterData (
+        long Row,
+        long Col,
+        BSTR * Value,
+        VARIANT_BOOL SavingToDB,
+        VARIANT_BOOL * WantThisCol );
+    HRESULT BeforeDataRefresh (
+        VARIANT_BOOL * Cancel );
+    HRESULT AfterDataRefresh ( );
+};
+
+struct __declspec(uuid("d76d712a-4a96-11d3-bd95-d296dc2dd072"))
+VSDataObject;
+    // [ default ] interface IVSDataObject
+
+struct __declspec(uuid("d76d7129-4a96-11d3-bd95-d296dc2dd072"))
+IVSDataObject : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFileCount))
+    short FileCount;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Clear ( );
+    short GetFileCount ( );
+    _variant_t GetGetData (
+        short Format );
+    VARIANT_BOOL GetGetFormat (
+        short Format );
+    _bstr_t GetFiles (
+        short Index );
+    HRESULT SetData (
+        const _variant_t & Value,
+        const _variant_t & Format = vtMissing );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall get_FileCount (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall get_GetData (
+        short Format,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_GetFormat (
+        short Format,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Files (
+        short Index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetData (
+        VARIANT Value,
+        VARIANT Format = vtMissing ) = 0;
+};
+
+struct __declspec(uuid("d76d712e-4a96-11d3-bd95-d296dc2dd072"))
+VSFlexGrid;
+    // [ default ] interface IVSFlexGrid
+    // [ default, source ] dispinterface _IVSFlexGridEvents
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\visualcstudy\userthreads\release\vsflex7.tli"
+
+#pragma pack(pop)

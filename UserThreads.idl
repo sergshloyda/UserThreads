@@ -1,0 +1,37 @@
+
+	// UserThreads.idl : IDL source for UserThreads.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (UserThreads.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(9E0A0ADC-3413-442C-A454-C4EF5874F8D9),
+		dual,
+		helpstring("IBarCodeReader Interface"),
+		pointer_default(unique)
+	]
+	interface IBarCodeReader : IDispatch
+	{
+	};
+[
+	uuid(3E60D31D-0B0C-46B1-BA00-038E848BF7C1),
+	version(1.0),
+	helpstring("UserThreads 1.0 Type Library")
+]
+library UserThreadsLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	[
+		uuid(DE856718-3667-4989-9DEA-209E3943E079),
+		helpstring("BarCodeReader Class")
+	]
+	coclass BarCodeReader
+	{
+		[default] interface IBarCodeReader;
+	};
+};
+
+	

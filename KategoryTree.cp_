@@ -1,0 +1,86 @@
+// KategoryTree.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "userthreads.h"
+#include "CategoryTree.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// CCategoryTree
+
+IMPLEMENT_DYNCREATE(CCategoryTree, CTreeView)
+
+CCategoryTree::CCategoryTree()
+{
+}
+
+CCategoryTree::~CCategoryTree()
+{
+}
+
+
+BEGIN_MESSAGE_MAP(CCategoryTree, CTreeView)
+	//{{AFX_MSG_MAP(CCategoryTree)
+	ON_WM_CREATE()
+	ON_WM_SIZE()
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CCategoryTree drawing
+
+void CCategoryTree::OnDraw(CDC* pDC)
+{
+//	CDocument* pDoc = GetDocument();
+	// TODO: add draw code here
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// CCategoryTree diagnostics
+
+#ifdef _DEBUG
+void CCategoryTree::AssertValid() const
+{
+	CTreeView::AssertValid();
+}
+
+void CCategoryTree::Dump(CDumpContext& dc) const
+{
+	CTreeView::Dump(dc);
+}
+#endif //_DEBUG
+
+/////////////////////////////////////////////////////////////////////////////
+// CCategoryTree message handlers
+
+int CCategoryTree::OnCreate(LPCREATESTRUCT lpCreateStruct) 
+{
+	if (CTreeView::OnCreate(lpCreateStruct) == -1)
+		return -1;
+	
+DWORD dwStyle = WS_CHILD | WS_VISIBLE | WS_TABSTOP |
+ TVS_HASLINES | TVS_LINESATROOT | TVS_HASBUTTONS;
+
+ // Create the list control.  Don't worry about specifying
+ // correct coordinates.  That will be handled in OnSize()
+ BOOL bResult = m_TreeCtrl.Create(dwStyle, CRect(0,0,0,0),
+ this, IDC_CATEGORY_TREE);
+ m_TreeCtrl.Init ();
+
+return (bResult ? 0 : -1);
+}
+
+void CCategoryTree::OnSize(UINT nType, int cx, int cy) 
+{
+	CTreeView::OnSize(nType, cx, cy);
+	
+	if (::IsWindow(m_TreeCtrl.GetSafeHwnd ()))
+  m_TreeCtrl.MoveWindow(0, 0, cx, cy, TRUE);
+	
+}

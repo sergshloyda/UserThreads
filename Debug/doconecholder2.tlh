@@ -1,0 +1,310 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (0f4dba1d).
+//
+// c:\visualcstudy\userthreads\debug\doconecholder2.tlh
+//
+// C++ source equivalent of Win32 type library ./DLL/DocOneCHolder2.dll
+// compiler-generated file created 01/29/18 at 00:00:27 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace DOC {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("58ad7ae0-dd69-4f6e-88ab-8ee20669aee9"))
+/* LIBID */ __DOCONECHOLDER2Lib;
+struct /* coclass */ DocOneC;
+struct __declspec(uuid("b00c0348-a7c3-403a-ad72-650c21224da6"))
+/* dual interface */ IDocOneC;
+struct __declspec(uuid("7a6c2ad3-a46f-4cc4-8a8e-8860e038c139"))
+/* interface */ IValue;
+struct /* coclass */ Head;
+struct __declspec(uuid("f367c9d1-91c2-464f-b146-96ba0d78846f"))
+/* dual interface */ IHead;
+struct /* coclass */ Table;
+struct __declspec(uuid("976187a7-bd77-4972-b6c3-1f5dd4da1ab1"))
+/* dual interface */ ITable;
+struct __declspec(uuid("7969f54c-4ea5-4917-b576-3b26d9ed819c"))
+/* dual interface */ IRow;
+struct __declspec(uuid("3c9bf0b5-52b5-4a0b-9bf1-55828b2fdee4"))
+/* dual interface */ IField;
+struct /* coclass */ Row;
+struct /* coclass */ FieldX;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IDocOneC, __uuidof(IDocOneC));
+_COM_SMARTPTR_TYPEDEF(IValue, __uuidof(IValue));
+_COM_SMARTPTR_TYPEDEF(IHead, __uuidof(IHead));
+_COM_SMARTPTR_TYPEDEF(IField, __uuidof(IField));
+_COM_SMARTPTR_TYPEDEF(IRow, __uuidof(IRow));
+_COM_SMARTPTR_TYPEDEF(ITable, __uuidof(ITable));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("b3a52191-3c35-47b0-a058-4a9ee9f1725e"))
+DocOneC;
+    // [ default ] interface IDocOneC
+    // interface IValue
+
+struct __declspec(uuid("b00c0348-a7c3-403a-ad72-650c21224da6"))
+IDocOneC : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetNumber,put=PutNumber))
+    _bstr_t Number;
+    __declspec(property(get=GetViewName,put=PutViewName))
+    _bstr_t ViewName;
+    __declspec(property(get=GetDate,put=PutDate))
+    _variant_t Date;
+    __declspec(property(get=GetTime,put=PutTime))
+    _variant_t Time;
+    __declspec(property(get=GetAuthor,put=PutAuthor))
+    _bstr_t Author;
+    __declspec(property(get=GetDescription,put=PutDescription))
+    _bstr_t Description;
+    __declspec(property(get=GetHead))
+    IDispatchPtr Head;
+    __declspec(property(get=GetTable))
+    IDispatchPtr Table;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetNumber ( );
+    void PutNumber (
+        _bstr_t pVal );
+    _bstr_t GetViewName ( );
+    void PutViewName (
+        _bstr_t pVal );
+    _variant_t GetDate ( );
+    void PutDate (
+        const _variant_t & pVal );
+    _variant_t GetTime ( );
+    void PutTime (
+        const _variant_t & pVal );
+    _bstr_t GetAuthor ( );
+    void PutAuthor (
+        _bstr_t pVal );
+    _bstr_t GetDescription ( );
+    void PutDescription (
+        _bstr_t pVal );
+    IDispatchPtr GetHead ( );
+    IDispatchPtr GetTable ( );
+    HRESULT LoadFromStr (
+        _bstr_t strData );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Number (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Number (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ViewName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ViewName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Date (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Date (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_Time (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Time (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_Author (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Author (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Head (
+        /*[out,retval]*/ IDispatch * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Table (
+        /*[out,retval]*/ IDispatch * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_LoadFromStr (
+        /*[in]*/ BSTR strData ) = 0;
+};
+
+struct __declspec(uuid("7a6c2ad3-a46f-4cc4-8a8e-8860e038c139"))
+IValue : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SaveToString (
+        BSTR * strObjDN );
+    HRESULT LoadFromString (
+        _bstr_t strObjDN );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_SaveToString (
+        /*[out]*/ BSTR * strObjDN ) = 0;
+      virtual HRESULT __stdcall raw_LoadFromString (
+        /*[in]*/ BSTR strObjDN ) = 0;
+};
+
+struct __declspec(uuid("77391f58-bbf2-439d-8c6b-0524c6d2055d"))
+Head;
+    // [ default ] interface IHead
+
+struct __declspec(uuid("f367c9d1-91c2-464f-b146-96ba0d78846f"))
+IHead : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetAttribute (
+        _bstr_t bstrKey );
+    void PutAttribute (
+        _bstr_t bstrKey,
+        const _variant_t & pVal );
+    HRESULT AddAttrName (
+        _bstr_t bstrAttrName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Attribute (
+        BSTR bstrKey,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Attribute (
+        BSTR bstrKey,
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall raw_AddAttrName (
+        BSTR bstrAttrName ) = 0;
+};
+
+struct __declspec(uuid("f1d8fc3a-35b4-44fa-abf1-d06b8ccc4604"))
+Table;
+    // [ default ] interface ITable
+
+struct __declspec(uuid("3c9bf0b5-52b5-4a0b-9bf1-55828b2fdee4"))
+IField : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetValue,put=PutValue))
+    _variant_t Value;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetValue ( );
+    void PutValue (
+        const _variant_t & pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Value (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Value (
+        /*[in]*/ VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("7969f54c-4ea5-4917-b576-3b26d9ed819c"))
+IRow : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Add (
+        struct IField * pField,
+        _bstr_t Key );
+    IFieldPtr Item (
+        _bstr_t bstrKey );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IField * pField,
+        /*[in]*/ BSTR Key ) = 0;
+      virtual HRESULT __stdcall raw_Item (
+        BSTR bstrKey,
+        /*[out,retval]*/ struct IField * * pVal ) = 0;
+};
+
+struct __declspec(uuid("976187a7-bd77-4972-b6c3-1f5dd4da1ab1"))
+ITable : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFieldsX))
+    IRowPtr FieldsX;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IRowPtr GetFieldsX ( );
+    long LoadRows ( );
+    long GetRow ( );
+    HRESULT AddNewLine ( );
+    HRESULT AddField (
+        _bstr_t bstrFieldName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FieldsX (
+        /*[out,retval]*/ struct IRow * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_LoadRows (
+        /*[out,retval]*/ long * pResult ) = 0;
+      virtual HRESULT __stdcall raw_GetRow (
+        /*[out,retval]*/ long * pResult ) = 0;
+      virtual HRESULT __stdcall raw_AddNewLine ( ) = 0;
+      virtual HRESULT __stdcall raw_AddField (
+        BSTR bstrFieldName ) = 0;
+};
+
+struct __declspec(uuid("f9b12288-405e-4b7b-ad68-f95c7967c143"))
+Row;
+    // [ default ] interface IRow
+
+struct __declspec(uuid("f993b436-52b5-4a1e-b306-48e69a01f341"))
+FieldX;
+    // [ default ] interface IField
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\visualcstudy\userthreads\debug\doconecholder2.tli"
+
+} // namespace DOC
+
+#pragma pack(pop)

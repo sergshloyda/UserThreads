@@ -1,0 +1,216 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (0f4dba1d).
+//
+// c:\visualcstudy\userthreads\debug\doconecholder2.tli
+//
+// Wrapper implementations for Win32 type library ./DLL/DocOneCHolder2.dll
+// compiler-generated file created 01/29/18 at 00:00:27 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IDocOneC wrapper method implementations
+//
+
+inline _bstr_t IDocOneC::GetNumber ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Number(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IDocOneC::PutNumber ( _bstr_t pVal ) {
+    HRESULT _hr = put_Number(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IDocOneC::GetViewName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ViewName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IDocOneC::PutViewName ( _bstr_t pVal ) {
+    HRESULT _hr = put_ViewName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IDocOneC::GetDate ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Date(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IDocOneC::PutDate ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Date(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IDocOneC::GetTime ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Time(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IDocOneC::PutTime ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Time(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IDocOneC::GetAuthor ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Author(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IDocOneC::PutAuthor ( _bstr_t pVal ) {
+    HRESULT _hr = put_Author(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IDocOneC::GetDescription ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IDocOneC::PutDescription ( _bstr_t pVal ) {
+    HRESULT _hr = put_Description(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IDocOneC::GetHead ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Head(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr IDocOneC::GetTable ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_Table(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT IDocOneC::LoadFromStr ( _bstr_t strData ) {
+    HRESULT _hr = raw_LoadFromStr(strData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IValue wrapper method implementations
+//
+
+inline HRESULT IValue::SaveToString ( BSTR * strObjDN ) {
+    HRESULT _hr = raw_SaveToString(strObjDN);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IValue::LoadFromString ( _bstr_t strObjDN ) {
+    HRESULT _hr = raw_LoadFromString(strObjDN);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IHead wrapper method implementations
+//
+
+inline _variant_t IHead::GetAttribute ( _bstr_t bstrKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Attribute(bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IHead::PutAttribute ( _bstr_t bstrKey, const _variant_t & pVal ) {
+    HRESULT _hr = put_Attribute(bstrKey, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IHead::AddAttrName ( _bstr_t bstrAttrName ) {
+    HRESULT _hr = raw_AddAttrName(bstrAttrName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IField wrapper method implementations
+//
+
+inline _variant_t IField::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IField::PutValue ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Value(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IRow wrapper method implementations
+//
+
+inline HRESULT IRow::Add ( struct IField * pField, _bstr_t Key ) {
+    HRESULT _hr = raw_Add(pField, Key);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IFieldPtr IRow::Item ( _bstr_t bstrKey ) {
+    struct IField * _result = 0;
+    HRESULT _hr = raw_Item(bstrKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IFieldPtr(_result, false);
+}
+
+//
+// interface ITable wrapper method implementations
+//
+
+inline IRowPtr ITable::GetFieldsX ( ) {
+    struct IRow * _result = 0;
+    HRESULT _hr = get_FieldsX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IRowPtr(_result, false);
+}
+
+inline long ITable::LoadRows ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_LoadRows(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITable::GetRow ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetRow(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITable::AddNewLine ( ) {
+    HRESULT _hr = raw_AddNewLine();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITable::AddField ( _bstr_t bstrFieldName ) {
+    HRESULT _hr = raw_AddField(bstrFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

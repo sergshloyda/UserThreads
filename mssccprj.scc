@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[UserThreads.dsp]
+SCC_Aux_Path = "C:\SourceControl\MyVSS"
+SCC_Project_Name = "$/UserThreads", WBAAAAAA

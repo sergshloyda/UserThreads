@@ -1,0 +1,131 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (0fd04f10).
+//
+// c:\visualcstudy1\userthreads\debug\Dir1CServer.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy1\Dir1CServer\ReleaseUMinDependency\Dir1CServer.exe
+// compiler-generated file created 01/02/15 at 16:11:17 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("027c30bd-0b1b-4195-91a2-c014441110ec"))
+/* dispinterface */ _IDir1CServEvents;
+struct /* coclass */ Dir1CServ;
+struct __declspec(uuid("f937dc68-de1e-442a-bfab-bbd33957f73a"))
+/* dual interface */ IDir1CServ;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IDir1CServEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IDir1CServ, __uuidof(IDir1CServ));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("027c30bd-0b1b-4195-91a2-c014441110ec"))
+_IDir1CServEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT BeforeSaveCheck ( );
+    HRESULT BeforeOpen1C ( );
+    HRESULT AfterOpen1C ( );
+    HRESULT AfterSaveCheck (
+        _bstr_t bstrNumCheck );
+    HRESULT NomenclatureChanged ( );
+    HRESULT BeforeNomenclatureChanging ( );
+};
+
+struct __declspec(uuid("944b7da7-6e6d-47a4-9baa-2fe07a56b2ba"))
+Dir1CServ;
+    // [ default ] interface IDir1CServ
+    // [ default, source ] dispinterface _IDir1CServEvents
+
+struct __declspec(uuid("f937dc68-de1e-442a-bfab-bbd33957f73a"))
+IDir1CServ : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT RefreshNomenclature ( );
+    HRESULT Open1C (
+        _bstr_t bstrPath,
+        _bstr_t bstrUser,
+        _bstr_t bstrPassword );
+    HRESULT SaveCheckIn1C (
+        _bstr_t strPointName,
+        _bstr_t strUser,
+        long nCheckNum,
+        VARIANT * vtArray );
+    HRESULT Close1C ( );
+    _bstr_t GetUserNameX ( );
+    HRESULT LoadReturnDoc (
+        VARIANT * psaHeadArray,
+        VARIANT * psaTableArray );
+    _variant_t GetTableDoc ( );
+    HRESULT SaveDocIn1C (
+        _bstr_t pstrMoniker );
+    HRESULT SaveDocIndirect (
+        IUnknown * pDoc );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_RefreshNomenclature ( ) = 0;
+    virtual HRESULT __stdcall raw_Open1C (
+        BSTR bstrPath,
+        BSTR bstrUser,
+        BSTR bstrPassword ) = 0;
+    virtual HRESULT __stdcall raw_SaveCheckIn1C (
+        BSTR strPointName,
+        BSTR strUser,
+        long nCheckNum,
+        VARIANT * vtArray ) = 0;
+    virtual HRESULT __stdcall raw_Close1C ( ) = 0;
+    virtual HRESULT __stdcall raw_GetUserNameX (
+        BSTR * bstrUserName ) = 0;
+    virtual HRESULT __stdcall raw_LoadReturnDoc (
+        VARIANT * psaHeadArray,
+        VARIANT * psaTableArray ) = 0;
+    virtual HRESULT __stdcall raw_GetTableDoc (
+        VARIANT * psaTableDoc ) = 0;
+    virtual HRESULT __stdcall raw_SaveDocIn1C (
+        BSTR pstrMoniker ) = 0;
+    virtual HRESULT __stdcall raw_SaveDocIndirect (
+        IUnknown * pDoc ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_DIR1CSERVERLib =
+    {0x44501aaf,0xae9a,0x4ea5,{0x95,0xd7,0x84,0xc4,0x6a,0xc7,0x0e,0x9d}};
+extern "C" const GUID __declspec(selectany) DIID__IDir1CServEvents =
+    {0x027c30bd,0x0b1b,0x4195,{0x91,0xa2,0xc0,0x14,0x44,0x11,0x10,0xec}};
+extern "C" const GUID __declspec(selectany) CLSID_Dir1CServ =
+    {0x944b7da7,0x6e6d,0x47a4,{0x9b,0xaa,0x2f,0xe0,0x7a,0x56,0xb2,0xba}};
+extern "C" const GUID __declspec(selectany) IID_IDir1CServ =
+    {0xf937dc68,0xde1e,0x442a,{0xbf,0xab,0xbb,0xd3,0x39,0x57,0xf7,0x3a}};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\visualcstudy1\userthreads\debug\Dir1CServer.tli"
+
+#pragma pack(pop)

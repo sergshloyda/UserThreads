@@ -1,0 +1,70 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (da6b53bf).
+//
+// QueueDispatcher.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy1\QueueDispatcher\QueueDispatcher.tlb
+// compiler-generated file created 05/08/12 at 21:52:24 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("f82bf6d1-412b-4f62-b149-6e4df3a6196f"))
+/* dispinterface */ _IQDEvents;
+struct /* coclass */ QD;
+struct __declspec(uuid("ac8a0a11-b9e1-4ff9-996c-f8611cc7dfc3"))
+/* dual interface */ IQD;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IQDEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IQD, __uuidof(IQD));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("f82bf6d1-412b-4f62-b149-6e4df3a6196f"))
+_IQDEvents : IDispatch
+{};
+
+struct __declspec(uuid("c6c1c486-6115-4fda-9b6c-25078c8b14a9"))
+QD;
+    // [ default ] interface IQD
+    // [ default, source ] dispinterface _IQDEvents
+
+struct __declspec(uuid("ac8a0a11-b9e1-4ff9-996c-f8611cc7dfc3"))
+IQD : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddToROT (
+        unsigned long dwFlags ) = 0;
+    virtual HRESULT __stdcall AdviseToQueue (
+        IUnknown * pQueue,
+        VARIANT * varResult ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_QUEUEDISPATCHERLib =
+    {0x7a3a82b9,0x1c23,0x46d5,{0xaf,0xc1,0x80,0x54,0xec,0x47,0xf0,0x94}};
+extern "C" const GUID __declspec(selectany) DIID__IQDEvents =
+    {0xf82bf6d1,0x412b,0x4f62,{0xb1,0x49,0x6e,0x4d,0xf3,0xa6,0x19,0x6f}};
+extern "C" const GUID __declspec(selectany) CLSID_QD =
+    {0xc6c1c486,0x6115,0x4fda,{0x9b,0x6c,0x25,0x07,0x8c,0x8b,0x14,0xa9}};
+extern "C" const GUID __declspec(selectany) IID_IQD =
+    {0xac8a0a11,0xb9e1,0x4ff9,{0x99,0x6c,0xf8,0x61,0x1c,0xc7,0xdf,0xc3}};
+
+#pragma pack(pop)

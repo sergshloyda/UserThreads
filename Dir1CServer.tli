@@ -1,0 +1,110 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (8be3cf07).
+//
+// Dir1CServer.tli
+//
+// Wrapper implementations for Win32 type library C:\VisualCStudy1\Dir1CServer\ReleaseUMinDependency\Dir1CServer.exe
+// compiler-generated file created 03/28/14 at 21:38:14 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface _IDir1CServEvents wrapper method implementations
+//
+
+inline HRESULT _IDir1CServEvents::BeforeSaveCheck ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _IDir1CServEvents::BeforeOpen1C ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _IDir1CServEvents::AfterOpen1C ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _IDir1CServEvents::AfterSaveCheck ( _bstr_t bstrNumCheck ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008", (BSTR)bstrNumCheck);
+    return _result;
+}
+
+inline HRESULT _IDir1CServEvents::NomenclatureChanged ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT _IDir1CServEvents::BeforeNomenclatureChanging ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+//
+// interface IDir1CServ wrapper method implementations
+//
+
+inline HRESULT IDir1CServ::RefreshNomenclature ( ) {
+    HRESULT _hr = raw_RefreshNomenclature();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDir1CServ::Open1C ( _bstr_t bstrPath, _bstr_t bstrUser, _bstr_t bstrPassword ) {
+    HRESULT _hr = raw_Open1C(bstrPath, bstrUser, bstrPassword);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDir1CServ::SaveCheckIn1C ( _bstr_t strPointName, _bstr_t strUser, long nCheckNum, VARIANT * vtArray ) {
+    HRESULT _hr = raw_SaveCheckIn1C(strPointName, strUser, nCheckNum, vtArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDir1CServ::Close1C ( ) {
+    HRESULT _hr = raw_Close1C();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IDir1CServ::GetUserName ( ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetUserName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IDir1CServ::LoadReturnDoc ( VARIANT * psaHeadArray, VARIANT * psaTableArray ) {
+    HRESULT _hr = raw_LoadReturnDoc(psaHeadArray, psaTableArray);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IDir1CServ::GetTableDoc ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetTableDoc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT IDir1CServ::SaveDocIn1C ( _bstr_t pstrMoniker ) {
+    HRESULT _hr = raw_SaveDocIn1C(pstrMoniker);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDir1CServ::SaveDocIndirect ( IUnknown * pDoc ) {
+    HRESULT _hr = raw_SaveDocIndirect(pDoc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

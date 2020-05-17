@@ -1,0 +1,116 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (ae15d352).
+//
+// singletoneservice.tlh
+//
+// C++ source equivalent of Win32 type library C:\VisualCStudy1\singletoneservice\singletoneservice.tlb
+// compiler-generated file created 11/18/14 at 17:27:25 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7f21b80a-292e-4de4-b8f9-ed52e9f12474"))
+/* dispinterface */ _IMySingletonEvents;
+struct /* coclass */ MySingleton;
+struct __declspec(uuid("0c842cd1-c756-40e3-a3e3-92a59ada2ef0"))
+/* dual interface */ IMySingleton;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IMySingletonEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IMySingleton, __uuidof(IMySingleton));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("7f21b80a-292e-4de4-b8f9-ed52e9f12474"))
+_IMySingletonEvents : IDispatch
+{};
+
+struct __declspec(uuid("a7e18fee-2c7d-4dbc-905b-b1b82ae2c1d2"))
+MySingleton;
+    // [ default ] interface IMySingleton
+    // [ default, source ] dispinterface _IMySingletonEvents
+
+struct __declspec(uuid("0c842cd1-c756-40e3-a3e3-92a59ada2ef0"))
+IMySingleton : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT HelloWorld (
+        _bstr_t bstrMsg );
+    HRESULT ConnectPoint (
+        _bstr_t bstrMachine,
+        IUnknown * pUnk );
+    HRESULT DisconnectPoint (
+        _bstr_t bstrKey );
+    HRESULT AdviseTransactedDocument (
+        _bstr_t bstrMachine,
+        _bstr_t bstr1CDocNumber,
+        _bstr_t bstrIntDocNumber );
+    HRESULT AdviseClientAboutTransaction ( );
+    HRESULT ExecuteExprAndRetObject (
+        _bstr_t bstrExpr,
+        IDispatch * * pObj );
+    HRESULT RefreshDataAllClients ( );
+    HRESULT ThrowError (
+        _bstr_t bstrMachine,
+        _bstr_t bstrSource,
+        _bstr_t bstrDescription );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_HelloWorld (
+        BSTR bstrMsg ) = 0;
+    virtual HRESULT __stdcall raw_ConnectPoint (
+        BSTR bstrMachine,
+        IUnknown * pUnk ) = 0;
+    virtual HRESULT __stdcall raw_DisconnectPoint (
+        BSTR bstrKey ) = 0;
+    virtual HRESULT __stdcall raw_AdviseTransactedDocument (
+        BSTR bstrMachine,
+        BSTR bstr1CDocNumber,
+        BSTR bstrIntDocNumber ) = 0;
+    virtual HRESULT __stdcall raw_AdviseClientAboutTransaction ( ) = 0;
+    virtual HRESULT __stdcall raw_ExecuteExprAndRetObject (
+        BSTR bstrExpr,
+        IDispatch * * pObj ) = 0;
+    virtual HRESULT __stdcall raw_RefreshDataAllClients ( ) = 0;
+    virtual HRESULT __stdcall raw_ThrowError (
+        BSTR bstrMachine,
+        BSTR bstrSource,
+        BSTR bstrDescription ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_SINGLETONESERVICELib =
+    {0x7873adbb,0xb32c,0x4e41,{0x91,0xe8,0x4a,0xc2,0x96,0x9c,0xfa,0xb4}};
+extern "C" const GUID __declspec(selectany) DIID__IMySingletonEvents =
+    {0x7f21b80a,0x292e,0x4de4,{0xb8,0xf9,0xed,0x52,0xe9,0xf1,0x24,0x74}};
+extern "C" const GUID __declspec(selectany) CLSID_MySingleton =
+    {0xa7e18fee,0x2c7d,0x4dbc,{0x90,0x5b,0xb1,0xb8,0x2a,0xe2,0xc1,0xd2}};
+extern "C" const GUID __declspec(selectany) IID_IMySingleton =
+    {0x0c842cd1,0xc756,0x40e3,{0xa3,0xe3,0x92,0xa5,0x9a,0xda,0x2e,0xf0}};
+
+//
+// Wrapper method implementations
+//
+
+#include "singletoneservice.tli"
+
+#pragma pack(pop)

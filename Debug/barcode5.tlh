@@ -1,0 +1,92 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (77438523).
+//
+// c:\visualcstudy\userthreads\debug\barcode5.tlh
+//
+// C++ source equivalent of Win32 type library C:\Saler\ActiveX\BarCode5\Debug\barcode5.dll
+// compiler-generated file created 02/05/09 at 01:39:08 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("21f5286f-8814-4f55-bb9c-4682c8e15c8d"))
+/* dispinterface */ _IReaderEvents;
+struct /* coclass */ Reader;
+struct __declspec(uuid("f054312e-3ae2-40a9-9022-cf9ec7c1df91"))
+/* dual interface */ IReader;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IReaderEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IReader, __uuidof(IReader));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("21f5286f-8814-4f55-bb9c-4682c8e15c8d"))
+_IReaderEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT ReceiveBarCode (
+        _bstr_t BarCode );
+};
+
+struct __declspec(uuid("0e5142a9-3cc6-4372-a63a-8a5c8782f673"))
+Reader;
+    // [ default ] interface IReader
+    // [ default, source ] dispinterface _IReaderEvents
+
+struct __declspec(uuid("f054312e-3ae2-40a9-9022-cf9ec7c1df91"))
+IReader : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT OpenCommPort (
+        _bstr_t CommPort );
+    HRESULT CloseCommPort ( );
+    HRESULT Execute ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_OpenCommPort (
+        BSTR CommPort ) = 0;
+    virtual HRESULT __stdcall raw_CloseCommPort ( ) = 0;
+    virtual HRESULT __stdcall raw_Execute ( ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_BARCODE5Lib =
+    {0x4f825d00,0xbc5a,0x48bb,{0xb6,0x35,0xbd,0x8a,0x6a,0x88,0xe3,0x8e}};
+extern "C" const GUID __declspec(selectany) DIID__IReaderEvents =
+    {0x21f5286f,0x8814,0x4f55,{0xbb,0x9c,0x46,0x82,0xc8,0xe1,0x5c,0x8d}};
+extern "C" const GUID __declspec(selectany) CLSID_Reader =
+    {0x0e5142a9,0x3cc6,0x4372,{0xa6,0x3a,0x8a,0x5c,0x87,0x82,0xf6,0x73}};
+extern "C" const GUID __declspec(selectany) IID_IReader =
+    {0xf054312e,0x3ae2,0x40a9,{0x90,0x22,0xcf,0x9e,0xc7,0xc1,0xdf,0x91}};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\visualcstudy\userthreads\debug\barcode5.tli"
+
+#pragma pack(pop)

@@ -1,0 +1,78 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (88d150b2).
+//
+// Service1C.tlh
+//
+// C++ source equivalent of Win32 type library ..\Service1C\Service1C.tlb
+// compiler-generated file created 01/23/10 at 01:08:09 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7a795ffe-bce5-49f2-8925-fefc5b8e0dc3"))
+/* dispinterface */ _IManage1CEvents;
+struct /* coclass */ Manage1C;
+struct __declspec(uuid("7c31a658-f5ae-42ad-9a8a-63187843575e"))
+/* dual interface */ IManage1C;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IManage1CEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IManage1C, __uuidof(IManage1C));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("7a795ffe-bce5-49f2-8925-fefc5b8e0dc3"))
+_IManage1CEvents : IDispatch
+{};
+
+struct __declspec(uuid("4a952bd2-7173-433b-b03b-eb283ff8e6bf"))
+Manage1C;
+    // [ default ] interface IManage1C
+    // [ default, source ] dispinterface _IManage1CEvents
+
+struct __declspec(uuid("7c31a658-f5ae-42ad-9a8a-63187843575e"))
+IManage1C : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall RefreshNomenclature ( ) = 0;
+    virtual HRESULT __stdcall Open1C (
+        BSTR bstrPath,
+        BSTR bstrUser,
+        BSTR bstrPassword ) = 0;
+    virtual HRESULT __stdcall SaveCheckIn1C (
+        BSTR strPointName,
+        BSTR strUser,
+        long nCheckNum,
+        VARIANT * vtArray ) = 0;
+    virtual HRESULT __stdcall Close1C ( ) = 0;
+    virtual HRESULT __stdcall GetUserName (
+        BSTR * bstrUserName ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_SERVICE1CLib =
+    {0xbda2e060,0xeb18,0x4cf6,{0x88,0x05,0x54,0xa3,0xc3,0xe6,0x72,0x19}};
+extern "C" const GUID __declspec(selectany) DIID__IManage1CEvents =
+    {0x7a795ffe,0xbce5,0x49f2,{0x89,0x25,0xfe,0xfc,0x5b,0x8e,0x0d,0xc3}};
+extern "C" const GUID __declspec(selectany) CLSID_Manage1C =
+    {0x4a952bd2,0x7173,0x433b,{0xb0,0x3b,0xeb,0x28,0x3f,0xf8,0xe6,0xbf}};
+extern "C" const GUID __declspec(selectany) IID_IManage1C =
+    {0x7c31a658,0xf5ae,0x42ad,{0x9a,0x8a,0x63,0x18,0x78,0x43,0x57,0x5e}};
+
+#pragma pack(pop)

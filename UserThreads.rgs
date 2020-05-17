@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{07D70AD1-7C14-402F-97E8-8E096D9E7432} = s 'UserThreads'
+		'UserThreads.EXE'
+		{
+			val AppID = s {07D70AD1-7C14-402F-97E8-8E096D9E7432}
+		}
+	}
+}
